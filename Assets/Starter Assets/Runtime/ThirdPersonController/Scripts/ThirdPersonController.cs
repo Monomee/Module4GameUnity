@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -87,6 +88,10 @@ namespace StarterAssets
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
 
+        [Header("Crosshair")]
+        public Sprite crosshairSprite;
+        private Image crosshairImg;
+
         // timeout deltatime
         [SerializeField]private float _jumpTimeoutDelta;
         [SerializeField]private float _fallTimeoutDelta;
@@ -150,6 +155,8 @@ namespace StarterAssets
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
+
+            SetCrossHair();
         }
 
         private void Update()
@@ -387,6 +394,26 @@ namespace StarterAssets
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
+        }
+        void SetCrossHair()
+        {
+            Canvas canvas = _mainCamera.gameObject.GetComponentInChildren<Canvas>();
+            if (canvas == null)
+            {
+                canvas = new GameObject("AutoCrosshair").AddComponent<Canvas>();
+                canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+                canvas.pixelPerfect = true;
+                canvas.gameObject.AddComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+                canvas.transform.SetParent(_mainCamera.transform);
+                canvas.transform.position = Vector3.zero;
+            }
+
+            crosshairImg = new GameObject("Crosshair").AddComponent<Image>();
+            crosshairImg.sprite = crosshairSprite;
+            crosshairImg.rectTransform.sizeDelta = new Vector2(25, 25);
+            crosshairImg.transform.SetParent(canvas.transform);
+            crosshairImg.transform.position = Vector3.zero;
+            crosshairImg.raycastTarget = false;
         }
     }
 }
