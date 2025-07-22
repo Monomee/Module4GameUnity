@@ -4,32 +4,23 @@ using UnityEngine;
 
 public abstract class UnitBase : MonoBehaviour
 {
-    public float damage;
-    public float attackRange;
-    public bool isDead;
-    public float speed;
-    public float attackSpeed;
- 
-    void Start()
+    public int teamID;
+    protected Health healthComponent;
+    public float hp;
+    protected void HealthInit ()
     {
-        
+        if (healthComponent == null)
+        {
+            healthComponent = new Health(hp);
+        }
+    }
+    public virtual void OnTakeDmg(float damage)
+    {
+        healthComponent?.OnTakeDmg(damage);     
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool IsDead()
     {
-        
+        return healthComponent?.hp <= 0;
     }
-
-    public void OnTakeDamge()
-    { }
-
-    public void Die()
-    { }
-
-    public void AttackComponent()
-    { }
-
-    public void GetHealthComponent()
-    { }
 }

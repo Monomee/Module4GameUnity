@@ -1,23 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Health : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    public int hp;
-
-    // Start is called before the first frame update
-    void Start()
+    public float hp { get; set; }
+    public Health(float hp)
     {
-        
+        this.hp = hp;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnTakeDmg(float damage)
     {
-        
+        hp -= damage;
+        if (hp < 0) hp = 0;
     }
-
-    public void OnTakeDamage() 
-    { }
 }
