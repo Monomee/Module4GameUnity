@@ -61,6 +61,13 @@ namespace StarterAssets
 			jump = newJumpState;
 		}
 
+		public bool ConsumeJumpInput()
+		{
+			bool wasJumpPressed = jump;
+			jump = false;
+			return wasJumpPressed;
+		}
+
 		public void SprintInput(bool newSprintState)
 		{
 			sprint = newSprintState;
