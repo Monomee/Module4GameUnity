@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIBase : MonoBehaviour
+public class EffectConfig : EffectBase
 {
-    RoleStat roleStat;
-    List<SkillBase> skills;
-    //list effects add later
+    string codeName;
+    float duration;
     // Start is called before the first frame update
     void Start()
     {

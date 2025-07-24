@@ -5,6 +5,9 @@ using UnityEngine;
 public abstract class UnitBase : MonoBehaviour
 {
     public int teamID;
+    RoleStat roleStat;
+    List<SkillBase> skills;
+    List<EffectBase> effects;
     protected Health healthComponent;
     public float hp;
     protected void HealthInit ()
@@ -14,13 +17,12 @@ public abstract class UnitBase : MonoBehaviour
             healthComponent = new Health(hp);
         }
     }
-    public virtual void OnTakeDmg(float damage)
-    {
-        healthComponent?.OnTakeDmg(damage);     
-    }
-
     public bool IsDead()
     {
         return healthComponent?.hp <= 0;
+    }
+    public Health GetHealthComponent()
+    {
+        return healthComponent;
     }
 }

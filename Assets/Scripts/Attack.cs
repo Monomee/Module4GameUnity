@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public float damage;
-    public float attackRange;
-    public float attackSpeed;
-    public float attackCooldown;
-
-    public Attack(float damage, float attackRange, float attackSpeed, float attackCooldown)
-    {
-        this.damage = damage;
-        this.attackRange = attackRange;
-        this.attackSpeed = attackSpeed;
-        this.attackCooldown = attackCooldown;
-    }
+    public float damage { get; set; }
+    public float attackRange { get; set; }
+    public float attackSpeed { get; set; }
+    public float attackCooldown { get; set; }
 
     // Start is called before the first frame update
     void Start()

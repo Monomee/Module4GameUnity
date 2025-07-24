@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStats : UnitBase
+public class EffectBase : MonoBehaviour
 {
-    private void Awake()
-    {
-        HealthInit();
-    }
+    SkillBase skillBase;
+    UnitBase owner;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("PlayerStats initialized with HP: " + hp); 
+        
     }
 
     // Update is called once per frame

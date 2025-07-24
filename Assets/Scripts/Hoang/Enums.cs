@@ -24,3 +24,10 @@ public enum SkillActiveCondition
     OnDead,
     ASAP
 }
+public enum SkillCastType
+{
+    Passive,
+    Active,
+    AutoAimTarget,
+    Custom
+}

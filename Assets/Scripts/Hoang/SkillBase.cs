@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkillBase : MonoBehaviour
 {
-    AIBase owner;
+    UnitBase owner;
     // Start is called before the first frame update
     void Start()
     {
