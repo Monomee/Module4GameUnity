@@ -9,15 +9,11 @@ public class StatConfigBase : MonoBehaviour
     float basePercentValue;
     float otherValue;
     float allPercentValue;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public float OtherValue { get => otherValue; set => otherValue = value; }
+     
+    public float GetValue()
     {
-        
+        return (otherValue + (basePercentValue * baseValue)) * allPercentValue;
     }
 }

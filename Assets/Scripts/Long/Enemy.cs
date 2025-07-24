@@ -2,21 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyStats : UnitBase
+public class Enemy : UnitBase
 {
     protected Attack attackComponent;
     public float moveSpeed;
-    public float damage;
-    public float attackRange;
-    public float attackSpeed;
-    public float attackCooldown;
     private void Awake()
     {
         HealthInit();
-        if (attackComponent == null)
-        {
-            attackComponent = new Attack(damage, attackRange, attackSpeed, attackCooldown);
-        }
     }
     // Start is called before the first frame update
     void Start()

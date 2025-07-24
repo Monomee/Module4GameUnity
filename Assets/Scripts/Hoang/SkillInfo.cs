@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkillInfo : MonoBehaviour
 {
     string codeName;
-    int level;
+    //int level;
     // Start is called before the first frame update
     void Start()
     {
