@@ -11,20 +11,29 @@ public abstract class UnitBase : MonoBehaviour
     protected Health healthComponent;
     protected Attack attackComponent;
     public float hp;
-    protected void HealthInit ()
+    protected virtual void HealthInit ()
     {
         if (healthComponent == null)
         {
             healthComponent = new Health(hp);
         }
     }
-    protected void AttackInit()
+    protected virtual void AttackInit()
     {
         if (attackComponent == null)
         {
             attackComponent = new Attack(); 
         }
     }
+
+    public virtual void OnTakeDmg(float dmg)
+    {
+        if (healthComponent != null)
+        {
+            healthComponent.OnTakeDmg(dmg); 
+        }
+    }
+
     public bool IsDead()
     {
         return healthComponent?.hp <= 0;
@@ -33,4 +42,7 @@ public abstract class UnitBase : MonoBehaviour
     {
         return healthComponent;
     }
+
+
+    
 }
