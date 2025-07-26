@@ -13,7 +13,7 @@ public class Health : MonoBehaviour
 
     public void OnTakeDmg(float damage)
     {
-        hp -= damage;
         if (hp < 0) hp = 0;
+        hp -= damage;        
     }
 }

@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     public void Initialize(Vector3 direction, Transform startPosition)
     {
         this.direction = direction.normalized;
-        transform.position = startPosition.position;
+        transform.position = startPosition.position + Vector3.up;
         transform.rotation = Quaternion.LookRotation(direction);
     }
     void OnEnable()

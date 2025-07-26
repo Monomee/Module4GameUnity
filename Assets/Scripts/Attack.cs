@@ -1,43 +1,43 @@
 using UnityEngine;
 
-public class Attack : MonoBehaviour
+public class Attack : StatConfigBase
 {
-    public float damage { get; set; }
-    public float attackRange { get; set; }
-    public float attackSpeed { get; set; }
-    public float attackCooldown { get; set; }
-
-    // Start is called before the first frame update
-    void Start()
+    public Attack(StatType statType, float baseValue, float basePercentValue, float otherValue, float allPercentValue) : base(statType, baseValue, basePercentValue, otherValue, allPercentValue)
     {
-
+        this.statType = StatType.Atk;
+        this.baseValue = baseValue;
+        this.basePercentValue = basePercentValue;
+        this.otherValue = otherValue;
+        this.allPercentValue = allPercentValue;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void DoAttack(Transform owner, Projectile projectile = null)
     {
         if (owner == null) return;
+        
         Vector3 projectileDir = owner.forward;
         //float offset = 1.5f;
-        //if (owner.gameObject.layer == LayerMask.NameToLayer("Player"))
-        //{
-        //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //    RaycastHit hit;
-        //    if (Physics.Raycast(ray, out hit, attackRange))
-        //    {
-        //        if (hit.collider != null)
-        //        {
-        //        }
-        //        else
-        //        {
-        //            projectileDir = projectile ? owner.forward : Vector3.zero;
-        //        }
-        //    }
-        //}
+        if (owner.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Vector3 screenCenter = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
+            Ray ray = Camera.main.ScreenPointToRay(screenCenter);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 100f))
+            {
+                if (Mathf.Abs(Vector3.Dot(ray.direction, owner.forward)) <= 0.9f)
+                {
+                    if (hit.collider != null)
+                    {
+                        projectileDir = (hit.point - owner.position).normalized;
+                    }
+                    else
+                    {
+                        projectileDir = ray.direction;
+                    }
+                }                
+            }
+        }
+
         if (projectile != null)
         {
             projectile.Initialize(projectileDir, owner);
@@ -45,8 +45,8 @@ public class Attack : MonoBehaviour
         }
         
     }
-    public bool CanAttack(float range, float coolDownTimer)
-    {
-        return range <= attackRange && coolDownTimer >= attackCooldown;
-    }
+    //public bool CanAttack(float range, float coolDownTimer)
+    //{
+    //    return range <= attackRange && coolDownTimer >= attackCooldown;
+    //}
 }
