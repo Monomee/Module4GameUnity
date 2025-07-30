@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class SkillBase : MonoBehaviour
 {
-    UnitBase owner;
+    protected UnitBase owner;
+    protected SkillInfo skillInfo;
+    protected SkillConfig skillConfig;
+   
+    protected GameObject skillPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +19,13 @@ public class SkillBase : MonoBehaviour
     void Update()
     {
         
+    }
+    public GameObject GetSkillPrefab()
+    {
+        return skillPrefab;
+    }
+    public void SetSkillPrefab(GameObject prefab)
+    {
+        skillPrefab = prefab;
     }
 }

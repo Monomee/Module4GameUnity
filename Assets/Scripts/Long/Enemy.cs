@@ -8,7 +8,6 @@ public class Enemy : UnitBase
     private void Awake()
     {
         HealthInit();
-        AttackInit();
     }
     // Start is called before the first frame update
     void Start()
@@ -20,5 +19,13 @@ public class Enemy : UnitBase
     void Update()
     {
         
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Projectile"))
+        {
+            healthComponent.OnTakeDmg(10);
+            Debug.Log("Enemy hit by projectile. Current HP: " + healthComponent.hp);
+        }
     }
 }

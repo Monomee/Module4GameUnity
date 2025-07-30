@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SkillConfig : SkillBase
 {
-    float range;
-    SkillActiveCondition activeCondition;
-    SkillCastType castType;
-    List<EffectConfig> effects;
+    public float range;
+    public SkillActiveCondition activeCondition;
+    protected SkillCastType castType;
+    protected List<EffectConfig> effects;
     // Start is called before the first frame update
     void Start()
     {
