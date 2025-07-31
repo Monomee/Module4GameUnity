@@ -7,25 +7,23 @@ public class Enemy : UnitBase
     public float moveSpeed;
     private void Awake()
     {
-        HealthInit();
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("EnemyStats initialized with HP: " + hp + " and Move Speed: " + moveSpeed);
+        if (roleStat == null)
+        {
+            roleStat = new RoleStat();
+        }
+        roleStat.dictStats = new Dictionary<StatType, StatConfigBase>();
+        GetComponent<Health>().Init();
+        //roleStat.dictStats.Add(StatType.HP, new Health(StatType.HP, 1000, 0.5f, 0, 0.2f));
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Projectile"))
-        {
-            healthComponent.OnTakeDmg(10);
-            Debug.Log("Enemy hit by projectile. Current HP: " + healthComponent.hp);
-        }
     }
 }

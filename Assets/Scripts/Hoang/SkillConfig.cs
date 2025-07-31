@@ -2,21 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillConfig : SkillBase
+public class SkillConfig
 {
-    public float range;
+    public string codeName;
     public SkillActiveCondition activeCondition;
-    protected SkillCastType castType;
-    protected List<EffectConfig> effects;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public SkillCastType castType;
+    public GameObject skillPrefab;
+    public List<EffectConfig> effects;
+    public string asset;
+    public float[] parameters;
 }

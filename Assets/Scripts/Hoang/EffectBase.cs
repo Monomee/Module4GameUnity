@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EffectBase : MonoBehaviour
+public class EffectBase
 {
     SkillBase skillBase;
     UnitBase owner;
-    // Start is called before the first frame update
-    void Start()
+    public EffectConfig effectConfig;
+    
+    public void OnActive()
     {
-        
+        Debug.Log("EffectBase OnActive");
+        // Apply effect logic here
     }
-
-    // Update is called once per frame
-    void Update()
+    public void OnDeactive()
     {
-        
+        Debug.Log("EffectBase OnDeactive");
+        // Clean up effect logic here
     }
 }

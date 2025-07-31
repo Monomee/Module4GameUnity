@@ -1,37 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.FullSerializer;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class TestUltimate : SkillBase
 {
-    GameObject ul;
-    public TestUltimate(SkillInfo skillInfo, SkillConfig skillConfig, UnitBase owner)
-    {
-        this.skillInfo = skillInfo;
-        this.skillConfig = skillConfig;
+    public TestUltimate(UnitBase owner, SkillConfig skillConfig, List<EffectBase> effects)
+    {        
         this.owner = owner;
+        this.skillConfig = skillConfig;
+        this.effects = effects;
     }
-    public void Cast()
+    public override void OnActive()
     {
-        //if (skillConfig.activeCondition == SkillActiveCondition.OnAction)
-        //{
-            Debug.Log($"{owner} casts Fireball with range {skillConfig.range}");
-            ul = Instantiate(skillPrefab);
-            ul.transform.position = owner.transform.position + Vector3.up + Vector3.forward; 
-        ul.transform.rotation = Quaternion.LookRotation(-owner.transform.right);
-        ul.transform.SetParent(owner.transform);
+        Debug.Log("TestUltimate OnActive");
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            owner.animator.SetTrigger("Attack");
+            owner.animator.SetBool("Ultimate", true);
+        }
         ApplyEffects();
-        //}
     }
-    public void EndCast()
+    public override void OnDeactive()
     {
-        ul.transform.SetParent(null);
-        Destroy(ul);
+        Debug.Log("TestUltimate OnDeactive");
+        owner.animator.SetBool("Ultimate", false);
     }
 
-    private void ApplyEffects()
+    protected override void ApplyEffects()
     {
-        Debug.Log($"Applying effects for skill {skillInfo.codeName}");
+        
     }
 }
