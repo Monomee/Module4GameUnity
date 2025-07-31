@@ -7,7 +7,7 @@ public class Boss : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("BossStats initialized with HP: " + hp + " and Move Speed: " + moveSpeed);
+        GetComponent<Health>().Init();
     }
 
     // Update is called once per frame

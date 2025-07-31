@@ -2,29 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class UnitBase : MonoBehaviour
+public class UnitBase : MonoBehaviour
 {
-    public int teamID;
-    protected RoleStat roleStat;
-    protected List<SkillBase> skills;
-    List<EffectBase> effects;
-    protected Health healthComponent;
-    public float hp;
-
-    protected void HealthInit ()
+    //public int teamID;
+    public Animator animator;
+    public RoleStat roleStat;   
+    List<EffectBase> effects; // co the chuyen sang EffectManager
+    public bool isDead = false;
+    public GameObject Create(GameObject prefab)
     {
-        if (healthComponent == null)
-        {
-            healthComponent = new Health(hp);
-        }
+        return Instantiate(prefab);
     }
-    public bool IsDead()
+    public Health GetHealth()
     {
-        return healthComponent?.hp <= 0;
+        return GetComponent<Health>();
     }
-    public Health GetHealthComponent()
-    {
-        return healthComponent;
-    }
-    
 }

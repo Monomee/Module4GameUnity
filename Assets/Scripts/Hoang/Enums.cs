@@ -21,7 +21,7 @@ public enum SkillActiveCondition
     TargetIsEnemyInRange,
     TargetIsAllyInRange,
     TargetIsSelf,
-    OnDead,
+    OnDead, //khi unitbase dead => goi skill manager check list skill xem co skill nao co active condition la OnDead khong, neu co thi goi skill do
     ASAP
 }
 public enum SkillCastType

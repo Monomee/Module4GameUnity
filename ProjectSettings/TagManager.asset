@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Projectile
+  - CanTakeDmg
   layers:
   - Default
   - TransparentFX
