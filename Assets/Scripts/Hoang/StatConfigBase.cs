@@ -34,7 +34,7 @@ public class StatConfigBase
     public void Recalculate()
     {
         value = GetValue();
-        if (value < minValue)
+        if (value <= minValue)
         {
             value = minValue;
             onCheckMinValue?.Invoke();

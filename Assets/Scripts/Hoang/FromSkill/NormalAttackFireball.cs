@@ -37,7 +37,7 @@ public class NormalAttackFireball : MonoBehaviour
             if (health != null)
             {
                 health.OnTakeDmg(damage);
-                Debug.Log(other.name + " took " + damage + " damage from the projectile. Current HP: ");
+                Debug.Log(other.name + " took " + damage + " damage from the projectile. Current HP: " + health.health);
             }
             Deactivate();
         }

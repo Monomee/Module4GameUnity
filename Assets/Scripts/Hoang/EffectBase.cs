@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class EffectBase
 {
-    SkillBase skillBase;
-    UnitBase owner;
-    public EffectConfig effectConfig;
+    protected SkillBase skillBase;
+    protected UnitBase owner;
+    protected EffectConfig effectConfig;
     
-    public void OnActive()
+    public virtual void OnActive(UnitBase onTarget)
     {
         Debug.Log("EffectBase OnActive");
         // Apply effect logic here
     }
-    public void OnDeactive()
+    public virtual void OnDeactive()
     {
         Debug.Log("EffectBase OnDeactive");
         // Clean up effect logic here
+    }
+    public void SetUnitBase(UnitBase unit)
+    {
+        owner = unit;
     }
 }

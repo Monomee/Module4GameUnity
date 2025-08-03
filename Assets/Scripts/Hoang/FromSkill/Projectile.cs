@@ -5,11 +5,13 @@ using UnityEngine.Animations.Rigging;
 
 public class Projectile : MonoBehaviour
 {
+    private SkillBase fromSkill;
     private Vector3 direction;
     private float damage;
     private float speed; 
-    public void Initialize(Vector3 direction, Transform startPosition, float damage, float duration, float speed)
+    public void Initialize(SkillBase fromSkill, Vector3 direction, Transform startPosition, float damage, float duration, float speed)
     {
+        this.fromSkill = fromSkill;
         this.direction = direction.normalized;
         transform.position = startPosition.position + Vector3.up;
         transform.rotation = Quaternion.LookRotation(direction);
@@ -34,9 +36,10 @@ public class Projectile : MonoBehaviour
             if (health != null)
             {
                 health.OnTakeDmg(damage);
-                Debug.Log(other.name + " took " + damage + " damage from the projectile. Current HP: " );
+                Debug.Log(other.name + " took " + damage + " damage from the projectile. Current HP: " + health.health); 
+                other.GetComponent<EffectManager>()?.AddListEffect(fromSkill.effects);
+                other.GetComponent<EffectManager>()?.ActiveEffect();
             }
-            //Deactivate();
         }
         
     }
