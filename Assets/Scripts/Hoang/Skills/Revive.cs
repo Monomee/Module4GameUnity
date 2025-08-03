@@ -34,6 +34,5 @@ public class ReviveConfig : SkillConfig
         activeCondition = SkillActiveCondition.OnDead;
         castType = SkillCastType.Passive;
         effects = new List<EffectConfig>();
-        skillPrefab = null;
     }
 }

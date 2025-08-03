@@ -6,10 +6,12 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     StatConfigBase hp;
+    public float health;
     public void Init()
     {
         hp = new StatConfigBase(StatType.HP, 100, 1, 0, 1, 0, 0, 100);
         AddListener();
+        GetComponent<UnitBase>().AddStats(StatType.HP, hp);
         Debug.Log("HP: " + hp.GetValue());
     }
     private void AddListener()
@@ -29,16 +31,20 @@ public class Health : MonoBehaviour
     }
     public void OnChecKDead()
     {
-        if (GetComponent<UnitBase>().isDead) Debug.Log("Unit is dead");
-        else Debug.Log("Unit is alive");
+        if (GetComponent<UnitBase>().isDead)
+        {
+            Debug.Log("Unit is dead");
+            RemoveListener();
+        }
     }
     public void OnTakeDmg(float damage)
-    {
-        hp.AddValue(-damage);
+    {     
         if (hp.value <= 0)
         {
             hp.value = 0;
             GetComponent<UnitBase>().isDead = true;
         }
+        hp.AddValue(-damage);
+        health = hp.value;
     }
 }

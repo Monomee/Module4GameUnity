@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class FireBall : SkillBase
@@ -8,12 +9,14 @@ public class FireBall : SkillBase
     GameObject fireball;
     private float lastCastTime = -Mathf.Infinity;
     private float cooldown => skillConfig.parameters[3];
+    private GameObject skillPrefab => Resources.Load<GameObject>(skillConfig.asset);
 
     public FireBall(UnitBase owner, SkillConfig skillConfig, List<EffectBase> effects)
     {
         this.owner = owner;
         this.skillConfig = skillConfig;
         this.effects = effects;
+        this.effects.Add(new BurningEffect(this, new BurningEffectConfig())); 
     }
     public override void OnActive()
     {
@@ -23,8 +26,8 @@ public class FireBall : SkillBase
             lastCastTime = Time.time;
 
             owner.animator.SetTrigger("Attack");
-            fireball = owner.Create(skillConfig.skillPrefab);
-
+            fireball = Object.Instantiate(skillPrefab);
+            
             Vector3 projectileDir = owner.transform.forward;
 
             if (owner.gameObject.layer == LayerMask.NameToLayer("Player"))
@@ -54,7 +57,7 @@ public class FireBall : SkillBase
                 float damage = skillConfig.parameters[0];
                 float duration = skillConfig.parameters[1];
                 float speed = skillConfig.parameters[2];
-                projectile.Initialize(projectileDir, owner.transform, damage, duration, speed);
+                projectile.Initialize(this, projectileDir, owner.transform, damage, duration, speed);
             }
 
             ApplyEffects();
@@ -62,13 +65,18 @@ public class FireBall : SkillBase
     }
     public override void OnDeactive()
     {
-        Debug.Log("FireBall OnDeactive");
-        // Implement any cleanup logic if necessary
+        //owner.GetComponent<EffectManager>().RemoveListEffect(effects);
+        Debug.Log("FireBall OnDeactive");       
     }
     protected override void ApplyEffects()
     {
         // Implement the logic to apply fireball effects
+        //owner.GetComponent<EffectManager>().AddListEffect(effects);
         Debug.Log("Applying fireball effects");
+    }
+    public List<EffectBase> GetEffects()
+    {
+        return effects;
     }
 }
 public class FireBallConfig : SkillConfig
@@ -79,8 +87,7 @@ public class FireBallConfig : SkillConfig
         activeCondition = SkillActiveCondition.OnAction;
         castType = SkillCastType.Active;
         effects = new List<EffectConfig>();
-        asset = "Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_03"; // Path to the prefab asset
-        skillPrefab = Resources.Load<GameObject>(asset); // Assign a prefab if needed //"Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_03"
-        parameters = new float[] { 100f, 5f, 5f, 20f }; // { damage, duration, speed, cooldown }
+        asset = "Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_03"; 
+        parameters = new float[] { 30f, 5f, 5f, 20f }; // damage, duration, speed, cooldown
     }
 }

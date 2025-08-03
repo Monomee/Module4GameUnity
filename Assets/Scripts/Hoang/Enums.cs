@@ -31,3 +31,24 @@ public enum SkillCastType
     AutoAimTarget,
     Custom
 }
+public enum EffectActiveEvent
+{
+    OnFirstTick,
+    OnTickInterval,
+    OnReceiveDamage,
+    OnReceiveFatalDamage,
+    OnFirstEngaging,
+    OnNormalAttack,
+    OnSendDmg,
+    OnCheckHP,
+    OnGetNormalAttack,
+    OnTargetReceiveDamage,
+    OnTargetCheckHPNormalAttack,
+    OnKillTarget,
+    OnGetHit,
+    OnOtherDead,
+    OnHeal,
+    OnUseSkill,
+    OnUseUltimateSkill, //hoangpl
+    OnBeforeAfterDealDamage, // Call a pair
+}
