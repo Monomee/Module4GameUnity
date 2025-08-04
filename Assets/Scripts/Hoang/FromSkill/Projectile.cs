@@ -5,12 +5,14 @@ using UnityEngine.Animations.Rigging;
 
 public class Projectile : MonoBehaviour
 {
+    private UnitBase owner;
     private SkillBase fromSkill;
     private Vector3 direction;
     private float damage;
     private float speed; 
-    public void Initialize(SkillBase fromSkill, Vector3 direction, Transform startPosition, float damage, float duration, float speed)
+    public void Initialize(UnitBase owner, SkillBase fromSkill, Vector3 direction, Transform startPosition, float damage, float duration, float speed)
     {
+        this.owner = owner;
         this.fromSkill = fromSkill;
         this.direction = direction.normalized;
         transform.position = startPosition.position + Vector3.up;
@@ -30,6 +32,11 @@ public class Projectile : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag(owner.tag))
+        {
+            Debug.Log("Projectile hit the owner: " + other.name);
+            return;
+        }
         if (other.CompareTag("CanTakeDmg"))
         {
             Health health = other.GetComponent<Health>();

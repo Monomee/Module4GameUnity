@@ -57,7 +57,7 @@ public class FireBall : SkillBase
                 float damage = skillConfig.parameters[0];
                 float duration = skillConfig.parameters[1];
                 float speed = skillConfig.parameters[2];
-                projectile.Initialize(this, projectileDir, owner.transform, damage, duration, speed);
+                projectile.Initialize(owner, this, projectileDir, owner.transform, damage, duration, speed);
             }
 
             ApplyEffects();
