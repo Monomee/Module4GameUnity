@@ -2,18 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoleStat : MonoBehaviour
+public class RoleStat
 {
-    Dictionary<StatType, StatConfigBase> dictStats;
-    // Start is called before the first frame update
-    void Start()
+    public Dictionary<StatType, StatConfigBase> dictStats;
+    public RoleStat()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        dictStats = new Dictionary<StatType, StatConfigBase>();
     }
 }

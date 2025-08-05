@@ -2,47 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class UnitBase : MonoBehaviour
+public class UnitBase : MonoBehaviour
 {
-    public int teamID;
-    RoleStat roleStat;
-    List<SkillBase> skills;
-    List<EffectBase> effects;
-    protected Health healthComponent;
-    protected Attack attackComponent;
+    //public int teamID;
+    public Animator animator;
+    public RoleStat roleStat;   
+    public bool isDead = false;
+
     public float hp;
-    protected virtual void HealthInit ()
-    {
-        if (healthComponent == null)
-        {
-            healthComponent = new Health(hp);
-        }
-    }
-    protected virtual void AttackInit()
-    {
-        if (attackComponent == null)
-        {
-            attackComponent = new Attack(); 
-        }
-    }
 
-    public virtual void OnTakeDmg(float dmg)
+    public void AddStats(StatType type, StatConfigBase stat)
     {
-        if (healthComponent != null)
+        if (roleStat == null)
         {
-            healthComponent.OnTakeDmg(dmg); 
+            roleStat = new RoleStat();
         }
+        roleStat.dictStats.Add(type, stat);
     }
-
-    public bool IsDead()
-    {
-        return healthComponent?.hp <= 0;
-    }
+    //public virtual void OnTakeDmg(float dmg)
+    //{
+    //    if (healthComponent != null)
+    //    {
+    //        healthComponent.OnTakeDmg(dmg); 
+    //    }
+    //}
     public Health GetHealthComponent()
     {
-        return healthComponent;
-    }
-
-
-    
+        return GetComponent<Health>();
+    } 
 }

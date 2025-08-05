@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : Enemy
+public class Boss : UnitBase
 {
+    public float moveSpeed;
+    private void Awake()
+    {
+
+    }
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("BossStats initialized with HP: " + hp + " and Move Speed: " + moveSpeed);
+        if (roleStat == null)
+        {
+            roleStat = new RoleStat();
+        }
+        roleStat.dictStats = new Dictionary<StatType, StatConfigBase>();
+        GetComponent<Health>().Init();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

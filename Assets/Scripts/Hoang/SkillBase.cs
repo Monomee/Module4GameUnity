@@ -2,18 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillBase : MonoBehaviour
+public class SkillBase // can tao skillmanager ke thua mono behavior chay update new ()
 {
-    UnitBase owner;
-    // Start is called before the first frame update
-    void Start()
+    public UnitBase owner;
+    public SkillConfig skillConfig;
+    public List<EffectBase> effects = new List<EffectBase>();
+
+    //tinh cooldown, virtual active , disable , 
+    public virtual void OnActive()
     {
-        
+        ApplyEffects();
+    }
+    public virtual void OnDeactive()
+    {
+
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void ApplyEffects()
     {
-        
+
     }
 }

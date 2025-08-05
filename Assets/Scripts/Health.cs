@@ -5,15 +5,46 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float hp { get; set; }
-    public Health(float hp)
+    StatConfigBase hp;
+    public float health;
+    public void Init()
     {
-        this.hp = hp;
+        hp = new StatConfigBase(StatType.HP, 100, 1, 0, 1, 0, 0, 100);
+        AddListener();
+        GetComponent<UnitBase>().AddStats(StatType.HP, hp);
+        Debug.Log("HP: " + hp.GetValue());
+    }
+    private void AddListener()
+    {
+        if (hp != null)
+        {
+            hp.OnCheckMinValue += OnChecKDead;
+        }          
     }
 
-    public void OnTakeDmg(float damage)
+    void RemoveListener()
     {
-        hp -= damage;
-        if (hp < 0) hp = 0;
+        if (hp != null)
+        {
+            hp.OnCheckMinValue -= OnChecKDead;
+        }
+    }
+    public void OnChecKDead()
+    {
+        if (GetComponent<UnitBase>().isDead)
+        {
+            Debug.Log("Unit is dead");
+            RemoveListener();
+        }
+    }
+    public void OnTakeDmg(float damage)
+    {     
+        if (hp.value <= 0)
+        {
+            hp.value = 0;
+            GetComponent<UnitBase>().isDead = true;
+        }
+        hp.AddValue(-damage);
+        health = hp.value;
     }
 }

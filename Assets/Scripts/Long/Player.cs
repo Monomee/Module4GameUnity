@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : UnitBase
-{
-    [SerializeField] private Animator animator;
+{ 
+    Health health;
     private void Awake()
     {
-        HealthInit();
-        AttackInit();
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -16,19 +15,31 @@ public class Player : UnitBase
         if (animator == null)
         {
             animator = GetComponent<Animator>();
+        }        
+        if (health == null)
+        {
+            health = GetComponent<Health>();
+            health.Init();
         }
-        Debug.Log("PlayerStats initialized with HP: " + hp); 
-    }
 
+        //Debug.Log("HP: " + roleStat.dictStats[StatType.HP].GetValue());
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            animator.SetTrigger("Attack");
-            attackComponent.DoAttack(this.transform, TestPool.SharedInstance.GetPooledObject().GetComponent<Projectile>());
-        }
+
     }
 
 
+}
+
+public class PlayerConfig : RoleConfig
+{
+    public PlayerConfig()
+    {
+        codeName = "Player";
+        skillList = new List<string>();
+        skillList.Add("TestUltimate");
+        skillList.Add("Fireball");
+    }
 }

@@ -15,17 +15,18 @@ public class Enemy : UnitBase
     public Transform player;
 
     public NavMeshAgent agent;
-    public Animator animator;
     public EnemyStateMachine enemyStateMachine;
 
-    private void Awake()
-    {
-        HealthInit();
-        AttackInit();
-    }
     // Start is called before the first frame update
     void Start()
     {
+        if (roleStat == null)
+        {
+            roleStat = new RoleStat();
+        }
+        roleStat.dictStats = new Dictionary<StatType, StatConfigBase>();
+        GetComponent<Health>().Init();
+
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
@@ -64,5 +65,6 @@ public class Enemy : UnitBase
                                                                                                      //transform.rotation = lookRotation;   // Withour slerp the enemy will immediately rotate so its not naturally.
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
         // transform.rotation = where the target is, we need to rotate at a certain speed
+
     }
 }
