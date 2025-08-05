@@ -93,8 +93,8 @@ namespace StarterAssets
         private Image crosshairImg;
 
         // timeout deltatime
-        [SerializeField]private float _jumpTimeoutDelta;
-        [SerializeField]private float _fallTimeoutDelta;
+        private float _jumpTimeoutDelta;
+        private float _fallTimeoutDelta;
 
         // animation IDs
         private int _animIDSpeed;

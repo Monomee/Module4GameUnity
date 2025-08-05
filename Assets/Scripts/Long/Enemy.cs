@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : UnitBase
 {
-    public float moveSpeed;
+    public int moveSpeed;
     private void Awake()
     {
         
