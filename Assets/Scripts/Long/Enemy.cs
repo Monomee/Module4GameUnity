@@ -15,13 +15,11 @@ public class Enemy : UnitBase
     public Transform player;
 
     public NavMeshAgent agent;
-    public Animator animator;
     public EnemyStateMachine enemyStateMachine;
 
     // Start is called before the first frame update
     void Start()
     {
-
         if (roleStat == null)
         {
             roleStat = new RoleStat();

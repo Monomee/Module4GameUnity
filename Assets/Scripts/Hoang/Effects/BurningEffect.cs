@@ -26,7 +26,7 @@ public class BurningEffect : EffectBase
         float elapsedTime = 0f;
         while (elapsedTime < effectConfig.duration)
         {
-            owner.GetHealth().OnTakeDmg(damagePerSecond * Time.deltaTime);
+            owner.GetHealthComponent().OnTakeDmg(damagePerSecond * Time.deltaTime);
             elapsedTime += Time.deltaTime;
             Debug.Log(elapsedTime);
             yield return null; 
