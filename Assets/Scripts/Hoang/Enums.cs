@@ -52,3 +52,10 @@ public enum EffectActiveEvent
     OnUseUltimateSkill, //hoangpl
     OnBeforeAfterDealDamage, // Call a pair
 }
+public enum TargetType
+{
+    Self,
+    Ally,
+    Enemy,
+    All
+}

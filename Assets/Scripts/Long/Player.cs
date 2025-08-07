@@ -19,7 +19,6 @@ public class Player : UnitBase
         if (health == null)
         {
             health = GetComponent<Health>();
-            health.Init();
         }
 
         //Debug.Log("HP: " + roleStat.dictStats[StatType.HP].GetValue());

@@ -25,7 +25,6 @@ public class Enemy : UnitBase
             roleStat = new RoleStat();
         }
         roleStat.dictStats = new Dictionary<StatType, StatConfigBase>();
-        GetComponent<Health>().Init();
 
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();

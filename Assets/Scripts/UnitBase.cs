@@ -19,13 +19,6 @@ public class UnitBase : MonoBehaviour
         }
         roleStat.dictStats.Add(type, stat);
     }
-    //public virtual void OnTakeDmg(float dmg)
-    //{
-    //    if (healthComponent != null)
-    //    {
-    //        healthComponent.OnTakeDmg(dmg); 
-    //    }
-    //}
     public Health GetHealthComponent()
     {
         return GetComponent<Health>();

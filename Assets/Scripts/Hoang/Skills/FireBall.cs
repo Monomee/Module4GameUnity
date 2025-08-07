@@ -16,7 +16,7 @@ public class FireBall : SkillBase
         this.owner = owner;
         this.skillConfig = skillConfig;
         this.effects = effects;
-        this.effects.Add(new BurningEffect(this, new BurningEffectConfig())); 
+        this.effects.Add(new BurningEffect(this.owner, this, new BurningEffectConfig())); 
     }
     public override void OnActive()
     {
@@ -65,18 +65,14 @@ public class FireBall : SkillBase
     }
     public override void OnDeactive()
     {
-        //owner.GetComponent<EffectManager>().RemoveListEffect(effects);
+        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
         Debug.Log("FireBall OnDeactive");       
     }
     protected override void ApplyEffects()
     {
         // Implement the logic to apply fireball effects
-        //owner.GetComponent<EffectManager>().AddListEffect(effects);
+        owner.GetComponent<EffectManager>().AddListEffect(effects);
         Debug.Log("Applying fireball effects");
-    }
-    public List<EffectBase> GetEffects()
-    {
-        return effects;
     }
 }
 public class FireBallConfig : SkillConfig
@@ -88,6 +84,6 @@ public class FireBallConfig : SkillConfig
         castType = SkillCastType.Active;
         effects = new List<EffectConfig>();
         asset = "Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_03"; 
-        parameters = new float[] { 30f, 5f, 5f, 20f }; // damage, duration, speed, cooldown
+        parameters = new float[] { 50f, 5f, 5f, 20f }; // damage, duration, speed, cooldown
     }
 }
