@@ -5,7 +5,7 @@ using UnityEngine;
 public class MageWalkState : IEnemyState
 {
     private Enemy enemyController;
-    private const string WALK_ANIMATION_BOOL = "isWalk";
+    private const string MAGE_WALK_ANIMATION_BOOL = "isWalk";
 
     public MageWalkState(Enemy enemyController)
     {
@@ -14,7 +14,7 @@ public class MageWalkState : IEnemyState
 
     public void Enter()
     {
-        enemyController.animator.SetBool(WALK_ANIMATION_BOOL, true);
+        enemyController.animator.SetBool(MAGE_WALK_ANIMATION_BOOL, true);
     }
 
     public void Update()
@@ -27,7 +27,7 @@ public class MageWalkState : IEnemyState
 
     public void Exit()
     {
-        enemyController.animator.SetBool(WALK_ANIMATION_BOOL, false);
+        enemyController.animator.SetBool(MAGE_WALK_ANIMATION_BOOL, false);
     }
 
     private void AttackPlayer()

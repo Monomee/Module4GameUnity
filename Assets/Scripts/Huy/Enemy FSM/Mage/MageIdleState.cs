@@ -5,7 +5,7 @@ using UnityEngine;
 public class MageIdleState : IEnemyState
 {
     private Enemy enemyController;
-    private const string IDLE_ANIMATION_BOOL = "isIdle";
+    private const string MAGE_IDLE_ANIMATION_BOOL = "isIdle";
 
     public MageIdleState(Enemy enemyController)
     {
@@ -13,7 +13,7 @@ public class MageIdleState : IEnemyState
     }
     public void Enter()
     {
-        enemyController.animator.SetBool(IDLE_ANIMATION_BOOL, true);
+        enemyController.animator.SetBool(MAGE_IDLE_ANIMATION_BOOL, true);
     }
 
 
@@ -27,6 +27,6 @@ public class MageIdleState : IEnemyState
 
     public void Exit()
     {
-        enemyController.animator.SetBool(IDLE_ANIMATION_BOOL, false);
+        enemyController.animator.SetBool(MAGE_IDLE_ANIMATION_BOOL, false);
     }
 }

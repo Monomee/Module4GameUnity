@@ -5,7 +5,7 @@ using UnityEngine;
 public class MageAttackState : IEnemyState
 {
     private Enemy enemyController;
-    private const string ATTACK_ANIMATION_BOOL = "isAttack";
+    private const string MAGE_ATTACK_ANIMATION_BOOL = "isAttack";
 
     public MageAttackState(Enemy enemyController)
     {
@@ -14,7 +14,7 @@ public class MageAttackState : IEnemyState
 
     public void Enter()
     {
-        enemyController.animator.SetBool(ATTACK_ANIMATION_BOOL, true);
+        enemyController.animator.SetBool(MAGE_ATTACK_ANIMATION_BOOL, true);
     }
 
     public void Update()
@@ -31,6 +31,6 @@ public class MageAttackState : IEnemyState
 
     public void Exit()
     {
-        enemyController.animator.SetBool(ATTACK_ANIMATION_BOOL, false);
+        enemyController.animator.SetBool(MAGE_ATTACK_ANIMATION_BOOL, false);
     }
 }
