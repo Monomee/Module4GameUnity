@@ -9,6 +9,6 @@ public class EffectConfig
     public float duration;
     public string asset; 
     public float[] parameters;
-    public EffectActiveEvent activeEvent; 
-    //co active condition (dieu kien kich hoat)
+    public EffectActiveEvent activeEvent;//co active condition (dieu kien kich hoat)
+    public TargetType targetType;  
 }

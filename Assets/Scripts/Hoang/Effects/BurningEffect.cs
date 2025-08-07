@@ -8,27 +8,28 @@ public class BurningEffect : EffectBase
     GameObject assetPrefab => Resources.Load<GameObject>(effectConfig.asset);
     GameObject prefap;
     Coroutine burnCoroutine;
-    public BurningEffect(SkillBase skillBase, BurningEffectConfig effectConfig, UnitBase owner = null)
+    
+    public BurningEffect(UnitBase fromOwner, SkillBase fromSkill, BurningEffectConfig effectConfig)
     {
-        this.skillBase = skillBase;
-        this.owner = owner;
+        this.fromSkill = fromSkill;
+        this.fromOwner = fromOwner;
         this.effectConfig = effectConfig;
     }
-    public override void OnActive(UnitBase onTarget)
+    
+    public override void OnActive()
     {
         Debug.Log("BurningEffect OnActive");
-        SetUnitBase(onTarget);
-        prefap = Object.Instantiate(assetPrefab, onTarget.transform.position + Vector3.down*0.5f, Quaternion.identity);
-        burnCoroutine = onTarget.StartCoroutine(Burn());
+        prefap = Object.Instantiate(assetPrefab, target.transform.position + Vector3.down*0.5f, Quaternion.identity);
+        //Object.Destroy(prefap, effectConfig.duration); 
+        burnCoroutine = fromOwner.StartCoroutine(Burn());
     }
     private IEnumerator Burn()
     {
         float elapsedTime = 0f;
         while (elapsedTime < effectConfig.duration)
         {
-            owner.GetHealthComponent().OnTakeDmg(damagePerSecond * Time.deltaTime);
+            target.GetHealthComponent().OnTakeDmg(damagePerSecond * Time.deltaTime);
             elapsedTime += Time.deltaTime;
-            Debug.Log(elapsedTime);
             yield return null; 
         }
         OnDeactive(); 
@@ -36,11 +37,9 @@ public class BurningEffect : EffectBase
     public override void OnDeactive()
     {
         Debug.Log("BurningEffect OnDeactive");
-        //assetPrefab.SetActive(false); 
         Object.Destroy(prefap);
-        //Resources.UnloadAsset(assetPrefab);
-        owner.StopCoroutine(burnCoroutine);
-        owner.GetComponent<EffectManager>()?.RemoveEffect(this);
+        fromOwner.StopCoroutine(burnCoroutine);
+        fromSkill.OnDeactive();
     }
 }
 public class BurningEffectConfig : EffectConfig
@@ -52,5 +51,6 @@ public class BurningEffectConfig : EffectConfig
         asset = "Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_04";
         parameters = new float[] { 10f }; // damage per second
         activeEvent = EffectActiveEvent.OnGetHit;
+        targetType = TargetType.Enemy;
     }    
 }
