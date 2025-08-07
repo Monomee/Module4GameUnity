@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class EffectManager : MonoBehaviour
 {
-    protected List<EffectBase> effects; // co the chuyen sang EffectManager
+    public List<EffectBase> effects;
     public Action activeEffectAction;
     // Start is called before the first frame update
     void Start()
@@ -28,13 +30,35 @@ public class EffectManager : MonoBehaviour
         //    Debug.Log(effects.Count + " effects active.");
         //}
     }
-    public void ActiveEffect()
+    public void ActiveEffect(UnitBase target = null)
     {
+        if (effects.Count == 0) return;
+        //foreach (EffectBase effect in effects)
+        //{
+        //    EffectBase effectInstance = Activator.CreateInstance(effect.GetType(), effect.fromSkill, effect.effectConfig, target) as EffectBase;
+        //    effectInstance.OnActive();
+        //}
         foreach (EffectBase effect in effects)
         {
             if (effect != null)
             {
-                effect.OnActive(GetComponent<UnitBase>());
+                switch (effect.effectConfig.targetType)
+                {
+                    case TargetType.All:
+                        break;
+                    case TargetType.Ally:
+                        break;
+                    case TargetType.Self:
+                        effect.OnActive();
+                        break;
+                    case TargetType.Enemy:
+                        //effect.SetTarget(target);
+                        //effect.OnActive();
+                        EffectBase effectInstance = Activator.CreateInstance(effect.GetType(), effect.fromOwner, effect.fromSkill, effect.effectConfig) as EffectBase;
+                        effectInstance.SetTarget(target);
+                        effectInstance.OnActive();
+                        break;
+                }
             }
         }
     }

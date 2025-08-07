@@ -5,14 +5,14 @@ using UnityEngine.Animations.Rigging;
 
 public class Projectile : MonoBehaviour
 {
-    private UnitBase owner;
+    private UnitBase fromOwner;
     private SkillBase fromSkill;
     private Vector3 direction;
     private float damage;
     private float speed; 
-    public void Initialize(UnitBase owner, SkillBase fromSkill, Vector3 direction, Transform startPosition, float damage, float duration, float speed)
+    public void Initialize(UnitBase fromOwner, SkillBase fromSkill, Vector3 direction, Transform startPosition, float damage, float duration, float speed)
     {
-        this.owner = owner;
+        this.fromOwner = fromOwner;
         this.fromSkill = fromSkill;
         this.direction = direction.normalized;
         transform.position = startPosition.position + Vector3.up;
@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(owner.tag))
+        if (other.CompareTag(fromOwner.tag))
         {
             Debug.Log("Projectile hit the owner: " + other.name);
             return;
@@ -43,9 +43,8 @@ public class Projectile : MonoBehaviour
             if (health != null)
             {
                 health.OnTakeDmg(damage);
-                Debug.Log(other.name + " took " + damage + " damage from the projectile. Current HP: " + health.health); 
-                other.GetComponent<EffectManager>()?.AddListEffect(fromSkill.effects);
-                other.GetComponent<EffectManager>()?.ActiveEffect();
+                Debug.Log(other.name + " took " + damage + " damage from the projectile. Current HP: " + health.health);
+                fromOwner.GetComponent<EffectManager>().ActiveEffect(other.GetComponent<UnitBase>());
             }
         }
         

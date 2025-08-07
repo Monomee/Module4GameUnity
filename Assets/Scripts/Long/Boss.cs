@@ -17,7 +17,6 @@ public class Boss : UnitBase
             roleStat = new RoleStat();
         }
         roleStat.dictStats = new Dictionary<StatType, StatConfigBase>();
-        GetComponent<Health>().Init();
     }
 
 }

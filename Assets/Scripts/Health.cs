@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
 {
     StatConfigBase hp;
     public float health;
-    public void Init()
+    public void Start()
     {
         hp = new StatConfigBase(StatType.HP, 100, 1, 0, 1, 0, 0, 100);
         AddListener();
