@@ -55,7 +55,10 @@ public class StatConfigBase
         otherValue += value;
         Recalculate();
     }
+    public void AddPercentValue(float value)
+    {
 
+    }
 
 
 

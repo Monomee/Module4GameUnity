@@ -21,9 +21,10 @@ public class SkillManager : MonoBehaviour
             skills = new List<SkillBase>();
         }
       //  Activator.CreateInstance(typeof(FireBall), new object[] { });   tu codename skill=> new object skill
-        skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
-
+        //skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
+        skills.Add(new Inferno(gameObject.GetComponent<UnitBase>(), new InfernoConfig(), new List<EffectBase>()));
         skills.Add(new Revive(gameObject.GetComponent<UnitBase>(), new ReviveConfig(), new List<EffectBase>()));
+        skills.Add(new ScorchingAura(gameObject.GetComponent<UnitBase>(), new ScorchingAuraConfig(), new List<EffectBase>()));
     }
 
     // Update is called once per frame
@@ -46,11 +47,10 @@ public class SkillManager : MonoBehaviour
 
                     break;
                 case SkillActiveCondition.OnDead:
-                    //if (gameObject.GetComponent<UnitBase>().roleStat.dictStats[StatType.HP].GetValue() <= 0)
-                    //{
-                    //skill.OnActive();
-                    //    skills.Remove(skill);
-                    //}
+                    if (GetComponent<UnitBase>().isDead)
+                    {
+                        skill.OnActive();
+                    }
                     break;
                 case SkillActiveCondition.ASAP:
                     skill.OnActive();

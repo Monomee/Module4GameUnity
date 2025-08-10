@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
-public class Projectile : MonoBehaviour
+public class OnEnterCollideSkill : MonoBehaviour
 {
     private UnitBase fromOwner;
     private SkillBase fromSkill;
@@ -34,7 +34,6 @@ public class Projectile : MonoBehaviour
     {
         if (other.CompareTag(fromOwner.tag))
         {
-            Debug.Log("Projectile hit the owner: " + other.name);
             return;
         }
         if (other.CompareTag("CanTakeDmg"))
@@ -43,7 +42,7 @@ public class Projectile : MonoBehaviour
             if (health != null)
             {
                 health.OnTakeDmg(damage);
-                Debug.Log(other.name + " took " + damage + " damage from the projectile. Current HP: " + health.health);
+                Debug.Log(other.name + " took " + damage + " damage from the entercollideskill. Current HP: " + health.health);
                 fromOwner.GetComponent<EffectManager>().ActiveEffect(other.GetComponent<UnitBase>());
             }
         }

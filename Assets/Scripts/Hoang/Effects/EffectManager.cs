@@ -9,7 +9,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 public class EffectManager : MonoBehaviour
 {
     public List<EffectBase> effects;
-    public Action activeEffectAction;
+    //public Action activeEffectAction;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +33,7 @@ public class EffectManager : MonoBehaviour
     public void ActiveEffect(UnitBase target = null)
     {
         if (effects.Count == 0) return;
-        //foreach (EffectBase effect in effects)
-        //{
-        //    EffectBase effectInstance = Activator.CreateInstance(effect.GetType(), effect.fromSkill, effect.effectConfig, target) as EffectBase;
-        //    effectInstance.OnActive();
-        //}
+
         foreach (EffectBase effect in effects)
         {
             if (effect != null)
