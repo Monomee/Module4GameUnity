@@ -9,36 +9,57 @@ public class InventoryItem : MonoBehaviour, IPointerClickHandler
 {
     Image itemIcon;
     public CanvasGroup canvasGroup;
-    public ItemBase item;
+
+    public ItemBase myItem;
+
     public InventorySlot activeSlot;
+    public EquipmentSlot activeEquipSlot;
 
     void Awake()
     {
-        itemIcon = GetComponent<Image>();
-        if (itemIcon == null)
-        {
-            Debug.LogError("Image component not found on InventoryItem.");
-        }
         canvasGroup = GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
-        {
-            Debug.LogError("CanvasGroup component not found on InventoryItem.");
-        }
+        itemIcon = GetComponent<Image>();
     }
-    public void Initialize(ItemBase itemBase, InventorySlot parent)
+
+    public void Initialize(ItemBase item, InventorySlot parent)
     {
         activeSlot = parent;
-        activeSlot.item = this;
-        item = itemBase;
-        itemIcon.sprite = itemBase.itemIcon;
+        activeEquipSlot = null;
+        activeSlot.myItem = this;
+        myItem = item;
+        itemIcon.sprite = item.itemIcon;
+    }
+
+    public void Initialize(ItemBase item, EquipmentSlot parent)
+    {
+        activeEquipSlot = parent;
+        activeSlot = null;
+        activeEquipSlot.currentItem = this;
+        myItem = item;
+        itemIcon.sprite = item.itemIcon;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Left)
+        if (eventData.button != PointerEventData.InputButton.Left)
+            return;
+
+        if (myItem is ConsumableItem consumable)
         {
-            //InventoryManager.Instance.SetCarriedItem(this);
+            consumable.Use(InventoryManager.Instance.playerGameObject);
+            if (activeSlot != null)
+            {
+                activeSlot.myItem = null;
+            }
+            else if (activeEquipSlot != null)
+            {
+                activeEquipSlot.Clear();
+            }
+            Destroy(gameObject);
+            return;
         }
+
+        InventoryManager.Instance.SetCarriedItem(this);
     }
 
 }

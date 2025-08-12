@@ -5,37 +5,30 @@ using UnityEngine.EventSystems;
 
 public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
-    public InventoryItem item;
+    public InventoryItem myItem;
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.button == PointerEventData.InputButton.Left)
-        {
-            if (InventoryManager.carriedItem == null) return;
+        if (eventData.button != PointerEventData.InputButton.Left)
+            return;
 
-            // InventorySlot ch? ch?a item bình th??ng (không ph?i EquipmentItem)
-            if (InventoryManager.carriedItem.myItem is EquipmentItem)
-                return;
+        if (InventoryManager.carriedItem == null) return;
 
-            SetItem(InventoryManager.carriedItem);
-        }
+        SetItem(InventoryManager.carriedItem);
     }
 
-    public void SetItem(InventoryItem inventoryItem)
+    public void SetItem(InventoryItem item)
     {
         InventoryManager.carriedItem = null;
 
-        // N?u có item c?, clear activeSlot
-        if (item != null)
-        {
-            item.activeSlot = null;
-        }
+        if (myItem != null)
+            myItem.activeSlot = null;
 
-        item = inventoryItem;
-        item.activeSlot = this;
-        item.activeEquipSlot = null;
+        myItem = item;
+        myItem.activeSlot = this;
+        myItem.activeEquipSlot = null;
 
-        item.transform.SetParent(transform);
-        item.canvasGroup.blocksRaycasts = true;
+        myItem.transform.SetParent(transform);
+        myItem.canvasGroup.blocksRaycasts = true;
     }
 }
