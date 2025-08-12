@@ -51,7 +51,7 @@ public class FireBall : SkillBase
                 }
             }
 
-            Projectile projectile = fireball.GetComponent<Projectile>();
+            OnEnterCollideSkill projectile = fireball.GetComponent<OnEnterCollideSkill>();
             if (projectile != null)
             {
                 float damage = skillConfig.parameters[0];
@@ -64,15 +64,17 @@ public class FireBall : SkillBase
         }
     }
     public override void OnDeactive()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
+    {       
         Debug.Log("FireBall OnDeactive");       
     }
     protected override void ApplyEffects()
     {
-        // Implement the logic to apply fireball effects
         owner.GetComponent<EffectManager>().AddListEffect(effects);
         Debug.Log("Applying fireball effects");
+    }
+    public override void DeapplyEffect()
+    {
+        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
     }
 }
 public class FireBallConfig : SkillConfig

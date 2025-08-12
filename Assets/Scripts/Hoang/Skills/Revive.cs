@@ -13,7 +13,7 @@ public class Revive : SkillBase
     public override void OnActive()
     {
         Debug.Log("Revive OnActive");
-        //owner.GetHealthComponent().hp = 100;
+        owner.GetComponent<Health>().OnTakeDmg(-50f);
         ApplyEffects();
     }
     public override void OnDeactive()

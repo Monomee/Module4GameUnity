@@ -22,4 +22,8 @@ public class SkillBase // can tao skillmanager ke thua mono behavior chay update
     {
 
     }
+    public virtual void DeapplyEffect()
+    {
+
+    }
 }

@@ -39,7 +39,7 @@ public class BurningEffect : EffectBase
         Debug.Log("BurningEffect OnDeactive");
         Object.Destroy(prefap);
         fromOwner.StopCoroutine(burnCoroutine);
-        fromSkill.OnDeactive();
+        fromSkill.DeapplyEffect();
     }
 }
 public class BurningEffectConfig : EffectConfig
