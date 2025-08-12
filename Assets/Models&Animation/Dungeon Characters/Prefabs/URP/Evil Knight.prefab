@@ -1428,7 +1428,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4828289068611687602}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: d0cacc9ad5b844f4eb1c8e45130c8fd0, type: 3}
   m_Controller: {fileID: 9100000, guid: 598709327e03aa9468a1448370fdb2b4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -1454,6 +1454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   isDead: 0
+  teamID: 0
   hp: 0
   moveSpeed: 0
   attackRange: 2
@@ -1461,7 +1462,7 @@ MonoBehaviour:
   detectionRadius: 10
   hasDetectedPlayer: 0
   player: {fileID: 0}
-  agent: {fileID: 0}
+  agent: {fileID: 5610407671135948922}
 --- !u!114 &2992369324875841708
 MonoBehaviour:
   m_ObjectHideFlags: 0
