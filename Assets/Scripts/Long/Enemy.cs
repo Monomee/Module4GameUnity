@@ -9,8 +9,10 @@ public class Enemy : UnitBase
     public float attackRange = 2f;
     public float turnSpeed;
     public float detectionRadius = 10f;
+    
 
     public bool hasDetectedPlayer = false;
+    public bool isReadyToAttack;
 
     public Transform player;
 
@@ -30,7 +32,7 @@ public class Enemy : UnitBase
         animator = GetComponent<Animator>();
 
         enemyStateMachine = new EnemyStateMachine();
-        enemyStateMachine.ChangeState(new IdleState(this));
+        enemyStateMachine.ChangeState(GetInitialState());
 
         Debug.Log("EnemyStats initialized with HP: " + hp + " and Move Speed: " + moveSpeed);
     }
@@ -40,6 +42,12 @@ public class Enemy : UnitBase
     {
         enemyStateMachine.Update();
     }
+
+    protected virtual IEnemyState GetInitialState()
+    {
+        return new IdleState(this); 
+    }
+
 
     public bool DetectedPlayer()
     {
