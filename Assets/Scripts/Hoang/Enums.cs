@@ -60,6 +60,12 @@ public enum TargetType
     All
 }
 
+public enum EffectApplyType
+{
+    Instant,
+    Temporary
+}
+
 public enum EquipmentType
 {
     Wand,

@@ -2,23 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New Equipment", menuName = "ScriptableObjects/EquipmentItem")]
 public class EquipmentItem : ItemBase
 {
-    public EquipmentType equipmentType;
-    public List<StatModifier> statModifiers;
+    [SerializeField]private EquipmentType equipmentType;
+    [SerializeField]private List<StatModifier> statModifiers;
     public void Equip(GameObject targetObject)
     {
-        if (targetObject == null)
-            return;
-        var roleStat = targetObject.GetComponent<RoleStat>();
-        if (roleStat == null)
-            return;
-        // Apply stat modifiers
+        ModifyStat(targetObject, apply: true);
+    }
+    public void Unequip(GameObject targetObject)
+    {
+        ModifyStat(targetObject, apply: false);
+    }
+    private void ModifyStat(GameObject targetObject, bool apply)
+    {
+        if (targetObject == null) return;
+        if (!targetObject.TryGetComponent<UnitBase>(out var unitBase)) return;
+
         foreach (var modifier in statModifiers)
         {
-            if (roleStat.dictStats.ContainsKey(modifier.statType))
+            if(apply)
             {
-                roleStat.dictStats[modifier.statType].AddValue(modifier.value);
+                unitBase.roleStat.ApplyModifier(modifier);
+            }
+            else
+            {
+                unitBase.roleStat.RemoveModifier(modifier);
             }
         }
     }

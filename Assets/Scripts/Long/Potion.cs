@@ -6,33 +6,35 @@ using UnityEngine;
 public class Potion : ConsumableItem
 {
     //public PotionData potionData;
-    public StatType statType;
-    public float effectValue;
+    public List<StatModifier> statModifiers;
+    public EffectApplyType effectApplyType;
     public float effectDuration;
     public override void Use(GameObject targetObject)
     {
         if (targetObject == null)
             return;
 
-        var roleStat = targetObject.GetComponent<RoleStat>();
-        if (roleStat == null)
+        if (!targetObject.TryGetComponent<UnitBase>(out var unitBase))
             return;
 
-        if (roleStat.dictStats.ContainsKey(statType))
+        foreach (var modifier in statModifiers)
         {
-            // Apply the potion effect
-            roleStat.dictStats[statType].AddValue(effectValue);
-
-            // If the potion has a duration, start a coroutine to revert the effect after the duration
-            if (effectDuration > 0)
+            if (unitBase.roleStat.dictStats.ContainsKey(modifier.statType))
             {
-                targetObject.GetComponent<MonoBehaviour>().StartCoroutine(RevertEffect(roleStat, statType, effectValue, effectDuration));
+                // Apply the potion effect
+                unitBase.roleStat.ApplyModifier(modifier);
+
+                // If the effect is temporary, start a coroutine to revert it after the duration
+                if (effectApplyType == EffectApplyType.Temporary && effectDuration > 0)
+                {
+                    unitBase.StartCoroutine(RevertEffect(unitBase.roleStat, modifier, effectDuration));
+                }
             }
         }
     }
-    private IEnumerator RevertEffect(RoleStat roleStat, StatType statType, float value, float duration)
+    private IEnumerator RevertEffect(RoleStat roleStat, StatModifier modifier, float duration)
     {
         yield return new WaitForSeconds(duration);
-        roleStat.dictStats[statType].AddValue(-value);
+        roleStat.RemoveModifier(modifier);
     }
 }
