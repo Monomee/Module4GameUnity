@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8116899c7c49ef34e8f3f1483195df1d, type: 3}
-  m_Name: HealPotion
+  m_Name: Heal Potion
   m_EditorClassIdentifier: 
   itemName: 
   itemIcon: {fileID: 0}
   itemDescription: 
-  maxStackSize: 5
   statModifiers: []
   effectApplyType: 0
   effectDuration: 0

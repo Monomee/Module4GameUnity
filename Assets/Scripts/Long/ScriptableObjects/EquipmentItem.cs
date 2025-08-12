@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Equipment", menuName = "ScriptableObjects/EquipmentItem")]
 public class EquipmentItem : ItemBase
 {
-    [SerializeField]private EquipmentType equipmentType;
+    public EquipmentType equipmentType;
     [SerializeField]private List<StatModifier> statModifiers;
     public void Equip(GameObject targetObject)
     {

@@ -71,7 +71,6 @@ public enum EquipmentType
     Wand,
     Robe,
     Helmet,
-    Ring,
     Boots
 }
 
