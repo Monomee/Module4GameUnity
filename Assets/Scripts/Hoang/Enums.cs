@@ -59,3 +59,13 @@ public enum TargetType
     Enemy,
     All
 }
+
+public enum EquipmentType
+{
+    Wand,
+    Robe,
+    Helmet,
+    Ring,
+    Boots
+}
+
