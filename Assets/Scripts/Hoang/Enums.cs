@@ -59,3 +59,18 @@ public enum TargetType
     Enemy,
     All
 }
+
+public enum EffectApplyType
+{
+    Instant,
+    Temporary
+}
+
+public enum EquipmentType
+{
+    Wand,
+    Robe,
+    Helmet,
+    Boots
+}
+
