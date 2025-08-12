@@ -4,37 +4,43 @@ using UnityEngine;
 
 public class AttackState : IEnemyState
 {
-    private Enemy enemyController;
+    private KnightEnemy knight;
     private const string ATTACK_ANIMATION_BOOL = "isAttacking";
 
 
     public AttackState(Enemy enemyController)
     {
-        this.enemyController = enemyController;
+        knight = (KnightEnemy)enemyController;
     }
 
     public void Enter()
     {
-        enemyController.animator.SetBool(ATTACK_ANIMATION_BOOL, true);
+        knight.animator.SetBool(ATTACK_ANIMATION_BOOL, true);
     }
 
 
     public void Update()
     {
-        if (enemyController.player == null) return;
+        if (knight.player == null) return;
 
-        float distance = Vector3.Distance(enemyController.transform.position, enemyController.player.position);
+        float distance = Vector3.Distance(knight.transform.position, knight.player.position);
 
         // Nếu player chạy xa → đuổi tiếp
-        if (distance > enemyController.attackRange + 0.5f)
+        if (distance > knight.attackRange + 0.5f)
         {
-            enemyController.enemyStateMachine.ChangeState(new RunningState(enemyController));
+            knight.readyToAttack = false;
+            knight.enemyStateMachine.ChangeState(new RunningState(knight));
             return;
+        }
+
+        else
+        {
+            knight.isReadyToAttack = true;
         }
     }
 
     public void Exit()
     {
-        enemyController.animator.SetBool(ATTACK_ANIMATION_BOOL, false);
+        knight.animator.SetBool(ATTACK_ANIMATION_BOOL, false);
     }
 }
