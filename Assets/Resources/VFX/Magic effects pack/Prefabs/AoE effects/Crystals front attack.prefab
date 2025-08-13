@@ -9771,6 +9771,8 @@ GameObject:
   - component: {fileID: 5135655739932955482}
   - component: {fileID: 6013317033843827723}
   - component: {fileID: 1667045297642010080}
+  - component: {fileID: 5553027388827114555}
+  - component: {fileID: 5917540953574829950}
   m_Layer: 0
   m_Name: Crystals front attack
   m_TagString: Untagged
@@ -14666,6 +14668,39 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!65 &5553027388827114555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156866507962234106}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.569919, y: 1.5254595, z: 6.9287724}
+  m_Center: {x: 4.8649592, y: 0.56151175, z: 0.53874135}
+--- !u!114 &5917540953574829950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156866507962234106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4d6bf820089d3408f667187b1c2793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4423714665294014839
 GameObject:
   m_ObjectHideFlags: 0
@@ -19625,7 +19660,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 677.2, z: 785.8, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 8e-45, z: 8.342e-42, w: 8.619819e+9}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0

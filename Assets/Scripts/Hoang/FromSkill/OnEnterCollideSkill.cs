@@ -15,7 +15,7 @@ public class OnEnterCollideSkill : MonoBehaviour
         this.fromOwner = fromOwner;
         this.fromSkill = fromSkill;
         this.direction = direction.normalized;
-        transform.position = startPosition.position + Vector3.up;
+        transform.position = startPosition.position;
         transform.rotation = Quaternion.LookRotation(direction);
         this.damage = damage;
         this.speed = speed;
@@ -43,9 +43,26 @@ public class OnEnterCollideSkill : MonoBehaviour
             {
                 health.OnTakeDmg(damage);
                 Debug.Log(other.name + " took " + damage + " damage from the entercollideskill. Current HP: " + health.health);
-                fromOwner.GetComponent<EffectManager>().ActiveEffect(other.GetComponent<UnitBase>());
+                fromOwner.GetComponent<EffectManager>().ActiveEffect(fromSkill.skillConfig.codeName, other.GetComponent<UnitBase>());
             }
-        }
-        
+        }        
     }
+    //private void OnParticleCollision(GameObject other)
+    //{
+    //    Debug.Log("Collide");
+    //    if (other.CompareTag(fromOwner.tag))
+    //    {
+    //        return;
+    //    }
+    //    if (other.CompareTag("CanTakeDmg"))
+    //    {
+    //        Health health = other.GetComponent<Health>();
+    //        if (health != null)
+    //        {
+    //            health.OnTakeDmg(damage);
+    //            Debug.Log(other.name + " took " + damage + " damage from the entercollideskill. Current HP: " + health.health);
+    //            fromOwner.GetComponent<EffectManager>().ActiveEffect(fromSkill.skillConfig.codeName, other.GetComponent<UnitBase>());
+    //        }
+    //    }
+    //}
 }

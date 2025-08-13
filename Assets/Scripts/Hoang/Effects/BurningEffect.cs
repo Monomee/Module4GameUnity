@@ -19,8 +19,7 @@ public class BurningEffect : EffectBase
     public override void OnActive()
     {
         Debug.Log("BurningEffect OnActive");
-        prefap = Object.Instantiate(assetPrefab, target.transform.position + Vector3.down*0.5f, Quaternion.identity);
-        //Object.Destroy(prefap, effectConfig.duration); 
+        prefap = Object.Instantiate(assetPrefab, target.transform.position + Vector3.down*0.5f, Quaternion.identity); 
         burnCoroutine = fromOwner.StartCoroutine(Burn());
     }
     private IEnumerator Burn()

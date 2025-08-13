@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class EffectManager : MonoBehaviour
 {
@@ -30,13 +29,13 @@ public class EffectManager : MonoBehaviour
         //    Debug.Log(effects.Count + " effects active.");
         //}
     }
-    public void ActiveEffect(UnitBase target = null)
+    public void ActiveEffect(String codeName, UnitBase target = null)
     {
         if (effects.Count == 0) return;
 
         foreach (EffectBase effect in effects)
         {
-            if (effect != null)
+            if (effect != null && effect.fromSkill.skillConfig.codeName.Equals(codeName))
             {
                 switch (effect.effectConfig.targetType)
                 {
@@ -48,8 +47,6 @@ public class EffectManager : MonoBehaviour
                         effect.OnActive();
                         break;
                     case TargetType.Enemy:
-                        //effect.SetTarget(target);
-                        //effect.OnActive();
                         EffectBase effectInstance = Activator.CreateInstance(effect.GetType(), effect.fromOwner, effect.fromSkill, effect.effectConfig) as EffectBase;
                         effectInstance.SetTarget(target);
                         effectInstance.OnActive();

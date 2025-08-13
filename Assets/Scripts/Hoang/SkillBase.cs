@@ -18,7 +18,7 @@ public class SkillBase // can tao skillmanager ke thua mono behavior chay update
 
     }
 
-    protected virtual void ApplyEffects()
+    public virtual void ApplyEffects()
     {
 
     }
