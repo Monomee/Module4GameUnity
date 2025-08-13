@@ -1,34 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
-public class FireBall : SkillBase
+public class GlacialSpike : SkillBase
 {
-    GameObject fireball;
+    GameObject spike;
     private float lastCastTime = -Mathf.Infinity;
-    private float cooldown => skillConfig.parameters[3];
+    private float cooldown => skillConfig.parameters[0];
     private GameObject skillPrefab => Resources.Load<GameObject>(skillConfig.asset);
 
-    public FireBall(UnitBase owner, SkillConfig skillConfig, List<EffectBase> effects)
+    public GlacialSpike(UnitBase owner, SkillConfig skillConfig, List<EffectBase> effects)
     {
         this.owner = owner;
         this.skillConfig = skillConfig;
         this.effects = effects;
-        this.effects.Add(new BurningEffect(this.owner, this, new BurningEffectConfig())); 
     }
     public override void OnActive()
     {
         if ((Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E)) && Time.time - lastCastTime >= cooldown)
         {
-            Debug.Log("FireBall OnActive");
             lastCastTime = Time.time;
 
             owner.animator.SetTrigger("Attack");
-            fireball = Object.Instantiate(skillPrefab);
-            
-            Vector3 direction = owner.transform.forward;
+            spike = Object.Instantiate(skillPrefab);
+
+            Vector3 projectileDir = owner.transform.forward;
 
             if (owner.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
@@ -41,51 +37,49 @@ public class FireBall : SkillBase
                     {
                         if (hit.collider != null)
                         {
-                            direction = (hit.point - owner.transform.position).normalized;
+                            projectileDir = (hit.point - owner.transform.position).normalized;
                         }
                         else
                         {
-                            direction = ray.direction;
+                            projectileDir = ray.direction;
                         }
                     }
                 }
             }
-
-            OnEnterCollideSkill script = fireball.GetComponent<OnEnterCollideSkill>();
+            
+            OnEnterCollideSkill script = spike.GetComponent<OnEnterCollideSkill>();
             if (script != null)
             {
-                float damage = skillConfig.parameters[0];
-                float duration = skillConfig.parameters[1];
-                float speed = skillConfig.parameters[2];
-                script.Initialize(owner, this, direction, owner.transform, damage, duration, speed);
+                float damage = skillConfig.parameters[1];
+                float duration = skillConfig.parameters[2];
+                script.Initialize(owner, this, projectileDir, owner.transform, damage, duration, 0);
             }
 
             ApplyEffects();
         }
     }
     public override void OnDeactive()
-    {       
-        Debug.Log("FireBall OnDeactive");       
+    {
+        
     }
     public override void ApplyEffects()
     {
         owner.GetComponent<EffectManager>().AddListEffect(effects);
-        Debug.Log("Applying fireball effects");
     }
     public override void DeapplyEffect()
     {
         owner.GetComponent<EffectManager>().RemoveListEffect(effects);
     }
 }
-public class FireBallConfig : SkillConfig
+public class GlacialSpikeConfig: SkillConfig
 {
-    public FireBallConfig()
+    public GlacialSpikeConfig() 
     {
-        codeName = "FireBall";
+        codeName = "GlacialSpike";
         activeCondition = SkillActiveCondition.OnAction;
         castType = SkillCastType.Active;
         effects = new List<EffectConfig>();
-        asset = "Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_03"; 
-        parameters = new float[] { 50f, 5f, 5f, 20f }; // damage, duration, speed, cooldown
+        asset = "UsedAsset/CrystalsFrontAttack";
+        parameters = new float[] { 10f, 30f, 1.2f}; //cooldown, dmg, duration
     }
 }

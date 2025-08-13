@@ -27,10 +27,10 @@ public class ScorchingAura : SkillBase
             }
 
             zone = Object.Instantiate(skillPrefab, owner.transform);
-            OnStayCollideSkill onStayCollideSkill = zone.GetComponent<OnStayCollideSkill>();
-            if (onStayCollideSkill != null)
+            OnStayCollideSkill script = zone.GetComponent<OnStayCollideSkill>();
+            if (script != null)
             {
-                onStayCollideSkill.Initialize(owner, this, owner.transform.position, skillConfig.parameters[1], 5);
+                script.Initialize(owner, this, owner.transform.position, skillConfig.parameters[1], 5);
             }
 
             ApplyEffects();
@@ -50,7 +50,7 @@ public class ScorchingAura : SkillBase
             owner.roleStat.dictStats[StatType.Atk].AddValue(-skillConfig.parameters[3]);
         }
     }
-    protected override void ApplyEffects()
+    public override void ApplyEffects()
     {
         owner.GetComponent<EffectManager>().AddListEffect(effects);
     }

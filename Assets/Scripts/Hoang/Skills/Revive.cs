@@ -13,14 +13,14 @@ public class Revive : SkillBase
     public override void OnActive()
     {
         Debug.Log("Revive OnActive");
-        owner.GetComponent<Health>().OnTakeDmg(-50f);
+        owner.roleStat.dictStats[StatType.HP].AddValue(50f);
         ApplyEffects();
     }
     public override void OnDeactive()
     {
         Debug.Log("Revive OnDeactive");
     }
-    protected override void ApplyEffects()
+    public override void ApplyEffects()
     {
         // Implement the logic to apply the revive effects
         Debug.Log("Applying revive effects");
