@@ -1,18 +1,25 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherEnemy : MonoBehaviour
+public class ArcherEnemy : Enemy
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform shootPoint;
+    public TestPool archerArrowPool;
+    public float arrowSpeed = 30f;
+
+    protected override IEnemyState GetInitialState()
     {
-        
+        return new ArcherIdleState(this);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void CheckAndAttackPlayer()
     {
-        
+        float distance = Vector3.Distance(transform.position, player.position);
+        if (distance <= attackRange)
+        {
+            FaceTarget();
+            enemyStateMachine.ChangeState(new ArcherAttackState(this));
+        }
     }
 }

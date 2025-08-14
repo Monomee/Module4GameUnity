@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class IdleState : IEnemyState
 { 
-    private Enemy enemyController;
+    private KnightEnemy knight;
     private const string IDLE_ANIMATION_BOOL = "isIdle";
 
 
     public IdleState(Enemy enemyController)
     {
-        this.enemyController = enemyController;
+        knight = enemyController as KnightEnemy;
     }
 
     public void Enter()
     {
-        enemyController.animator.SetBool(IDLE_ANIMATION_BOOL, true);
+        knight.animator.SetBool(IDLE_ANIMATION_BOOL, true);
     }
 
     public void Update()
     {
-        if(enemyController.DetectedPlayer())
+        if(knight.DetectedPlayer())
         {
-            enemyController.enemyStateMachine.ChangeState(new SwordDrawState(enemyController));
+            knight.enemyStateMachine.ChangeState(new SwordDrawState(knight));
         }
 
     }
 
     public void Exit()
     { 
-    enemyController.animator.SetBool(IDLE_ANIMATION_BOOL, false);
+        knight.animator.SetBool(IDLE_ANIMATION_BOOL, false);
     }
 }

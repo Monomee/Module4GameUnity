@@ -4,40 +4,33 @@ using UnityEngine;
 
 public class RunningState : IEnemyState
 {
-    private Enemy enemyController;
+    private KnightEnemy knight;
     private const string RUNNING_ANIMATION_TRIGGER = "isRunning";
     // Start is called before the first frame update
 
     public RunningState(Enemy enemyController)
-    { 
-        this.enemyController = enemyController;
+    {
+        knight = enemyController as KnightEnemy;
     }
     public void Enter()
     {
-        enemyController.animator.SetBool(RUNNING_ANIMATION_TRIGGER, true);
+        knight.animator.SetBool(RUNNING_ANIMATION_TRIGGER, true);
 
     }
 
 
     public void Update()
     {
-        enemyController.FaceTarget();
-        enemyController.agent.SetDestination(enemyController.player.position);
+        knight.FaceTarget();
+        knight.agent.SetDestination(knight.player.position);
         // Attack
-        AttackPlayer();
+        knight.CheckAndAttackPlayer();
     }
 
     public void Exit() 
     {
-        enemyController.animator.SetBool(RUNNING_ANIMATION_TRIGGER, false);
+        knight.animator.SetBool(RUNNING_ANIMATION_TRIGGER, false);
     }
-    private void AttackPlayer()
-    {
-        float distance = Vector3.Distance(enemyController.transform.position, enemyController.player.position);
-        if (distance <= enemyController.attackRange)
-        {
-            enemyController.enemyStateMachine.ChangeState(new AttackState(enemyController));
-        }
-    }
-    
+
+   
 }

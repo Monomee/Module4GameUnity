@@ -9,5 +9,6 @@ public class KnightEnemy : Enemy
     protected override IEnemyState GetInitialState()
     {
         return new IdleState(this);
-    }    
+    } 
+    
 }

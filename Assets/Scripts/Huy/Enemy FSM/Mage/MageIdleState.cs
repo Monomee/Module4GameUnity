@@ -4,29 +4,29 @@ using UnityEngine;
 
 public class MageIdleState : IEnemyState
 {
-    private Enemy enemyController;
+    private MageEnemy mage;
     private const string MAGE_IDLE_ANIMATION_BOOL = "isIdle";
 
     public MageIdleState(Enemy enemyController)
     {
-        this.enemyController = enemyController;
+        mage = enemyController as MageEnemy;
     }
     public void Enter()
     {
-        enemyController.animator.SetBool(MAGE_IDLE_ANIMATION_BOOL, true);
+        mage.animator.SetBool(MAGE_IDLE_ANIMATION_BOOL, true);
     }
 
 
     public void Update()
     {
-        if (enemyController.DetectedPlayer())
+        if (mage.DetectedPlayer())
         {
-            enemyController.enemyStateMachine.ChangeState(new MageWalkState(enemyController));
+            mage.enemyStateMachine.ChangeState(new MageWalkState(mage));
         }
     }
 
     public void Exit()
     {
-        enemyController.animator.SetBool(MAGE_IDLE_ANIMATION_BOOL, false);
+        mage.animator.SetBool(MAGE_IDLE_ANIMATION_BOOL, false);
     }
 }
