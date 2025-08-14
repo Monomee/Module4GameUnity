@@ -14,6 +14,7 @@ public class FrostNova : SkillBase
         this.owner = owner;
         this.skillConfig = skillConfig;
         this.effects = effects;
+        effects.Add(new FreezeEffect(owner, this, new FreezeEffectConfig()));
     }
     public override void OnActive()
     {
@@ -40,14 +41,6 @@ public class FrostNova : SkillBase
     public override void OnDeactive()
     {
 
-    }
-    public override void ApplyEffects()
-    {
-        owner.GetComponent<EffectManager>().AddListEffect(effects);
-    }
-    public override void DeapplyEffect()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
     }
 }
 public class FrostNovaConfig: SkillConfig

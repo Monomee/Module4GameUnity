@@ -20,11 +20,6 @@ public class Revive : SkillBase
     {
         Debug.Log("Revive OnDeactive");
     }
-    public override void ApplyEffects()
-    {
-        // Implement the logic to apply the revive effects
-        Debug.Log("Applying revive effects");
-    }
 }
 public class ReviveConfig : SkillConfig
 {

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -23,11 +24,11 @@ public class EffectManager : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //if (effects == null || effects.Count == 0) return;
-        //if (effects.Count > 0)
-        //{
-        //    Debug.Log(effects.Count + " effects active.");
-        //}
+        if (effects == null || effects.Count == 0) return;
+        if (effects.Count > 0)
+        {
+            Debug.Log(effects.Count + " effects active.");
+        }
     }
     public void ActiveEffect(String codeName, UnitBase target = null)
     {
@@ -79,9 +80,14 @@ public class EffectManager : MonoBehaviour
     }
     public void RemoveEffect(EffectBase effect)
     {
-        if (effects != null && effects.Contains(effect))
+        var item = effects.FirstOrDefault(e => e.GetType() == effect.GetType());
+        //if (effects != null && effects.Contains(effect))
+        //{
+        //    effects.Remove(effect);
+        //}
+        if (item != null)
         {
-            effects.Remove(effect);
+            effects.Remove(item);
         }
     }
     public void RemoveListEffect(List<EffectBase> effects)

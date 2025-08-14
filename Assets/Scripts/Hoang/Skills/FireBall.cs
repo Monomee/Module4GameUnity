@@ -17,6 +17,7 @@ public class FireBall : SkillBase
         this.skillConfig = skillConfig;
         this.effects = effects;
         this.effects.Add(new BurningEffect(this.owner, this, new BurningEffectConfig())); 
+        this.effects.Add(new KnockbackEffect(owner, this, new KnockbackEffectConfig()));
     }
     public override void OnActive()
     {
@@ -66,15 +67,6 @@ public class FireBall : SkillBase
     public override void OnDeactive()
     {       
         Debug.Log("FireBall OnDeactive");       
-    }
-    public override void ApplyEffects()
-    {
-        owner.GetComponent<EffectManager>().AddListEffect(effects);
-        Debug.Log("Applying fireball effects");
-    }
-    public override void DeapplyEffect()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
     }
 }
 public class FireBallConfig : SkillConfig
