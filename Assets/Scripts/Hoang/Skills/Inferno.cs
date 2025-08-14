@@ -72,15 +72,6 @@ public class Inferno : SkillBase
     {
 
     }
-    public override void ApplyEffects()
-    {
-        owner.GetComponent<EffectManager>().AddListEffect(effects);
-        Debug.Log("Applying effects");
-    }
-    public override void DeapplyEffect()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
-    }
 }
 public class InfernoConfig : SkillConfig
 {

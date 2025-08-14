@@ -5,8 +5,8 @@ using UnityEngine;
 public class BurningEffect : EffectBase
 {
     float damagePerSecond => effectConfig.parameters[0];
-    GameObject assetPrefab => Resources.Load<GameObject>(effectConfig.asset);
-    GameObject prefap;
+    GameObject asset => Resources.Load<GameObject>(effectConfig.asset);
+    GameObject burningArea;
     Coroutine burnCoroutine;
     
     public BurningEffect(UnitBase fromOwner, SkillBase fromSkill, BurningEffectConfig effectConfig)
@@ -19,7 +19,7 @@ public class BurningEffect : EffectBase
     public override void OnActive()
     {
         Debug.Log("BurningEffect OnActive");
-        prefap = Object.Instantiate(assetPrefab, target.transform.position + Vector3.down*0.5f, Quaternion.identity); 
+        burningArea = Object.Instantiate(asset, target.transform.position + Vector3.down*0.5f, Quaternion.identity); 
         burnCoroutine = fromOwner.StartCoroutine(Burn());
     }
     private IEnumerator Burn()
@@ -36,9 +36,9 @@ public class BurningEffect : EffectBase
     public override void OnDeactive()
     {
         Debug.Log("BurningEffect OnDeactive");
-        Object.Destroy(prefap);
+        Object.Destroy(burningArea);
         fromOwner.StopCoroutine(burnCoroutine);
-        fromSkill.DeapplyEffect();
+        fromSkill.DeapplyEffect(this);
     }
 }
 public class BurningEffectConfig : EffectConfig

@@ -17,6 +17,7 @@ public class ThunderStorm : SkillBase
         this.owner = owner;
         this.skillConfig = skillConfig;
         this.effects = effects;
+        effects.Add(new StunningEffect(owner, this, new StunningEffectConfig()));
     }
     public override void OnActive()
     {
@@ -72,16 +73,6 @@ public class ThunderStorm : SkillBase
     {
 
     }
-    public override void ApplyEffects()
-    {
-        owner.GetComponent<EffectManager>().AddListEffect(effects);
-        Debug.Log("Applying effects");
-    }
-    public override void DeapplyEffect()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
-    }
-
 }
 public class ThunderStormConfig: SkillConfig
 {

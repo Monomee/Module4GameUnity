@@ -49,14 +49,6 @@ public class TeslaTrap : SkillBase
     {
 
     }
-    public override void ApplyEffects()
-    {
-        owner.GetComponent<EffectManager>().AddListEffect(effects);
-    }
-    public override void DeapplyEffect()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
-    }
 }
 public class TeslaTrapConfig: SkillConfig
 {

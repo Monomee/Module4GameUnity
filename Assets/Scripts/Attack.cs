@@ -6,7 +6,7 @@ public class Attack: MonoBehaviour
     protected Animator animator;
 
     protected float cooldown = 0.5f;
-    protected float timer;
+    public float timer;
     
     private void Update()
     {

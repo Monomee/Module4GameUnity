@@ -62,14 +62,6 @@ public class GlacialSpike : SkillBase
     {
         
     }
-    public override void ApplyEffects()
-    {
-        owner.GetComponent<EffectManager>().AddListEffect(effects);
-    }
-    public override void DeapplyEffect()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
-    }
 }
 public class GlacialSpikeConfig: SkillConfig
 {

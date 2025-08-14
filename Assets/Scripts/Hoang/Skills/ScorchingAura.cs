@@ -50,14 +50,6 @@ public class ScorchingAura : SkillBase
             owner.roleStat.dictStats[StatType.Atk].AddValue(-skillConfig.parameters[3]);
         }
     }
-    public override void ApplyEffects()
-    {
-        owner.GetComponent<EffectManager>().AddListEffect(effects);
-    }
-    public override void DeapplyEffect()
-    {
-        owner.GetComponent<EffectManager>().RemoveListEffect(effects);
-    }
 }
 public class ScorchingAuraConfig: SkillConfig
 {

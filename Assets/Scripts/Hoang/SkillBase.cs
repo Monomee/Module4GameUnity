@@ -18,12 +18,12 @@ public class SkillBase // can tao skillmanager ke thua mono behavior chay update
 
     }
 
-    public virtual void ApplyEffects()
+    public void ApplyEffects()
     {
-
+        owner.GetComponent<EffectManager>().AddListEffect(effects);
     }
-    public virtual void DeapplyEffect()
+    public void DeapplyEffect(EffectBase effect)
     {
-
+        owner.GetComponent<EffectManager>().RemoveEffect(effect);
     }
 }
