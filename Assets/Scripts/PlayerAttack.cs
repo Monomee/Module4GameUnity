@@ -47,7 +47,7 @@ public class PlayerAttack : Attack
                 }
             }
 
-            NormalAttackFireball projectile = TestPool.SharedInstance.GetPooledObject().GetComponent<NormalAttackFireball>();
+            NormalAttackFireball projectile = ObjectPooling.SharedInstance.GetPooledObject().GetComponent<NormalAttackFireball>();
             if (projectile != null)
             {
                 float damage = dmg.GetValue();

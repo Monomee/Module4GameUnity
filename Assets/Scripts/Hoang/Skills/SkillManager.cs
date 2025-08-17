@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SkillManager : MonoBehaviour
@@ -9,6 +6,9 @@ public class SkillManager : MonoBehaviour
     protected List<SkillBase> skills;
 
     private Animator animator;
+    int maxSkillCount = 2;
+    bool activeCondition;
+    bool isPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class SkillManager : MonoBehaviour
         {
             skills = new List<SkillBase>();
         }
-      //  Activator.CreateInstance(typeof(FireBall), new object[] { });   tu codename skill=> new object skill
+        //  Activator.CreateInstance(typeof(FireBall), new object[] { });   tu codename skill=> new object skill
         //skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
         //skills.Add(new Inferno(gameObject.GetComponent<UnitBase>(), new InfernoConfig(), new List<EffectBase>()));
         skills.Add(new Revive(gameObject.GetComponent<UnitBase>(), new ReviveConfig(), new List<EffectBase>()));
@@ -37,15 +37,16 @@ public class SkillManager : MonoBehaviour
             if (character is Player)
             {
                 skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
+                isPlayer = true;
             }
             else if (character is Enemy)
             {
-
+                isPlayer = false;
 
             }
             else if (character is Boss)
             {
-                 
+                isPlayer = false;
             }
         }
     }
@@ -58,7 +59,19 @@ public class SkillManager : MonoBehaviour
             switch (skill.skillConfig.activeCondition)
             {
                 case SkillActiveCondition.OnAction:
-                    skill.OnActive();     
+                    if (isPlayer)
+                    {
+                        if (skills.Count != 1)
+                        {
+                            activeCondition = Input.GetKeyDown(KeyCode.E);
+                        }
+                        else if (skills.Count == 1)
+                        {
+                            activeCondition = Input.GetKeyDown(KeyCode.Q);
+                        }
+                    }
+
+                    skill.OnActive();
                     break;
                 case SkillActiveCondition.TargetIsEnemyInRange:
 
@@ -82,7 +95,7 @@ public class SkillManager : MonoBehaviour
                     Debug.Log("nothing happens");
                     break;
             }
-            
-        }              
+
+        }
     }
 }
