@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &84806266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,7 +541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 711570726}
-  - component: {fileID: 711570725}
+  - component: {fileID: 711570727}
   m_Layer: 0
   m_Name: Pooling
   m_TagString: Untagged
@@ -549,22 +549,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &711570725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711570724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dfaf417fcc69849a5a809677e3f9ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjects: []
-  objectToPool: {fileID: 5788826558223294042, guid: 25107bdaa75d15340ad90ddccef42869,
-    type: 3}
-  amountToPool: 10
 --- !u!4 &711570726
 Transform:
   m_ObjectHideFlags: 0
@@ -580,6 +564,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711570727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711570724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f413f2e3bf32349af87f504ced31d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjectsPlayer: []
+  pooledObjectsEnemy: []
+  objectToPoolPlayer: {fileID: 7251879486380165639, guid: c2f6a8962aac3814aa56cb9647c93470,
+    type: 3}
+  objectToPoolEnemy: {fileID: 5712219488875869251, guid: 29f4c72f9a1d9d446945740c2819895b,
+    type: 3}
+  amountToPoolPlayer: 10
+  amountToPoolEnemy: 20
 --- !u!1001 &746329221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1008,6 +1012,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 103929849021255442, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
+        type: 3}
+      propertyPath: agent
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2928834315418617393, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1086,7 +1095,7 @@ PrefabInstance:
     - target: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1229,30 +1238,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1363201463}
-  - component: {fileID: 1363201462}
   m_Layer: 0
   m_Name: MageFireBallPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1363201462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363201461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dfaf417fcc69849a5a809677e3f9ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjects: []
-  objectToPool: {fileID: 1513339508304654137, guid: 4a0c5bf5fee936247b507e3b184b0d06,
-    type: 3}
-  amountToPool: 100
+  m_IsActive: 0
 --- !u!4 &1363201463
 Transform:
   m_ObjectHideFlags: 0
@@ -1268,12 +1260,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1363776831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4214407058016185337, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1111034383}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1363776832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4214407058016185338, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
@@ -1363,9 +1349,8 @@ MonoBehaviour:
   player: {fileID: 4463867026796947}
   agent: {fileID: 0}
   shootPoint: {fileID: 176089914}
-  archerArrowPool: {fileID: 1606098580}
+  archerArrowPool: {fileID: 0}
   arrowSpeed: 30
-  fireRate: 3
 --- !u!114 &1368239985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,29 +1918,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606098581}
-  - component: {fileID: 1606098580}
   m_Layer: 0
   m_Name: ArcherArrowPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1606098580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606098579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dfaf417fcc69849a5a809677e3f9ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjects: []
-  objectToPool: {fileID: 1363776831}
-  amountToPool: 100
+  m_IsActive: 0
 --- !u!4 &1606098581
 Transform:
   m_ObjectHideFlags: 0
@@ -4712,6 +4681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0577b6a1ada884e85aa6ed7c6a0386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
 --- !u!137 &137784739472854451
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -5077,7 +5047,7 @@ PrefabInstance:
         type: 3}
       propertyPath: mageFireballPool
       value: 
-      objectReference: {fileID: 1363201462}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
