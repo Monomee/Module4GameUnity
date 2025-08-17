@@ -19,9 +19,9 @@ public class StunningEffect : EffectBase
     {
         Debug.Log("BurningEffect OnActive");
         stun = Object.Instantiate(asset, target.transform.position + Vector3.down * 0.5f, Quaternion.identity);
-        stunCoroutine = fromOwner.StartCoroutine(Burn());
+        stunCoroutine = fromOwner.StartCoroutine(Stunning());
     }
-    private IEnumerator Burn()
+    private IEnumerator Stunning()
     {
         float elapsedTime = 0f;
        

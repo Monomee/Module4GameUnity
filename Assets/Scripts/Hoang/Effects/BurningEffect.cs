@@ -20,9 +20,9 @@ public class BurningEffect : EffectBase
     {
         Debug.Log("BurningEffect OnActive");
         burningArea = Object.Instantiate(asset, target.transform.position + Vector3.down*0.5f, Quaternion.identity); 
-        burnCoroutine = fromOwner.StartCoroutine(Burn());
+        burnCoroutine = fromOwner.StartCoroutine(Burning());
     }
-    private IEnumerator Burn()
+    private IEnumerator Burning()
     {
         float elapsedTime = 0f;
         while (elapsedTime < effectConfig.duration)

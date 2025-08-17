@@ -20,9 +20,9 @@ public class FreezeEffect : EffectBase
     {
         Debug.Log("BurningEffect OnActive");
         freeze = Object.Instantiate(asset, target.transform.position + Vector3.down * 0.5f, Quaternion.identity);
-        freezeCoroutine = fromOwner.StartCoroutine(Burn());
+        freezeCoroutine = fromOwner.StartCoroutine(Freezing());
     }
-    private IEnumerator Burn()
+    private IEnumerator Freezing()
     {
         float elapsedTime = 0f;
 

@@ -14,6 +14,7 @@ public class TeslaTrap : SkillBase
         this.owner = owner;
         this.skillConfig = skillConfig;
         this.effects = effects;
+        effects.Add(new StunningEffect(owner, this, new StunningEffectConfig()));
     }
     public override void OnActive()
     {
