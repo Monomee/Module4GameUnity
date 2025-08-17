@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bf9f95f65435a4fb3f621a7568756b, type: 3}
   m_Name: Wand
   m_EditorClassIdentifier: 
-  itemName: 
-  itemIcon: {fileID: 0}
-  itemDescription: 
+  itemName: Wand
+  itemIcon: {fileID: 21300000, guid: c1073028faea5c14192b7ac7831dd8fd, type: 3}
+  isStackable: 0
+  itemDescription: Increase 10 Atk and 10 Hp
   equipmentType: 0
-  statModifiers: []
+  statModifiers:
+  - statType: 0
+    value: 10
+  - statType: 1
+    value: 10

@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class ItemBase : ScriptableObject
+public abstract class ItemBase : ScriptableObject
 {
     public string itemName;
     public Sprite itemIcon;
+    public bool isStackable = true;
     [TextArea]public string itemDescription;
-    //[SerializeField]private int maxStackSize = 5; 
+    
+    public abstract EquipmentItem GetEquipmentItem();
+    public abstract ConsumableItem GetConsumableItem();
+    public abstract ItemBase GetItem();
 }
 
 

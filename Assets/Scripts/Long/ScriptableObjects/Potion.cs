@@ -37,4 +37,8 @@ public class Potion : ConsumableItem
         yield return new WaitForSeconds(duration);
         roleStat.RemoveModifier(modifier);
     }
+
+    public override ItemBase GetItem() { return this; }
+    public override EquipmentItem GetEquipmentItem() { return null; }
+    public override ConsumableItem GetConsumableItem() { return this; }
 }
