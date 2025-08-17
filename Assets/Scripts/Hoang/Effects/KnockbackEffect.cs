@@ -19,13 +19,19 @@ public class KnockbackEffect : EffectBase
     {
         Debug.Log("BurningEffect OnActive");
         knock = Object.Instantiate(asset, target.transform.position + Vector3.down * 0.5f, Quaternion.identity);
-        target.transform.position -= target.transform.forward * effectConfig.parameters[0]; 
+        Object.Destroy(knock, 1.5f);
+        //target.GetComponent<Rigidbody>().AddForce(0, 0, -effectConfig.parameters[0], ForceMode.Impulse);
+        target.transform.position -= target.transform.forward * effectConfig.parameters[0];       
+        target.StartCoroutine(Deactive());
+    }
+    IEnumerator Deactive()
+    {
+        yield return new WaitForSeconds(3f);
         OnDeactive();
+        yield break;
     }
     public override void OnDeactive()
-    {
-
-        Object.Destroy(knock);
+    {        
         if (target is Player)
         {
             target = (Player)target;

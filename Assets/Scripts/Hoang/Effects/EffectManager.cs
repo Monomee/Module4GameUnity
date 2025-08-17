@@ -33,28 +33,48 @@ public class EffectManager : MonoBehaviour
     public void ActiveEffect(String codeName, UnitBase target = null)
     {
         if (effects.Count == 0) return;
-
-        foreach (EffectBase effect in effects)
+        for (int i = effects.Count - 1; i >= 0; i--)
         {
-            if (effect != null && effect.fromSkill.skillConfig.codeName.Equals(codeName))
+            if (effects[i] != null && effects[i].fromSkill.skillConfig.codeName.Equals(codeName))
             {
-                switch (effect.effectConfig.targetType)
+                switch (effects[i].effectConfig.targetType)
                 {
                     case TargetType.All:
                         break;
                     case TargetType.Ally:
                         break;
                     case TargetType.Self:
-                        effect.OnActive();
+                        effects[i].OnActive();
                         break;
                     case TargetType.Enemy:
-                        EffectBase effectInstance = Activator.CreateInstance(effect.GetType(), effect.fromOwner, effect.fromSkill, effect.effectConfig) as EffectBase;
+                        EffectBase effectInstance = Activator.CreateInstance(effects[i].GetType(), effects[i].fromOwner, effects[i].fromSkill, effects[i].effectConfig) as EffectBase;
                         effectInstance.SetTarget(target);
                         effectInstance.OnActive();
                         break;
                 }
             }
         }
+        //foreach (EffectBase effect in effects)
+        //{
+        //    if (effect != null && effect.fromSkill.skillConfig.codeName.Equals(codeName))
+        //    {
+        //        switch (effect.effectConfig.targetType)
+        //        {
+        //            case TargetType.All:
+        //                break;
+        //            case TargetType.Ally:
+        //                break;
+        //            case TargetType.Self:
+        //                effect.OnActive();
+        //                break;
+        //            case TargetType.Enemy:
+        //                EffectBase effectInstance = Activator.CreateInstance(effect.GetType(), effect.fromOwner, effect.fromSkill, effect.effectConfig) as EffectBase;
+        //                effectInstance.SetTarget(target);
+        //                effectInstance.OnActive();
+        //                break;
+        //        }
+        //    }
+        //}
     }
     public void AddListEffect(List<EffectBase> effects)
     {

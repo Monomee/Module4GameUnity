@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SkillManager : MonoBehaviour
@@ -21,7 +22,7 @@ public class SkillManager : MonoBehaviour
             skills = new List<SkillBase>();
         }
       //  Activator.CreateInstance(typeof(FireBall), new object[] { });   tu codename skill=> new object skill
-        skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
+        //skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
         //skills.Add(new Inferno(gameObject.GetComponent<UnitBase>(), new InfernoConfig(), new List<EffectBase>()));
         skills.Add(new Revive(gameObject.GetComponent<UnitBase>(), new ReviveConfig(), new List<EffectBase>()));
         //skills.Add(new ScorchingAura(gameObject.GetComponent<UnitBase>(), new ScorchingAuraConfig(), new List<EffectBase>()));
@@ -29,6 +30,24 @@ public class SkillManager : MonoBehaviour
         //skills.Add(new FrostNova(gameObject.GetComponent<UnitBase>(), new FrostNovaConfig(), new List<EffectBase>()));
         //skills.Add(new ThunderStorm(gameObject.GetComponent<UnitBase>(), new ThunderStormConfig(), new List<EffectBase>()));
         //skills.Add(new TeslaTrap(gameObject.GetComponent<UnitBase>(), new TeslaTrapConfig(), new List<EffectBase>()));
+
+        UnitBase character = gameObject.GetComponent<UnitBase>();
+        if (character != null)
+        {
+            if (character is Player)
+            {
+                skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
+            }
+            else if (character is Enemy)
+            {
+
+
+            }
+            else if (character is Boss)
+            {
+                 
+            }
+        }
     }
 
     // Update is called once per frame
