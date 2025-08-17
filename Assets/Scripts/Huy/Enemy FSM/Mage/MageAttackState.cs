@@ -6,8 +6,6 @@ public class MageAttackState : IEnemyState
 {
     private MageEnemy mage;
 
-    private Enemy enemyController;
-
     private const string MAGE_ATTACK_ANIMATION_BOOL = "isAttack";
 
     private float nextShotTime = 0f;
@@ -15,7 +13,6 @@ public class MageAttackState : IEnemyState
     public MageAttackState(Enemy enemyController)
     {
         mage = (MageEnemy)enemyController;
-        //this.enemyController = enemyController;
     }
 
     public void Enter()
@@ -31,6 +28,7 @@ public class MageAttackState : IEnemyState
         if (distance > mage.attackRange + 0.5f)
         {
             mage.isReadyToAttack = false;
+           
             mage.enemyStateMachine.ChangeState(new MageWalkState(mage));
             return;
         }
@@ -38,10 +36,10 @@ public class MageAttackState : IEnemyState
         {
             mage.isReadyToAttack = true;
         }
+        mage.FaceTarget();
 
         if (Time.time >= nextShotTime)
-        {
-            mage.FaceTarget();          
+        {            
             //Shoot();
             nextShotTime = Time.time + 1f / Mathf.Max(0.01f, mage.fireRate);
         }
@@ -52,30 +50,7 @@ public class MageAttackState : IEnemyState
     {
         mage.animator.SetBool(MAGE_ATTACK_ANIMATION_BOOL, false);
     }
-/*
-    private void Shoot()
-    {
-        if(mage.shootPoint == null || mage.mageFireballPool == null)
-        {
-            Debug.LogWarning("ShootPoint or mageFireballPool is not attached on MageEnemy");
-            return;
-        }
 
-        var mageFireBall = mage.mageFireballPool.GetPooledObject();
-
-        if (mageFireBall == null) return ;
-
-        mageFireBall.transform.position = mage.shootPoint.position;
-        mageFireBall.transform.rotation = Quaternion.LookRotation(
-            (mage.player.position + Vector3.up * 1.2f) - mage.shootPoint.position
-        );
-        mageFireBall.SetActive(true);
-
-        var rb = mageFireBall.GetComponent<Rigidbody>();
-        if (rb != null)
-            rb.velocity = mageFireBall.transform.forward * mage.fireballSpeed;
-    }
-*/
 }
 
 

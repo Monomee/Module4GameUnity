@@ -23,7 +23,7 @@ public class EnemyStateMachine
 
     public void Update()
     {
-        Debug.Log("StateMachine.Update()");
+        //Debug.Log("StateMachine.Update()");
         currentState?.Update();
     }
 }

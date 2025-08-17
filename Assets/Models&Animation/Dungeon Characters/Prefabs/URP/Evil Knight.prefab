@@ -1390,13 +1390,16 @@ GameObject:
   m_Component:
   - component: {fileID: 2273819545256077627}
   - component: {fileID: 1213779807}
-  - component: {fileID: 4819817451902315942}
   - component: {fileID: 2992369324875841708}
   - component: {fileID: 3443450609754874071}
   - component: {fileID: 5610407671135948922}
+  - component: {fileID: 8266474015727949648}
+  - component: {fileID: 5168533599288272255}
+  - component: {fileID: 6450007299206989451}
+  - component: {fileID: 2182208612268153280}
   m_Layer: 0
   m_Name: Evil Knight
-  m_TagString: Untagged
+  m_TagString: CanTakeDmg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1440,29 +1443,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4819817451902315942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4828289068611687602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52a0bac652ca9904e8aab36f8d1dc4c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  isDead: 0
-  teamID: 0
-  hp: 0
-  moveSpeed: 0
-  attackRange: 2
-  turnSpeed: 0
-  detectionRadius: 10
-  hasDetectedPlayer: 0
-  player: {fileID: 0}
-  agent: {fileID: 5610407671135948922}
 --- !u!114 &2992369324875841708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,7 +1455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9001eea0b6f360346a9bc9fbd36e25ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 100
 --- !u!136 &3443450609754874071
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1513,7 +1493,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1521,6 +1501,83 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8266474015727949648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4828289068611687602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a608a2cfc4984a46848381a7d3e6572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  isDead: 0
+  teamID: 0
+  hp: 0
+  moveSpeed: 0
+  attackRange: 2
+  turnSpeed: 0
+  detectionRadius: 10
+  hasDetectedPlayer: 0
+  isReadyToAttack: 0
+  player: {fileID: 0}
+  agent: {fileID: 5610407671135948922}
+  readyToAttack: 0
+  knightDamage: 10
+--- !u!114 &5168533599288272255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4828289068611687602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a608a2cfc4984a46848381a7d3e6572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  isDead: 0
+  teamID: 0
+  hp: 0
+  moveSpeed: 4
+  attackRange: 2
+  turnSpeed: 5
+  detectionRadius: 10
+  hasDetectedPlayer: 0
+  isReadyToAttack: 0
+  player: {fileID: 0}
+  agent: {fileID: 5610407671135948922}
+  readyToAttack: 0
+  knightDamage: 10
+--- !u!114 &6450007299206989451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4828289068611687602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7edd658a413105644ad2cb0395c333d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2182208612268153280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4828289068611687602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c60188690296948bd094e3e12be17b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMelee: 1
 --- !u!1 &4992911949004653609
 GameObject:
   m_ObjectHideFlags: 0

@@ -69,9 +69,19 @@ public class Enemy : UnitBase
         // Take the direction of the target
         Vector3 direction = (player.position - transform.position).normalized; // use normalized to calculate the enemy direction without affected by the distance
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z)); // y=0 because we don't want the enemy looks up or down
-                                                                                                     //transform.rotation = lookRotation;   // Withour slerp the enemy will immediately rotate so its not naturally.
+                                                                                                     //transform.rotation = lookRotation;   // Without slerp the enemy will immediately rotate so its not naturally.
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
         // transform.rotation = where the target is, we need to rotate at a certain speed
 
+    }
+
+    public virtual void CheckAndAttackPlayer()
+    {
+        float distance = Vector3.Distance(transform.position, player.position);
+        if (distance <= attackRange)
+        {
+            FaceTarget();
+            enemyStateMachine.ChangeState(new AttackState(this));
+        }
     }
 }

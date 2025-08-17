@@ -12,6 +12,18 @@ public class MageEnemy : Enemy
 
     protected override IEnemyState GetInitialState()
     {
-        return new MageIdleState(this); 
+        return new MageIdleState(this);
     }
+
+    public override void CheckAndAttackPlayer()
+    {
+        float distance = Vector3.Distance(transform.position, player.position);
+        if (distance <= attackRange)
+        {
+           
+            enemyStateMachine.ChangeState(new MageAttackState(this));
+        }
+
+    }
+
 }
