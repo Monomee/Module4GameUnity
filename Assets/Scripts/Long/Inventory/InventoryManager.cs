@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using Unity.Mathematics;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class InventoryManager : MonoBehaviour
     private InventoryItem tempSlot;
     private InventoryItem originalSlot;
     bool isMovingItem = false;
+    //private bool isMouseDown = false;
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -64,7 +66,25 @@ public class InventoryManager : MonoBehaviour
         {
             itemCursor.GetComponent<Image>().sprite = movingSlot.GetItem().itemIcon;
         }
-
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    if (!isMovingItem)
+        //    {
+        //        if (BeginItemMove())
+        //        {
+        //            isMouseDown = true;
+        //        }
+        //    }
+        //}
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    if (isMovingItem && isMouseDown)
+        //    {
+        //        EndItemMove();
+        //        isMouseDown = false;
+        //    }
+        //}
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (isMovingItem)
@@ -76,6 +96,18 @@ public class InventoryManager : MonoBehaviour
                 BeginItemMove();
             }
         }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            if (isMovingItem)
+            {
+                EndItemMove_Single();
+            }
+            else
+            {
+                BeginItemMove_Half();
+            }
+        }
+
     }
     public void RefreshUI()
     {
@@ -188,6 +220,23 @@ public class InventoryManager : MonoBehaviour
         RefreshUI();
         return true;
     }
+    private bool BeginItemMove_Half()
+    {
+        originalSlot = GetClosetSlot();
+        if (originalSlot == null || originalSlot.GetItem() == null)
+        {
+            return false;
+        }
+        movingSlot = new InventoryItem(originalSlot.GetItem(),Mathf.CeilToInt(originalSlot.GetQuantity() / 2f));
+        originalSlot.SubtractQuantity(Mathf.CeilToInt(originalSlot.GetQuantity() / 2f));
+        if (originalSlot.GetQuantity() < 1)
+        {
+            originalSlot.Clear();
+        }
+        isMovingItem = true;
+        RefreshUI();
+        return true;
+    }
     private bool EndItemMove()
     {
         originalSlot = GetClosetSlot();
@@ -218,7 +267,7 @@ public class InventoryManager : MonoBehaviour
                     originalSlot.AddItem(movingSlot.GetItem(), movingSlot.GetQuantity());//b=c
                     movingSlot.AddItem(tempSlot.GetItem(), tempSlot.GetQuantity());//c=a
                     RefreshUI();
-                    movingSlot.Clear();
+                    return true;
                 }
             }
             else
@@ -229,6 +278,39 @@ public class InventoryManager : MonoBehaviour
         }
         isMovingItem = false;
         RefreshUI();
+        return true;
+    }
+    private bool EndItemMove_Single()
+    {
+        originalSlot = GetClosetSlot();
+        if (originalSlot == null)
+        {
+            return false;
+        }
+        if(originalSlot.GetItem() != null && originalSlot.GetItem() != movingSlot.GetItem())
+        {
+            return false;
+        }
+        movingSlot.SubtractQuantity(1);
+        if (originalSlot.GetItem() != null && originalSlot.GetItem() == movingSlot.GetItem())
+        {
+            originalSlot.AddQuantity(1);
+        }
+        else
+        {
+            originalSlot.AddItem(movingSlot.GetItem(), 1);
+        }
+
+        if (movingSlot.GetQuantity() < 1)
+        {
+            isMovingItem = false;
+            movingSlot.Clear(); // Clear the moving slot if quantity is less than 1
+        }
+        else
+        {
+            isMovingItem = true;
+        }
+        RefreshUI(); 
         return true;
     }
 }
