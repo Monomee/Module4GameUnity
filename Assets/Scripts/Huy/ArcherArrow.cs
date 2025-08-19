@@ -11,7 +11,7 @@ public class ArcherArrow : MonoBehaviour
     [SerializeField] string stickOnlyOnTag = "Player"; // chỉ dính mục tiêu có tag này (để trống = dính mọi thứ)
 
     Rigidbody rb;
-    Collider col;
+    Collider collider;
     bool hasHit;
 
     // Thông tin mỗi phát bắn (truyền từ chỗ spawn)
@@ -24,7 +24,7 @@ public class ArcherArrow : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        col = GetComponent<Collider>();
+        collider = GetComponent<Collider>();
     }
 
     void OnEnable()
@@ -39,7 +39,7 @@ public class ArcherArrow : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
             rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         }
-        if (col) col.enabled = true;
+        if (collider) collider.enabled = true;
 
         // hẹn giờ tự hủy nếu không trúng
         if (lifeCo != null) StopCoroutine(lifeCo);
@@ -54,9 +54,9 @@ public class ArcherArrow : MonoBehaviour
         damage = dmg;
 
         // Không va chạm với kẻ bắn
-        if (col && ownerCols != null)
+        if (collider && ownerCols != null)
             for (int i = 0; i < ownerCols.Length; i++)
-                if (ownerCols[i]) Physics.IgnoreCollision(col, ownerCols[i], true);
+                if (ownerCols[i]) Physics.IgnoreCollision(collider, ownerCols[i], true);
     }
 
     void FixedUpdate()
@@ -71,7 +71,7 @@ public class ArcherArrow : MonoBehaviour
         if (hasHit) return;
         if (owner && c.transform.IsChildOf(owner)) return; // không dính chính mình
 
-        // Chỉ dính vào tag mong muốn (nếu có)
+        // Chỉ dính vào tag mong muốn 
         if (!string.IsNullOrEmpty(stickOnlyOnTag) && !c.collider.CompareTag(stickOnlyOnTag))
         {
             // vẫn có thể gây damage rồi tự hủy nếu muốn:
@@ -102,7 +102,7 @@ public class ArcherArrow : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
         }
-        if (col) col.enabled = false;
+        if (collider) collider.enabled = false;
 
         // Đặt đúng điểm chạm & xoay mũi vào mục tiêu (ngược normal)
         transform.position = point;
@@ -136,10 +136,10 @@ public class ArcherArrow : MonoBehaviour
 
         // Dọn dẹp trước khi trả về pool
         transform.SetParent(null);
-        if (col) col.enabled = true;
-        if (col && ownerCols != null)
+        if (collider) collider.enabled = true;
+        if (collider && ownerCols != null)
             for (int i = 0; i < ownerCols.Length; i++)
-                if (ownerCols[i]) Physics.IgnoreCollision(col, ownerCols[i], false);
+                if (ownerCols[i]) Physics.IgnoreCollision(collider, ownerCols[i], false);
 
         gameObject.SetActive(false);
     }

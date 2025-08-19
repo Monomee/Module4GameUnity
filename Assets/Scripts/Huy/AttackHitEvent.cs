@@ -67,11 +67,17 @@ public class AttackHitEvent : MonoBehaviour
         var mageFireBall = mage.mageFireballPool.GetPooledObject();
 
         if (mageFireBall == null) return;
+        Vector3 dir = (mage.player.position + Vector3.up * 1.2f) - mage.shootPoint.position;
+        Quaternion rot = Quaternion.LookRotation(dir);
 
+        // Hàm này sẽ giúp code ngắn hơn so với 2 dòng dưới
+        mageFireBall.transform.SetPositionAndRotation(mage.shootPoint.position, rot); 
+        /*
         mageFireBall.transform.position = mage.shootPoint.position;
         mageFireBall.transform.rotation = Quaternion.LookRotation(
             (mage.player.position + Vector3.up * 1.2f) - mage.shootPoint.position
         );
+        */
         mageFireBall.SetActive(true);
 
         var rb = mageFireBall.GetComponent<Rigidbody>();
@@ -107,13 +113,12 @@ public class AttackHitEvent : MonoBehaviour
         if (archer == null || archer.shootPoint == null || archer.archerArrowPool == null) return;
 
         var arrow = archer.archerArrowPool.GetPooledObject();
-        if (!arrow) return;
+        if (arrow == null) return;
 
-        // Hướng bay tới Player (nâng mục tiêu một chút)
+        // Hướng bay tới Player 
         Vector3 dir = (archer.player.position + Vector3.up * 1.2f) - archer.shootPoint.position;
         Quaternion rot = Quaternion.LookRotation(dir);
 
-        // Đặt world pos/rot TRƯỚC khi bật
         arrow.transform.SetPositionAndRotation(archer.shootPoint.position, rot);
         arrow.SetActive(true);
 
