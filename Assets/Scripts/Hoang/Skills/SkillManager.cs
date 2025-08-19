@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SkillManager : MonoBehaviour
@@ -22,12 +23,12 @@ public class SkillManager : MonoBehaviour
             skills = new List<SkillBase>();
         }
         //  Activator.CreateInstance(typeof(FireBall), new object[] { });   tu codename skill=> new object skill
-        //skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
+        skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
         //skills.Add(new Inferno(gameObject.GetComponent<UnitBase>(), new InfernoConfig(), new List<EffectBase>()));
-        skills.Add(new Revive(gameObject.GetComponent<UnitBase>(), new ReviveConfig(), new List<EffectBase>()));
+        //skills.Add(new Revive(gameObject.GetComponent<UnitBase>(), new ReviveConfig(), new List<EffectBase>()));
         //skills.Add(new ScorchingAura(gameObject.GetComponent<UnitBase>(), new ScorchingAuraConfig(), new List<EffectBase>()));
         //skills.Add(new GlacialSpike(gameObject.GetComponent<UnitBase>(), new GlacialSpikeConfig(), new List<EffectBase>()));
-        //skills.Add(new FrostNova(gameObject.GetComponent<UnitBase>(), new FrostNovaConfig(), new List<EffectBase>()));
+        skills.Add(new FrostNova(gameObject.GetComponent<UnitBase>(), new FrostNovaConfig(), new List<EffectBase>()));
         //skills.Add(new ThunderStorm(gameObject.GetComponent<UnitBase>(), new ThunderStormConfig(), new List<EffectBase>()));
         //skills.Add(new TeslaTrap(gameObject.GetComponent<UnitBase>(), new TeslaTrapConfig(), new List<EffectBase>()));
 
@@ -36,7 +37,7 @@ public class SkillManager : MonoBehaviour
         {
             if (character is Player)
             {
-                skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
+                //skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
                 isPlayer = true;
             }
             else if (character is Enemy)
@@ -54,24 +55,24 @@ public class SkillManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (SkillBase skill in skills)
+        for (int i = skills.Count - 1; i >= 0; i--)
         {
-            switch (skill.skillConfig.activeCondition)
+            switch (skills[i].skillConfig.activeCondition)
             {
                 case SkillActiveCondition.OnAction:
                     if (isPlayer)
                     {
-                        if (skills.Count != 1)
+                        if (i == 1)
                         {
                             activeCondition = Input.GetKeyDown(KeyCode.E);
                         }
-                        else if (skills.Count == 1)
+                        else if (i == 0)
                         {
                             activeCondition = Input.GetKeyDown(KeyCode.Q);
                         }
                     }
 
-                    skill.OnActive();
+                    skills[i].OnActive(activeCondition);
                     break;
                 case SkillActiveCondition.TargetIsEnemyInRange:
 
@@ -85,17 +86,24 @@ public class SkillManager : MonoBehaviour
                 case SkillActiveCondition.OnDead:
                     if (GetComponent<UnitBase>().isDead)
                     {
-                        skill.OnActive();
+                        skills[i].OnActive(true);
                     }
                     break;
                 case SkillActiveCondition.ASAP:
-                    skill.OnActive();
+                    skills[i].OnActive(true);
                     break;
                 default:
                     Debug.Log("nothing happens");
                     break;
             }
-
+        }
+    }
+    public void AddSkill(SkillBase skillToAdd, SkillBase skillToRemove)
+    {
+        if (skills.Contains(skillToRemove))
+        {
+            skills.Remove(skillToRemove);
+            skills.Add(skillToAdd);
         }
     }
 }

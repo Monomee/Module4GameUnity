@@ -18,7 +18,6 @@ public class FreezeEffect : EffectBase
 
     public override void OnActive()
     {
-        Debug.Log("BurningEffect OnActive");
         freeze = Object.Instantiate(asset, target.transform.position + Vector3.down * 0.5f, Quaternion.identity);
         freezeCoroutine = fromOwner.StartCoroutine(Freezing());
     }
@@ -35,10 +34,10 @@ public class FreezeEffect : EffectBase
                 target.GetComponent<PlayerAttack>().enabled = false;
                 target.GetComponent<ThirdPersonController>().enabled = false;
             }
-            else if (target is TestEnemy)
+            else if (target is Enemy)
             {
-                target = (TestEnemy)target;
-                target.GetComponent<TestEnemy>().enabled = false;
+                target = (Enemy)target;
+                target.GetComponent<Enemy>().enabled = false;
             }
             else if (target is Boss)
             {
@@ -51,7 +50,6 @@ public class FreezeEffect : EffectBase
     }
     public override void OnDeactive()
     {
-        Debug.Log("Stunning OnDeactive");
         Object.Destroy(freeze);
         if (target is Player)
         {
@@ -59,10 +57,10 @@ public class FreezeEffect : EffectBase
             target.GetComponent<PlayerAttack>().enabled = true;
             target.GetComponent<ThirdPersonController>().enabled = true;
         }
-        else if (target is TestEnemy)
+        else if (target is Enemy)
         {
-            target = (TestEnemy)target;
-            target.GetComponent<TestEnemy>().enabled = true;
+            target = (Enemy)target;
+            target.GetComponent<Enemy>().enabled = true;
         }
         else if (target is Boss)
         {

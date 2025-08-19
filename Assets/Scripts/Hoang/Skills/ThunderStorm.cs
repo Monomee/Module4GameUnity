@@ -19,9 +19,9 @@ public class ThunderStorm : SkillBase
         this.effects = effects;
         effects.Add(new StunningEffect(owner, this, new StunningEffectConfig()));
     }
-    public override void OnActive()
+    public override void OnActive(bool active)
     {
-        if (Input.GetKey(KeyCode.E))
+        if (active)
         {
             if (pointer == null)
             {
@@ -66,7 +66,6 @@ public class ThunderStorm : SkillBase
             {
                 Debug.LogError("OnStayCollideSkill component not found on the inferno prefab.");
             }
-            ApplyEffects();
         }
     }
     public override void OnDeactive()

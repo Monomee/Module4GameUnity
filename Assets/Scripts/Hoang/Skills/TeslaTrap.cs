@@ -16,9 +16,9 @@ public class TeslaTrap : SkillBase
         this.effects = effects;
         effects.Add(new StunningEffect(owner, this, new StunningEffectConfig()));
     }
-    public override void OnActive()
+    public override void OnActive(bool active)
     {
-        if ((Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E)) && Time.time - lastCastTime >= cooldown)
+        if (active && Time.time - lastCastTime >= cooldown)
         {
             lastCastTime = Time.time;
 
@@ -40,10 +40,7 @@ public class TeslaTrap : SkillBase
                     float duration = skillConfig.parameters[2];
                     script.Initialize(owner, this, projectileDir, damage, duration);
                 }
-            }
-            
-
-            ApplyEffects();
+            }         
         }
     }
     public override void OnDeactive()

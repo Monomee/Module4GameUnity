@@ -77,6 +77,7 @@ public class ArcherArrow : MonoBehaviour
             // vẫn có thể gây damage rồi tự hủy nếu muốn:
             var h = c.collider.GetComponentInParent<Health>();
             if (h) h.OnTakeDmg(damage);
+            Debug.Log("trung: "+c.gameObject.name);
             // Không dính → tự hủy sớm:
             StartCoroutine(DespawnAfter(0.05f));
             return;

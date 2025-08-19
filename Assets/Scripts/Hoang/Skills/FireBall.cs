@@ -19,9 +19,9 @@ public class FireBall : SkillBase
         this.effects.Add(new BurningEffect(this.owner, this, new BurningEffectConfig())); 
         this.effects.Add(new KnockbackEffect(owner, this, new KnockbackEffectConfig()));
     }
-    public override void OnActive()
+    public override void OnActive(bool active)
     {
-        if ((Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E)) && Time.time - lastCastTime >= cooldown)
+        if (active && Time.time - lastCastTime >= cooldown)
         {
             Debug.Log("FireBall OnActive");
             lastCastTime = Time.time;
@@ -61,7 +61,7 @@ public class FireBall : SkillBase
                 script.Initialize(owner, this, direction, owner.transform, damage, duration, speed);
             }
 
-            ApplyEffects();
+            //ApplyEffects();
         }
     }
     public override void OnDeactive()
