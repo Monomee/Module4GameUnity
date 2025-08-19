@@ -32,7 +32,11 @@ public class EquipmentItem : ItemBase
             }
         }
     }
-    public override ItemBase GetItem() { return this; }
+
+    public override void Use(GameObject targetObject)
+    {
+        return;
+    }
+
     public override EquipmentItem GetEquipmentItem() { return this; }
-    public override ConsumableItem GetConsumableItem() {return null; }
 }

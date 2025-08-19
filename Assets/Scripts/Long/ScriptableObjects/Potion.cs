@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Potion", menuName = "ScriptableObjects/Consumable/Potion")]
 public class Potion : ConsumableItem
 {
-    //public PotionData potionData;
     public List<StatModifier> statModifiers;
     public EffectApplyType effectApplyType;
     public float effectDuration;
@@ -38,7 +37,5 @@ public class Potion : ConsumableItem
         roleStat.RemoveModifier(modifier);
     }
 
-    public override ItemBase GetItem() { return this; }
-    public override EquipmentItem GetEquipmentItem() { return null; }
     public override ConsumableItem GetConsumableItem() { return this; }
 }

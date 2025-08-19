@@ -32,7 +32,10 @@ public class InventoryItem
     public void SubtractQuantity(int quantity)
     {
         this.quantity -= quantity;
-        if (this.quantity < 0) this.quantity = 0;
+        if (this.quantity <= 0)
+        {
+            Clear();
+        }
     }
 
     public void AddItem(ItemBase item, int quantity)

@@ -8,11 +8,13 @@ public abstract class ItemBase : ScriptableObject
     public string itemName;
     public Sprite itemIcon;
     public bool isStackable = true;
+    public int stackSize = 64;
     [TextArea]public string itemDescription;
     
-    public abstract EquipmentItem GetEquipmentItem();
-    public abstract ConsumableItem GetConsumableItem();
-    public abstract ItemBase GetItem();
+    public virtual EquipmentItem GetEquipmentItem() { return null; }
+    public virtual ConsumableItem GetConsumableItem() { return null; }
+    public virtual ItemBase GetItem() { return this; }
+    public abstract void Use(GameObject targetObject);
 }
 
 

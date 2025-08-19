@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
 using Unity.Mathematics;
+using System.Linq;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -15,17 +16,23 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]private ItemBase itemToAdd;
     [SerializeField]private ItemBase itemToRemove;
     [SerializeField]private GameObject slotHolder;
+    [SerializeField]private GameObject hotbarSlotHolder;
 
     [SerializeField]private InventoryItem[] startingItem;
     [SerializeField]private InventoryItem[] items;
 
     private GameObject[] slots;
+    private GameObject[] hotbarSlots;
 
     private InventoryItem movingSlot;
     private InventoryItem tempSlot;
     private InventoryItem originalSlot;
     bool isMovingItem = false;
     //private bool isMouseDown = false;
+
+    public ItemBase selectedItem;
+    [SerializeField] private GameObject hotbarSelector;
+    [SerializeField] private int selectedSlotIndex = 0;
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -41,19 +48,26 @@ public class InventoryManager : MonoBehaviour
     {
         slots = new GameObject[slotHolder.transform.childCount];
         items = new InventoryItem[slots.Length];
+        hotbarSlots = new GameObject[hotbarSlotHolder.transform.childCount];
+
+        for(int i = 0; i < hotbarSlots.Length; i++)
+        {
+            hotbarSlots[i] = hotbarSlotHolder.transform.GetChild(i).gameObject;
+        }
+
         for (int i = 0; i < items.Length; i++)
         {
             items[i] = new InventoryItem();
         }
-        for (int i = 0; i < startingItem.Length; i++)
-        {
-            items[i] = startingItem[i];
-        }
-
         for (int i = 0; i < slotHolder.transform.childCount; i++)
         {
             slots[i] = slotHolder.transform.GetChild(i).gameObject;
         }
+        for (int i = 0; i < startingItem.Length; i++)
+        {
+            AddItemToInventory(startingItem[i].GetItem(), startingItem[i].GetQuantity());
+        }
+
         RefreshUI();
         AddItemToInventory(itemToAdd,1);
         RemoveItemFromInventory(itemToRemove);
@@ -108,10 +122,27 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
+        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            selectedSlotIndex = Mathf.Clamp(selectedSlotIndex - 1, 0, hotbarSlots.Length - 1);
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            selectedSlotIndex = Mathf.Clamp(selectedSlotIndex + 1, 0, hotbarSlots.Length - 1);
+        }
+
+        hotbarSelector.transform.position = hotbarSlots[selectedSlotIndex].transform.position;
+        selectedItem = items[selectedSlotIndex + slots.Length - hotbarSlots.Length].GetItem();
+
+        if(Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            UseSelectedItem(gameObject);
+        }
     }
     public void RefreshUI()
     {
         for (int i = 0; i < slots.Length; i++)
+        {
             try
             {
                 slots[i].transform.GetChild(0).GetComponent<Image>().enabled = true;
@@ -131,14 +162,50 @@ public class InventoryManager : MonoBehaviour
                 slots[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
                 slots[i].transform.GetChild(1).GetComponent<TMP_Text>().text = "";
             }
+        }
+            
+        RefreshHotbar();
+    }
+    public void RefreshHotbar()
+    {
+        for (int i = 0; i < hotbarSlots.Length; i++)
+        {
+            try
+            {
+                hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().enabled = true;
+                hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = items[i + slots.Length - hotbarSlots.Length].GetItem().itemIcon;
+                if (items[i + slots.Length - hotbarSlots.Length].GetItem().isStackable)
+                {
+                    hotbarSlots[i].transform.GetChild(1).GetComponent<TMP_Text>().text = items[i + slots.Length - hotbarSlots.Length].GetQuantity().ToString();
+                }
+                else
+                {
+                    hotbarSlots[i].transform.GetChild(1).GetComponent<TMP_Text>().text = "";
+                }
+            }
+            catch
+            {
+                hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().sprite = null;
+                hotbarSlots[i].transform.GetChild(0).GetComponent<Image>().enabled = false;
+                hotbarSlots[i].transform.GetChild(1).GetComponent<TMP_Text>().text = "";
+            }
+        }
+            
     }
 
     public bool AddItemToInventory(ItemBase item, int quantity)
     {
         InventoryItem inventoryItem = Contains(item);
-        if (inventoryItem != null && inventoryItem.GetItem().isStackable)
+        if (inventoryItem != null)
         {
-            inventoryItem.AddQuantity(1);
+            var quantityCanAdd = inventoryItem.GetItem().stackSize - inventoryItem.GetQuantity();
+            var quantityToAdd = Mathf.Clamp(quantity, 0 , quantityCanAdd);
+            var remainder = quantity - quantityToAdd;
+            inventoryItem.AddQuantity(quantity);
+            if (remainder > 0)
+            {
+                AddItemToInventory(item, remainder);
+            }
         }
         else
         {
@@ -146,7 +213,14 @@ public class InventoryManager : MonoBehaviour
             {
                 if (items[i].GetItem() == null)
                 {
-                    items[i].AddItem(item, quantity);
+                    var quantityCanAdd = item.stackSize - items[i].GetQuantity();
+                    var quantityToAdd = Mathf.Clamp(quantity, 0, quantityCanAdd);
+                    var remainder = quantity - quantityToAdd;
+                    items[i].AddItem(item, quantityToAdd);
+                    if (remainder > 0)
+                    {
+                        AddItemToInventory(item, remainder);
+                    }
                     break;
                 }
             }
@@ -188,7 +262,7 @@ public class InventoryManager : MonoBehaviour
     {
         for (int i = 0; i < items.Length; i++)
         {
-            if (items[i].GetItem() == item)
+            if (items[i].GetItem() == item && items[i].GetItem().isStackable && items[i].GetQuantity() < items[i].GetItem().stackSize)
             {
                 return items[i];
             }
@@ -251,7 +325,7 @@ public class InventoryManager : MonoBehaviour
             {
                 if (originalSlot.GetItem() == movingSlot.GetItem())//same item
                 {
-                    if (originalSlot.GetItem().isStackable)
+                    if (originalSlot.GetItem().isStackable && originalSlot.GetQuantity() < originalSlot.GetItem().stackSize)
                     {
                         originalSlot.AddQuantity(movingSlot.GetQuantity());
                         movingSlot.Clear();
@@ -291,13 +365,18 @@ public class InventoryManager : MonoBehaviour
         {
             return false;
         }
-        movingSlot.SubtractQuantity(1);
-        if (originalSlot.GetItem() != null && originalSlot.GetItem() == movingSlot.GetItem())
+        if (originalSlot.GetItem() != null && originalSlot.GetItem() == movingSlot.GetItem() && !movingSlot.GetItem().isStackable)
         {
+            return false;
+        }
+        else if (originalSlot.GetItem() != null && originalSlot.GetItem() == movingSlot.GetItem())
+        {
+            movingSlot.SubtractQuantity(1);
             originalSlot.AddQuantity(1);
         }
         else
         {
+            movingSlot.SubtractQuantity(1);
             originalSlot.AddItem(movingSlot.GetItem(), 1);
         }
 
@@ -311,6 +390,26 @@ public class InventoryManager : MonoBehaviour
             isMovingItem = true;
         }
         RefreshUI(); 
+        return true;
+    }
+    public void UseSelectedItem(GameObject targetObject)
+    {
+        if (selectedItem != null)
+        {
+            selectedItem.Use(targetObject);
+            items[selectedSlotIndex + slots.Length - hotbarSlots.Length].SubtractQuantity(1);
+            RefreshUI();
+        }
+    }
+    public bool isFull()
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i].GetItem() == null)
+            {
+                return false;
+            }
+        }
         return true;
     }
 }
