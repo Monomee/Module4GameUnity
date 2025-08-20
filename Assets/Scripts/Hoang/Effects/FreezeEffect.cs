@@ -44,8 +44,9 @@ public class FreezeEffect : EffectBase
                 target = (Boss)target;
                 target.GetComponent<Boss>().enabled = false;
             }
+            target.GetComponent<Animator>().speed = 0f;
             yield return null;
-        }
+        }       
         OnDeactive();
     }
     public override void OnDeactive()
@@ -68,6 +69,7 @@ public class FreezeEffect : EffectBase
             target.GetComponent<Boss>().enabled = true;
         }
         fromOwner.StopCoroutine(freezeCoroutine);
+        target.GetComponent<Animator>().speed = 1f;
         fromSkill.DeapplyEffect(this);
     }
 }

@@ -309,7 +309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &447353493
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1242,7 +1242,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1363201463}
-  - component: {fileID: 1363201464}
   m_Layer: 0
   m_Name: MageFireBallPool
   m_TagString: Untagged
@@ -1265,21 +1264,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1363201464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363201461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f413f2e3bf32349af87f504ced31d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjectsPlayer: []
-  objectToPoolPlayer: {fileID: 0}
-  amountToPoolPlayer: 0
 --- !u!4 &1363776832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4214407058016185338, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
@@ -1721,7 +1705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1586375305
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1887,7 +1871,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606098581}
-  - component: {fileID: 1606098582}
   - component: {fileID: 1606098583}
   m_Layer: 0
   m_Name: ArcherArrowPool
@@ -1911,22 +1894,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1606098582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606098579}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f413f2e3bf32349af87f504ced31d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjectsPlayer: []
-  objectToPoolPlayer: {fileID: 8218955982014944640, guid: e03779a888d1af140a82c18a80d6d380,
-    type: 3}
-  amountToPoolPlayer: 20
 --- !u!114 &1606098583
 MonoBehaviour:
   m_ObjectHideFlags: 0
