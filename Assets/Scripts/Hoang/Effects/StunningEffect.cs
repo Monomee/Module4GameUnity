@@ -44,6 +44,7 @@ public class StunningEffect : EffectBase
                 target = (Boss)target;
                 target.GetComponent<Boss>().enabled = false;
             }
+            target.GetComponent<Animator>().speed = 0f;
             yield return null;
         }
         OnDeactive();
@@ -69,6 +70,7 @@ public class StunningEffect : EffectBase
             target.GetComponent<Boss>().enabled = true;
         }
         fromOwner.StopCoroutine(stunCoroutine);
+        target.GetComponent<Animator>().speed = 1f;
         fromSkill.DeapplyEffect(this);
     }
 }

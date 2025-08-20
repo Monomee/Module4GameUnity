@@ -5,7 +5,7 @@ using UnityEngine;
 public class ArcherEnemy : Enemy
 {
     public Transform shootPoint;
-    public ObjectPooling archerArrowPool;
+    public EnemyObjectPooling archerArrowPool;
     public float arrowSpeed = 30f;
 
     protected override IEnemyState GetInitialState()

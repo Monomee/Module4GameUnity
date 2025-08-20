@@ -10,7 +10,7 @@ public class Revive : SkillBase
         this.skillConfig = skillConfig;
         this.effects = effects;
     }
-    public override void OnActive()
+    public override void OnActive(bool active)
     {
         Debug.Log("Revive OnActive");
         owner.roleStat.dictStats[StatType.HP].AddValue(50f);

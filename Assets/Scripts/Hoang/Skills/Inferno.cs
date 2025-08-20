@@ -18,9 +18,9 @@ public class Inferno : SkillBase
         this.effects = effects;
         this.effects.Add(new BurningEffect(this.owner, this, new BurningEffectConfig()));
     }
-    public override void OnActive()
+    public override void OnActive(bool active)
     {        
-        if (Input.GetKey(KeyCode.E))
+        if (active)
         {
             if (pointer==null)
             {
@@ -65,7 +65,6 @@ public class Inferno : SkillBase
             {
                 Debug.LogError("OnStayCollideSkill component not found on the inferno prefab.");
             }
-            ApplyEffects();
         }
     }
     public override void OnDeactive()

@@ -9,7 +9,7 @@ public class SkillBase // can tao skillmanager ke thua mono behavior chay update
     public List<EffectBase> effects = new List<EffectBase>();
 
     //tinh cooldown, virtual active , disable , 
-    public virtual void OnActive()
+    public virtual void OnActive(bool active)
     {
         ApplyEffects();
     }

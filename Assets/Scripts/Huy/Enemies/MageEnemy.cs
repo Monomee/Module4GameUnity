@@ -5,7 +5,7 @@ using UnityEngine;
 public class MageEnemy : Enemy
 {
     public Transform shootPoint;
-    public ObjectPooling mageFireballPool;
+    public EnemyObjectPooling mageFireballPool;
 
     public float fireballSpeed = 10f;
     public float fireRate = 1f;

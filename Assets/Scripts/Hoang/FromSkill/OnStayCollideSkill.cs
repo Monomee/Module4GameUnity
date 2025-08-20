@@ -69,6 +69,7 @@ public class OnStayCollideSkill : MonoBehaviour
             Health health = other.GetComponent<Health>();
             if (health != null)
             {
+                fromSkill.ApplyEffects();
                 fromOwner.GetComponent<EffectManager>().ActiveEffect(fromSkill.skillConfig.codeName, other.GetComponent<UnitBase>());
             }
         }

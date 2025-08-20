@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AttackHitEvent : MonoBehaviour
 {
@@ -105,7 +102,7 @@ public class AttackHitEvent : MonoBehaviour
     public void ArcherShootAttack()
     {
         if (archer == null || archer.shootPoint == null || archer.archerArrowPool == null) return;
-
+        Debug.Log("archer attack");
         var arrow = archer.archerArrowPool.GetPooledObject();
         if (!arrow) return;
 

@@ -15,7 +15,7 @@ public class ScorchingAura : SkillBase
         this.effects = effects;
         this.effects.Add(new BurningEffect(this.owner, this, new BurningEffectConfig()));
     }
-    public override void OnActive()
+    public override void OnActive(bool active)
     {
         if (Time.time - lastCastTime >= cooldown)
         {

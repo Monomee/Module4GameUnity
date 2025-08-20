@@ -43,6 +43,7 @@ public class OnEnterCollideSkill : MonoBehaviour
             {
                 health.OnTakeDmg(damage);
                 Debug.Log(other.name + " took " + damage + " damage from the entercollideskill. Current HP: " + health.health);
+                fromSkill.ApplyEffects();
                 fromOwner.GetComponent<EffectManager>().ActiveEffect(fromSkill.skillConfig.codeName, other.GetComponent<UnitBase>());
             }
         }        

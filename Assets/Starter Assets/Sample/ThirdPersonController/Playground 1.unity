@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &84806266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &447353493
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -577,13 +577,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledObjectsPlayer: []
-  pooledObjectsEnemy: []
   objectToPoolPlayer: {fileID: 7251879486380165639, guid: c2f6a8962aac3814aa56cb9647c93470,
     type: 3}
-  objectToPoolEnemy: {fileID: 5712219488875869251, guid: 29f4c72f9a1d9d446945740c2819895b,
-    type: 3}
   amountToPoolPlayer: 10
-  amountToPoolEnemy: 20
 --- !u!1001 &746329221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1016,7 +1012,17 @@ PrefabInstance:
         type: 3}
       propertyPath: agent
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1368239980}
+    - target: {fileID: 103929849021255442, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 4463867026796947}
+    - target: {fileID: 103929849021255442, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
+        type: 3}
+      propertyPath: archerArrowPool
+      value: 
+      objectReference: {fileID: 1606098583}
     - target: {fileID: 2928834315418617393, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1087,6 +1093,11 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 8ba888c3f45da8e43b58abe94b641cfe, type: 3}
+    - target: {fileID: 6105081154297913132, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
         type: 3}
       propertyPath: m_Name
@@ -1095,7 +1106,12 @@ PrefabInstance:
     - target: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
+        type: 3}
+      propertyPath: m_TagString
+      value: CanTakeDmg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1108,23 +1124,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1368239983}
-    - targetCorrespondingSourceObject: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1368239982}
-    - targetCorrespondingSourceObject: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1368239981}
-    - targetCorrespondingSourceObject: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1368239980}
     - targetCorrespondingSourceObject: {fileID: 8535945981115261088, guid: 52d8c93ed1945ee4ab35d7bf85c5043e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1368239985}
+      addedObject: {fileID: 1368239992}
   m_SourcePrefab: {fileID: 100100000, guid: 52d8c93ed1945ee4ab35d7bf85c5043e, type: 3}
 --- !u!1001 &1221041499
 PrefabInstance:
@@ -1288,84 +1292,33 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &1368239981
-CapsuleCollider:
+--- !u!54 &1368239992
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175851491}
-  m_Material: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.54
-  m_Height: 1.54
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &1368239982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175851491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9001eea0b6f360346a9bc9fbd36e25ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
---- !u!114 &1368239983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175851491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc54155bb2da35d4394b4ba9cb3c7c89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  isDead: 0
-  teamID: 0
-  hp: 0
-  moveSpeed: 4
-  attackRange: 15
-  turnSpeed: 5
-  detectionRadius: 10
-  hasDetectedPlayer: 0
-  isReadyToAttack: 0
-  player: {fileID: 4463867026796947}
-  agent: {fileID: 0}
-  shootPoint: {fileID: 176089914}
-  archerArrowPool: {fileID: 0}
-  arrowSpeed: 30
---- !u!114 &1368239985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175851491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1c60188690296948bd094e3e12be17b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMelee: 0
-  isMage: 0
-  isArcher: 1
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1402827283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1752,7 +1705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1586375305
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1918,13 +1871,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606098581}
+  - component: {fileID: 1606098583}
   m_Layer: 0
   m_Name: ArcherArrowPool
-  m_TagString: Untagged
+  m_TagString: CanTakeDmg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1606098581
 Transform:
   m_ObjectHideFlags: 0
@@ -1940,6 +1894,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1606098583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606098579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd679a8b3b93834f8c0cf28f8c11922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjectsEnemy: []
+  objectToPoolEnemy: {fileID: 8218955982014944640, guid: e03779a888d1af140a82c18a80d6d380,
+    type: 3}
+  amountToPoolEnemy: 20
 --- !u!1001 &1762682258
 PrefabInstance:
   m_ObjectHideFlags: 0
