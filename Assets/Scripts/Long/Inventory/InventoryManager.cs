@@ -323,17 +323,24 @@ public class InventoryManager : MonoBehaviour
         {
             if (originalSlot.GetItem() != null)
             {
-                if (originalSlot.GetItem() == movingSlot.GetItem())//same item
+                if (originalSlot.GetItem() == movingSlot.GetItem() && originalSlot.GetItem().isStackable && originalSlot.GetQuantity() < originalSlot.GetItem().stackSize)//same item
                 {
-                    if (originalSlot.GetItem().isStackable && originalSlot.GetQuantity() < originalSlot.GetItem().stackSize)
+
+                    var quantityCanAdd = originalSlot.GetItem().stackSize - originalSlot.GetQuantity();
+                    var quantityToAdd = Mathf.Clamp(movingSlot.GetQuantity(), 0, quantityCanAdd);
+                    var remainder = movingSlot.GetQuantity() - quantityCanAdd;
+                    originalSlot.AddQuantity(quantityToAdd);
+                    if(remainder <= 0)
                     {
-                        originalSlot.AddQuantity(movingSlot.GetQuantity());
                         movingSlot.Clear();
                     }
                     else
                     {
+                        movingSlot.SubtractQuantity(quantityToAdd);
+                        RefreshUI();
                         return false;
                     }
+
                 }
                 else
                 {
@@ -357,15 +364,19 @@ public class InventoryManager : MonoBehaviour
     private bool EndItemMove_Single()
     {
         originalSlot = GetClosetSlot();
-        if (originalSlot == null)
+        if (originalSlot is null)
         {
             return false;
         }
-        if(originalSlot.GetItem() != null && originalSlot.GetItem() != movingSlot.GetItem())
+        if(originalSlot.GetItem() != null && 
+          (originalSlot.GetItem() != movingSlot.GetItem() || 
+          originalSlot.GetQuantity() >= originalSlot.GetItem().stackSize))
         {
             return false;
         }
-        if (originalSlot.GetItem() != null && originalSlot.GetItem() == movingSlot.GetItem() && !movingSlot.GetItem().isStackable)
+        if (originalSlot.GetItem() != null && 
+            originalSlot.GetItem() == movingSlot.GetItem() && 
+            !movingSlot.GetItem().isStackable)
         {
             return false;
         }
@@ -376,8 +387,8 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
-            movingSlot.SubtractQuantity(1);
             originalSlot.AddItem(movingSlot.GetItem(), 1);
+            movingSlot.SubtractQuantity(1);
         }
 
         if (movingSlot.GetQuantity() < 1)
@@ -401,7 +412,7 @@ public class InventoryManager : MonoBehaviour
             RefreshUI();
         }
     }
-    public bool isFull()
+    public bool IsFull()
     {
         for (int i = 0; i < items.Length; i++)
         {
