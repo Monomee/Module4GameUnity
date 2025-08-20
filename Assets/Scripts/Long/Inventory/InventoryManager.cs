@@ -196,12 +196,14 @@ public class InventoryManager : MonoBehaviour
     public bool AddItemToInventory(ItemBase item, int quantity)
     {
         InventoryItem inventoryItem = Contains(item);
-        if (inventoryItem != null)
+        if (inventoryItem != null &&
+            inventoryItem.GetItem().isStackable &&
+            inventoryItem.GetQuantity() < item.stackSize)
         {
             var quantityCanAdd = inventoryItem.GetItem().stackSize - inventoryItem.GetQuantity();
             var quantityToAdd = Mathf.Clamp(quantity, 0 , quantityCanAdd);
-            var remainder = quantity - quantityToAdd;
-            inventoryItem.AddQuantity(quantity);
+            var remainder = quantity - quantityCanAdd;
+            inventoryItem.AddQuantity(quantityToAdd);
             if (remainder > 0)
             {
                 AddItemToInventory(item, remainder);
@@ -215,7 +217,7 @@ public class InventoryManager : MonoBehaviour
                 {
                     var quantityCanAdd = item.stackSize - items[i].GetQuantity();
                     var quantityToAdd = Mathf.Clamp(quantity, 0, quantityCanAdd);
-                    var remainder = quantity - quantityToAdd;
+                    var remainder = quantity - quantityCanAdd;
                     items[i].AddItem(item, quantityToAdd);
                     if (remainder > 0)
                     {
@@ -262,7 +264,9 @@ public class InventoryManager : MonoBehaviour
     {
         for (int i = 0; i < items.Length; i++)
         {
-            if (items[i].GetItem() == item && items[i].GetItem().isStackable && items[i].GetQuantity() < items[i].GetItem().stackSize)
+            if (items[i].GetItem() == item &&
+                items[i].GetItem().isStackable && 
+                items[i].GetQuantity() < items[i].GetItem().stackSize)
             {
                 return items[i];
             }
@@ -364,7 +368,7 @@ public class InventoryManager : MonoBehaviour
     private bool EndItemMove_Single()
     {
         originalSlot = GetClosetSlot();
-        if (originalSlot is null)
+        if (originalSlot == null)
         {
             return false;
         }
