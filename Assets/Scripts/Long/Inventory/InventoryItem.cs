@@ -5,61 +5,49 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
 
-public class InventoryItem : MonoBehaviour, IPointerClickHandler
+[System.Serializable]
+public class InventoryItem
 {
-    Image itemIcon;
-    public CanvasGroup canvasGroup;
+    [SerializeField]private ItemBase item;
+    [SerializeField]private int quantity;
 
-    public ItemBase myItem;
-
-    public InventorySlot activeSlot;
-    public EquipmentSlot activeEquipSlot;
-
-    void Awake()
+    public InventoryItem()
     {
-        canvasGroup = GetComponent<CanvasGroup>();
-        itemIcon = GetComponent<Image>();
+        this.item = null;
+        this.quantity = 0;
     }
-
-    public void Initialize(ItemBase item, InventorySlot parent)
+    public InventoryItem(ItemBase item, int quantity)
     {
-        activeSlot = parent;
-        activeEquipSlot = null;
-        activeSlot.myItem = this;
-        myItem = item;
-        itemIcon.sprite = item.itemIcon;
+        this.item = item;
+        this.quantity = quantity;
     }
-
-    public void Initialize(ItemBase item, EquipmentSlot parent)
+    public InventoryItem(InventoryItem inventoryItem)
     {
-        activeEquipSlot = parent;
-        activeSlot = null;
-        activeEquipSlot.currentItem = this;
-        myItem = item;
-        itemIcon.sprite = item.itemIcon;
+        this.item = inventoryItem.item;
+        this.quantity = inventoryItem.quantity;
     }
-
-    public void OnPointerClick(PointerEventData eventData)
+    public ItemBase GetItem() { return item; }
+    public int GetQuantity() { return quantity; }
+    public void AddQuantity(int quantity) { this.quantity += quantity; }
+    public void SubtractQuantity(int quantity)
     {
-        if (eventData.button != PointerEventData.InputButton.Left)
-            return;
-
-        if (myItem is ConsumableItem consumable)
+        this.quantity -= quantity;
+        if (this.quantity <= 0)
         {
-            consumable.Use(InventoryManager.Instance.playerGameObject);
-            if (activeSlot != null)
-            {
-                activeSlot.myItem = null;
-            }
-            else if (activeEquipSlot != null)
-            {
-                activeEquipSlot.Clear();
-            }
-            Destroy(gameObject);
-            return;
+            Clear();
         }
+    }
 
-        InventoryManager.Instance.SetCarriedItem(this);
+    public void AddItem(ItemBase item, int quantity)
+    {
+        this.item = item;
+        this.quantity = quantity;
+    }
+
+    public void Clear()
+    {
+        this.item = null;
+        this.quantity = 0;
     }
 
 }

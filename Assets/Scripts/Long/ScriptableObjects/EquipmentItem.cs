@@ -6,7 +6,7 @@ using UnityEngine;
 public class EquipmentItem : ItemBase
 {
     public EquipmentType equipmentType;
-    [SerializeField]private List<StatModifier> statModifiers;
+    [SerializeField] private List<StatModifier> statModifiers;
     public void Equip(GameObject targetObject)
     {
         ModifyStat(targetObject, apply: true);
@@ -22,7 +22,7 @@ public class EquipmentItem : ItemBase
 
         foreach (var modifier in statModifiers)
         {
-            if(apply)
+            if (apply)
             {
                 unitBase.roleStat.ApplyModifier(modifier);
             }
@@ -32,4 +32,11 @@ public class EquipmentItem : ItemBase
             }
         }
     }
+
+    public override void Use(GameObject targetObject)
+    {
+        return;
+    }
+
+    public override EquipmentItem GetEquipmentItem() { return this; }
 }
