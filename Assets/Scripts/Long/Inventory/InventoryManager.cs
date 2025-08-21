@@ -69,8 +69,6 @@ public class InventoryManager : MonoBehaviour
         }
 
         RefreshUI();
-        AddItemToInventory(itemToAdd,1);
-        RemoveItemFromInventory(itemToRemove);
     }
     private void Update()
     {
@@ -412,7 +410,10 @@ public class InventoryManager : MonoBehaviour
         if (selectedItem != null)
         {
             selectedItem.Use(targetObject);
-            items[selectedSlotIndex + slots.Length - hotbarSlots.Length].SubtractQuantity(1);
+            if(selectedItem is ConsumableItem)
+            {
+                items[selectedSlotIndex + slots.Length - hotbarSlots.Length].SubtractQuantity(1);
+            }
             RefreshUI();
         }
     }
