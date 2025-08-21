@@ -30,7 +30,7 @@ public class OnStayCollideSkill : MonoBehaviour
         {
             return;
         }
-        if (other.CompareTag("CanTakeDmg"))
+        if (other.CompareTag("CanTakeDmg") || other.CompareTag("Player"))
         {
             //Health health = other.GetComponent<Health>();
             //if (health != null)
@@ -64,7 +64,7 @@ public class OnStayCollideSkill : MonoBehaviour
         {
             return;
         }
-        if (other.CompareTag("CanTakeDmg"))
+        if (other.CompareTag("CanTakeDmg") || other.CompareTag("Player"))
         {
             Health health = other.GetComponent<Health>();
             if (health != null)
@@ -77,7 +77,7 @@ public class OnStayCollideSkill : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("CanTakeDmg"))
+        if (other.CompareTag("CanTakeDmg") || other.CompareTag("Player"))
         {
             lastDamageTimes.Remove(other.gameObject); 
         }

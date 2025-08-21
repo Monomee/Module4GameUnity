@@ -71,7 +71,6 @@ public class SkillManager : MonoBehaviour
                             activeCondition = Input.GetKeyDown(KeyCode.Q);
                         }
                     }
-
                     skills[i].OnActive(activeCondition);
                     break;
                 case SkillActiveCondition.TargetIsEnemyInRange:
@@ -98,12 +97,16 @@ public class SkillManager : MonoBehaviour
             }
         }
     }
-    public void AddSkill(SkillBase skillToAdd, SkillBase skillToRemove)
+    //public void AddSkill(SkillBase skillToAdd, SkillBase skillToRemove)
+    //{
+    //    if (skills.Contains(skillToRemove))
+    //    {
+    //        skills.Remove(skillToRemove);
+    //        skills.Add(skillToAdd);
+    //    }
+    //}
+    public void AddSkill(SkillBase skillToAdd, int skillToRemoveIndex)
     {
-        if (skills.Contains(skillToRemove))
-        {
-            skills.Remove(skillToRemove);
-            skills.Add(skillToAdd);
-        }
+        skills[skillToRemoveIndex] = skillToAdd;
     }
 }
