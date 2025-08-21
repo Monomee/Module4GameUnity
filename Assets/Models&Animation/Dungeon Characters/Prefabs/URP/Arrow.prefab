@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4259112346252870086}
   - component: {fileID: 5832347646297966723}
   - component: {fileID: 4725666510908537487}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arrow Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1828747124843240412}
   - component: {fileID: 3827314617792881222}
   - component: {fileID: 871613957196347634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

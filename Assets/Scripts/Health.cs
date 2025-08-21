@@ -34,6 +34,7 @@ public class Health : MonoBehaviour
         if (GetComponent<UnitBase>().isDead)
         {
             Debug.Log("Unit is dead");
+            GetComponent<UnitBase>().animator.SetBool("Alive", false);
             RemoveListener();
         }
     }

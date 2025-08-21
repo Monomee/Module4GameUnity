@@ -70,7 +70,7 @@ public class ArcherArrow : MonoBehaviour
     {
         if (hasHit) return;
         if (owner && c.transform.IsChildOf(owner)) return; // không dính chính mình
-
+        
         // Chỉ dính vào tag mong muốn (nếu có)
         if (!string.IsNullOrEmpty(stickOnlyOnTag) && !c.collider.CompareTag(stickOnlyOnTag))
         {
@@ -88,7 +88,7 @@ public class ArcherArrow : MonoBehaviour
         // Gây damage 1 lần
         var health = c.collider.GetComponentInParent<Health>();
         if (health) health.OnTakeDmg(damage);
-
+        Debug.Log("hoangpl " + c.collider.gameObject.GetInstanceID() + " my " + GetInstanceID() );
         // Lấy contact chính xác
         var contact = c.GetContact(0);
         StickTo(c.collider.transform, contact.point, contact.normal);

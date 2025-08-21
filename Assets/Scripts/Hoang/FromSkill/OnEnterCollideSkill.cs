@@ -36,7 +36,7 @@ public class OnEnterCollideSkill : MonoBehaviour
         {
             return;
         }
-        if (other.CompareTag("CanTakeDmg"))
+        if (other.CompareTag("CanTakeDmg") || other.CompareTag("Player"))
         {
             Health health = other.GetComponent<Health>();
             if (health != null)
@@ -48,22 +48,4 @@ public class OnEnterCollideSkill : MonoBehaviour
             }
         }        
     }
-    //private void OnParticleCollision(GameObject other)
-    //{
-    //    Debug.Log("Collide");
-    //    if (other.CompareTag(fromOwner.tag))
-    //    {
-    //        return;
-    //    }
-    //    if (other.CompareTag("CanTakeDmg"))
-    //    {
-    //        Health health = other.GetComponent<Health>();
-    //        if (health != null)
-    //        {
-    //            health.OnTakeDmg(damage);
-    //            Debug.Log(other.name + " took " + damage + " damage from the entercollideskill. Current HP: " + health.health);
-    //            fromOwner.GetComponent<EffectManager>().ActiveEffect(fromSkill.skillConfig.codeName, other.GetComponent<UnitBase>());
-    //        }
-    //    }
-    //}
 }
