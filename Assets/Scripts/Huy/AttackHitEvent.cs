@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class AttackHitEvent : MonoBehaviour
 {
-    public bool isMelee;
+    public bool isKnight;
+    public bool isSpider;
     public bool isMage;
     public bool isArcher;
 
@@ -13,6 +14,7 @@ public class AttackHitEvent : MonoBehaviour
     private MageEnemy mage;
     private KnightEnemy knight;
     private ArcherEnemy archer;
+    private SpiderEnemy spider;
 
     private void Awake()
     {
@@ -20,6 +22,7 @@ public class AttackHitEvent : MonoBehaviour
         mage = GetComponent<MageEnemy>();
         knight = GetComponent<KnightEnemy>();
         archer = GetComponent<ArcherEnemy>();
+        spider = GetComponent<SpiderEnemy>();
     }
 
     public void DoAttack()
@@ -27,9 +30,14 @@ public class AttackHitEvent : MonoBehaviour
         // FSM is NOT allowed to attack
         if (!enemy.isReadyToAttack) return;
 
-        if (isMelee)
+        if (isKnight)
         {
-            MeleeAttack();
+            KnightAttack();
+        }
+
+        if (isSpider)
+        {
+            SpiderAttack();
         }
 
         if (isMage)
@@ -43,7 +51,7 @@ public class AttackHitEvent : MonoBehaviour
         }
     }
 
-    private void MeleeAttack()
+    private void KnightAttack()
     {
         if (enemy.player == null) return;
 
@@ -55,6 +63,20 @@ public class AttackHitEvent : MonoBehaviour
             enemy.player.GetComponent<Health>()?.OnTakeDmg(knight.knightDamage);
         }
     }
+
+    private void SpiderAttack()
+    {
+        if (enemy.player == null) return;
+
+        float dist = Vector3.Distance(enemy.transform.position, enemy.player.position);
+        if (dist <= enemy.attackRange)
+        {
+            Debug.Log($"{enemy.name} hitted Player, took {spider.spiderDamage} damage");
+
+            enemy.player.GetComponent<Health>()?.OnTakeDmg(spider.spiderDamage);
+        }
+    }
+
 
     private void MageShootAttack()
     {

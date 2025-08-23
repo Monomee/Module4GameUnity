@@ -11056,7 +11056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6064414885988962449
 Transform:
   m_ObjectHideFlags: 0
@@ -11166,11 +11166,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   isDead: 0
-  teamID: 0
-  hp: 0
   moveSpeed: 4
   attackRange: 20
-  turnSpeed: 5
+  turnSpeed: 20
   detectionRadius: 10
   hasDetectedPlayer: 0
   isReadyToAttack: 0
@@ -11178,7 +11176,7 @@ MonoBehaviour:
   agent: {fileID: 8740020680818212276}
   shootPoint: {fileID: 6926131503228227784}
   mageFireballPool: {fileID: 0}
-  fireballSpeed: 10
+  fireballSpeed: 20
   fireRate: 1
 --- !u!114 &1501407028563365775
 MonoBehaviour:
@@ -11192,7 +11190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c60188690296948bd094e3e12be17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMelee: 0
+  isKnight: 0
+  isSpider: 0
+  isMage: 1
+  isArcher: 0
 --- !u!1 &7373404905691380056
 GameObject:
   m_ObjectHideFlags: 0

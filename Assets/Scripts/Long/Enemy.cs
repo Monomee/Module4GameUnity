@@ -8,7 +8,7 @@ public class Enemy : UnitBase
     public float moveSpeed;
     public float attackRange = 2f;
     public float turnSpeed;
-    public float detectionRadius = 10f;
+    public float detectionRadius = 5f;
     
 
     public bool hasDetectedPlayer = false;
@@ -34,7 +34,6 @@ public class Enemy : UnitBase
         enemyStateMachine = new EnemyStateMachine();
         enemyStateMachine.ChangeState(GetInitialState());
 
-        Debug.Log("EnemyStats initialized with HP: " + hp + " and Move Speed: " + moveSpeed);
     }
 
     // Update is called once per frame

@@ -2130,13 +2130,14 @@ GameObject:
   - component: {fileID: 8218385578586400270}
   - component: {fileID: 7188759237453644034}
   - component: {fileID: 5384516334480383964}
+  - component: {fileID: 1841831742644394161}
   m_Layer: 0
   m_Name: Evil Knight
   m_TagString: CanTakeDmg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &488952404053778995
 Transform:
   m_ObjectHideFlags: 0
@@ -2248,8 +2249,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   isDead: 0
-  teamID: 0
-  hp: 0
   moveSpeed: 0
   attackRange: 2
   turnSpeed: 0
@@ -2260,6 +2259,22 @@ MonoBehaviour:
   agent: {fileID: 7188759237453644034}
   readyToAttack: 0
   knightDamage: 10
+--- !u!114 &1841831742644394161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014392636077758758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c60188690296948bd094e3e12be17b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isKnight: 0
+  isSpider: 0
+  isMage: 0
+  isArcher: 0
 --- !u!1 &8368332275176690420
 GameObject:
   m_ObjectHideFlags: 0

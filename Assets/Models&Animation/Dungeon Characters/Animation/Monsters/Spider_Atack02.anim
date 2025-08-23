@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Spider_Atack02
-  serializedVersion: 6
+  serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -6005,6 +6005,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3032232084
       attribute: 1
@@ -6012,6 +6014,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3032232084
       attribute: 2
@@ -6019,6 +6023,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3142295830
       attribute: 2
@@ -6026,6 +6032,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1999879942
       attribute: 2
@@ -6033,6 +6041,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3701414245
       attribute: 2
@@ -6040,6 +6050,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2601988437
       attribute: 2
@@ -6047,6 +6059,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 698448058
       attribute: 2
@@ -6054,6 +6068,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2482445469
       attribute: 2
@@ -6061,6 +6077,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3847588428
       attribute: 2
@@ -6068,6 +6086,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3894124073
       attribute: 2
@@ -6075,6 +6095,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 536863242
       attribute: 2
@@ -6082,6 +6104,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2042306180
       attribute: 2
@@ -6089,6 +6113,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 509427303
       attribute: 2
@@ -6096,6 +6122,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 220665709
       attribute: 2
@@ -6103,6 +6131,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 433126526
       attribute: 2
@@ -6110,6 +6140,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2954843470
       attribute: 2
@@ -6117,6 +6149,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2369552997
       attribute: 2
@@ -6124,6 +6158,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2344177130
       attribute: 2
@@ -6131,6 +6167,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 4015787305
       attribute: 2
@@ -6138,6 +6176,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 462110457
       attribute: 2
@@ -6145,6 +6185,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3302049810
       attribute: 2
@@ -6152,6 +6194,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2434709040
       attribute: 2
@@ -6159,6 +6203,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3660699754
       attribute: 2
@@ -6166,6 +6212,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1222227589
       attribute: 2
@@ -6173,6 +6221,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 233841400
       attribute: 2
@@ -6180,6 +6230,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 746027044
       attribute: 2
@@ -6187,6 +6239,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1510032354
       attribute: 2
@@ -6194,6 +6248,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1838923778
       attribute: 2
@@ -6201,6 +6257,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2184516365
       attribute: 2
@@ -6208,6 +6266,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1836806066
       attribute: 1
@@ -6215,6 +6275,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3142295830
       attribute: 1
@@ -6222,6 +6284,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1999879942
       attribute: 1
@@ -6229,6 +6293,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3316695129
       attribute: 1
@@ -6236,6 +6302,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3701414245
       attribute: 1
@@ -6243,6 +6311,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2601988437
       attribute: 1
@@ -6250,6 +6320,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 698448058
       attribute: 1
@@ -6257,6 +6329,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 780630874
       attribute: 1
@@ -6264,6 +6338,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2482445469
       attribute: 1
@@ -6271,6 +6347,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3847588428
       attribute: 1
@@ -6278,6 +6356,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3894124073
       attribute: 1
@@ -6285,6 +6365,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3242528868
       attribute: 1
@@ -6292,6 +6374,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 536863242
       attribute: 1
@@ -6299,6 +6383,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2042306180
       attribute: 1
@@ -6306,6 +6392,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 509427303
       attribute: 1
@@ -6313,6 +6401,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 597232413
       attribute: 1
@@ -6320,6 +6410,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 220665709
       attribute: 1
@@ -6327,6 +6419,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 433126526
       attribute: 1
@@ -6334,6 +6428,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2954843470
       attribute: 1
@@ -6341,6 +6437,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2369552997
       attribute: 1
@@ -6348,6 +6446,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1069546810
       attribute: 1
@@ -6355,6 +6455,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2344177130
       attribute: 1
@@ -6362,6 +6464,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 4015787305
       attribute: 1
@@ -6369,6 +6473,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 462110457
       attribute: 1
@@ -6376,6 +6482,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3565700665
       attribute: 1
@@ -6383,6 +6491,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3302049810
       attribute: 1
@@ -6390,6 +6500,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2434709040
       attribute: 1
@@ -6397,6 +6509,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3660699754
       attribute: 1
@@ -6404,6 +6518,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 994716935
       attribute: 1
@@ -6411,6 +6527,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1222227589
       attribute: 1
@@ -6418,6 +6536,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 233841400
       attribute: 1
@@ -6425,6 +6545,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 746027044
       attribute: 1
@@ -6432,6 +6554,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3650500222
       attribute: 1
@@ -6439,6 +6563,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1510032354
       attribute: 1
@@ -6446,6 +6572,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1838923778
       attribute: 1
@@ -6453,6 +6581,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2184516365
       attribute: 1
@@ -6460,6 +6590,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1836806066
       attribute: 2
@@ -6467,6 +6599,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2534502695
       attribute: 2
@@ -6474,6 +6608,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3316695129
       attribute: 2
@@ -6481,6 +6617,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 780630874
       attribute: 2
@@ -6488,6 +6626,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3242528868
       attribute: 2
@@ -6495,6 +6635,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 597232413
       attribute: 2
@@ -6502,6 +6644,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1069546810
       attribute: 2
@@ -6509,6 +6653,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3565700665
       attribute: 2
@@ -6516,6 +6662,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 994716935
       attribute: 2
@@ -6523,6 +6671,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3650500222
       attribute: 2
@@ -6530,6 +6680,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1836806066
       attribute: 3
@@ -6537,6 +6689,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2534502695
       attribute: 3
@@ -6544,6 +6698,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3032232084
       attribute: 3
@@ -6551,6 +6707,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3142295830
       attribute: 3
@@ -6558,6 +6716,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1999879942
       attribute: 3
@@ -6565,6 +6725,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3316695129
       attribute: 3
@@ -6572,6 +6734,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3701414245
       attribute: 3
@@ -6579,6 +6743,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2601988437
       attribute: 3
@@ -6586,6 +6752,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 698448058
       attribute: 3
@@ -6593,6 +6761,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 780630874
       attribute: 3
@@ -6600,6 +6770,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2482445469
       attribute: 3
@@ -6607,6 +6779,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3847588428
       attribute: 3
@@ -6614,6 +6788,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3894124073
       attribute: 3
@@ -6621,6 +6797,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3242528868
       attribute: 3
@@ -6628,6 +6806,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 536863242
       attribute: 3
@@ -6635,6 +6815,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2042306180
       attribute: 3
@@ -6642,6 +6824,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 509427303
       attribute: 3
@@ -6649,6 +6833,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 597232413
       attribute: 3
@@ -6656,6 +6842,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 220665709
       attribute: 3
@@ -6663,6 +6851,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 433126526
       attribute: 3
@@ -6670,6 +6860,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2954843470
       attribute: 3
@@ -6677,6 +6869,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2369552997
       attribute: 3
@@ -6684,6 +6878,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1069546810
       attribute: 3
@@ -6691,6 +6887,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2344177130
       attribute: 3
@@ -6698,6 +6896,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 4015787305
       attribute: 3
@@ -6705,6 +6905,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 462110457
       attribute: 3
@@ -6712,6 +6914,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3565700665
       attribute: 3
@@ -6719,6 +6923,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3302049810
       attribute: 3
@@ -6726,6 +6932,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2434709040
       attribute: 3
@@ -6733,6 +6941,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3660699754
       attribute: 3
@@ -6740,6 +6950,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 994716935
       attribute: 3
@@ -6747,6 +6959,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1222227589
       attribute: 3
@@ -6754,6 +6968,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 233841400
       attribute: 3
@@ -6761,6 +6977,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 746027044
       attribute: 3
@@ -6768,6 +6986,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 3650500222
       attribute: 3
@@ -6775,6 +6995,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1510032354
       attribute: 3
@@ -6782,6 +7004,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1838923778
       attribute: 3
@@ -6789,6 +7013,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 2184516365
       attribute: 3
@@ -6796,6 +7022,8 @@ AnimationClip:
       typeID: 4
       customType: 0
       isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
@@ -6818,7 +7046,8 @@ AnimationClip:
     m_HeightFromFeet: 0
     m_Mirror: 0
   m_EditorCurves:
-  - curve:
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -6846,7 +7075,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -6874,7 +7105,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -6902,7 +7135,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -6930,7 +7165,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -6958,7 +7195,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -6986,7 +7225,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7014,7 +7255,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7042,7 +7285,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7169,7 +7414,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7296,7 +7543,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7423,7 +7672,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7550,7 +7801,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7686,7 +7939,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7822,7 +8077,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -7958,7 +8215,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8094,7 +8353,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8185,7 +8446,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8276,7 +8539,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8367,7 +8632,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8458,7 +8725,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8486,7 +8755,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8514,7 +8785,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8542,7 +8815,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8570,7 +8845,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8724,7 +9001,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -8878,7 +9157,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9032,7 +9313,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9186,7 +9469,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9295,7 +9580,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9404,7 +9691,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9513,7 +9802,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9622,7 +9913,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9740,7 +10033,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9858,7 +10153,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -9976,7 +10273,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10094,7 +10393,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10122,7 +10423,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10150,7 +10453,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10178,7 +10483,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10206,7 +10513,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10351,7 +10660,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10496,7 +10807,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10641,7 +10954,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10786,7 +11101,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -10904,7 +11221,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11022,7 +11341,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11140,7 +11461,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11258,7 +11581,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11376,7 +11701,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11494,7 +11821,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11612,7 +11941,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11730,7 +12061,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11758,7 +12091,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11786,7 +12121,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11814,7 +12151,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11842,7 +12181,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -11996,7 +12337,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -12150,7 +12493,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -12304,7 +12649,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -12458,7 +12805,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -12567,7 +12916,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -12676,7 +13027,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -12785,7 +13138,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -12894,7 +13249,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13021,7 +13378,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13148,7 +13507,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13275,7 +13636,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13402,7 +13765,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13430,7 +13795,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13458,7 +13825,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13486,7 +13855,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13514,7 +13885,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13668,7 +14041,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13822,7 +14197,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -13976,7 +14353,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14130,7 +14509,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14239,7 +14620,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14348,7 +14731,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14457,7 +14842,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14566,7 +14953,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14693,7 +15082,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14820,7 +15211,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -14947,7 +15340,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15074,7 +15469,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15165,7 +15562,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15256,7 +15655,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15347,7 +15748,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15438,7 +15841,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15466,7 +15871,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15494,7 +15901,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15522,7 +15931,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15550,7 +15961,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15731,7 +16144,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -15912,7 +16327,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -16093,7 +16510,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -16274,7 +16693,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -16419,7 +16840,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -16564,7 +16987,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -16709,7 +17134,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -16854,7 +17281,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -16999,7 +17428,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17144,7 +17575,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17289,7 +17722,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17434,7 +17869,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17462,7 +17899,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17490,7 +17929,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17518,7 +17959,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17546,7 +17989,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17709,7 +18154,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -17872,7 +18319,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18035,7 +18484,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18198,7 +18649,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18307,7 +18760,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18416,7 +18871,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18525,7 +18982,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18634,7 +19093,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18752,7 +19213,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18870,7 +19333,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -18988,7 +19453,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19106,7 +19573,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19134,7 +19603,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19162,7 +19633,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19190,7 +19663,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19218,7 +19693,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19372,7 +19849,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19526,7 +20005,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19680,7 +20161,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19834,7 +20317,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -19934,7 +20419,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20034,7 +20521,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20134,7 +20623,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20234,7 +20725,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20343,7 +20836,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20452,7 +20947,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20561,7 +21058,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20670,7 +21169,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20698,7 +21199,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20726,7 +21229,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20754,7 +21259,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20782,7 +21289,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -20945,7 +21454,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21108,7 +21619,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21271,7 +21784,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21434,7 +21949,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21543,7 +22060,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21652,7 +22171,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21761,7 +22282,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21870,7 +22393,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -21979,7 +22504,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22088,7 +22615,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22197,7 +22726,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22306,7 +22837,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22334,7 +22867,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22362,7 +22897,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22390,7 +22927,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22544,7 +23083,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22698,7 +23239,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -22852,7 +23395,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23060,7 +23605,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23268,7 +23815,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23476,7 +24025,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23504,7 +24055,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23532,7 +24085,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23560,7 +24115,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23588,7 +24145,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23616,7 +24175,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23644,7 +24205,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23672,7 +24235,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23700,7 +24265,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23728,7 +24295,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23756,7 +24325,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23784,7 +24355,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23812,7 +24385,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23840,7 +24415,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23868,7 +24445,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23896,7 +24475,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23924,7 +24505,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23952,7 +24535,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -23980,7 +24565,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24008,7 +24595,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24036,7 +24625,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24064,7 +24655,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24092,7 +24685,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24120,7 +24715,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24148,7 +24745,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24176,7 +24775,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24204,7 +24805,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24232,7 +24835,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24260,7 +24865,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24288,7 +24895,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24316,7 +24925,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24344,7 +24955,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24372,7 +24985,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24400,7 +25015,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24428,7 +25045,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24456,7 +25075,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24484,7 +25105,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24512,7 +25135,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24540,7 +25165,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24568,7 +25195,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24596,7 +25225,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24624,7 +25255,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24652,7 +25285,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24680,7 +25315,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24708,7 +25345,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24736,7 +25375,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24764,7 +25405,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24792,7 +25435,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24820,7 +25465,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24848,7 +25495,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24876,7 +25525,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24904,7 +25555,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24932,7 +25585,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24960,7 +25615,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -24988,7 +25645,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25016,7 +25675,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25044,7 +25705,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25072,7 +25735,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25100,7 +25765,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25128,7 +25795,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25156,7 +25825,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25184,7 +25855,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25212,7 +25885,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25240,7 +25915,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25268,7 +25945,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25296,7 +25975,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25324,7 +26005,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25352,7 +26035,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25380,7 +26065,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25408,7 +26095,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25436,7 +26125,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25464,7 +26155,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25492,7 +26185,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25520,7 +26215,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25548,7 +26245,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25576,7 +26275,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25604,7 +26305,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25632,7 +26335,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25660,7 +26365,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25688,7 +26395,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25716,7 +26425,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25744,7 +26455,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25772,7 +26485,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25800,7 +26515,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25828,7 +26545,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25856,7 +26575,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25884,7 +26605,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25912,7 +26635,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25940,7 +26665,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25968,7 +26695,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -25996,7 +26725,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26024,7 +26755,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26052,7 +26785,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26080,7 +26815,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26108,7 +26845,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26136,7 +26875,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26164,7 +26905,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26192,7 +26935,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26220,7 +26965,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26248,7 +26995,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26276,7 +27025,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26304,7 +27055,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26332,7 +27085,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26360,7 +27115,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26388,7 +27145,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26416,7 +27175,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26444,7 +27205,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26472,7 +27235,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26500,7 +27265,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26528,7 +27295,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26556,7 +27325,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26584,7 +27355,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26612,7 +27385,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26640,7 +27415,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26668,7 +27445,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26696,7 +27475,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26724,7 +27505,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26752,7 +27535,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26780,7 +27565,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26808,7 +27595,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26836,7 +27625,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26864,7 +27655,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26892,7 +27685,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26920,7 +27715,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26948,7 +27745,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -26976,7 +27775,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27004,7 +27805,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27032,7 +27835,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27060,7 +27865,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27088,7 +27895,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27116,7 +27925,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27144,7 +27955,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27172,7 +27985,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27200,7 +28015,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27228,7 +28045,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27256,7 +28075,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27284,7 +28105,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27312,7 +28135,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27340,7 +28165,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27368,7 +28195,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27396,7 +28225,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27424,7 +28255,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27452,7 +28285,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27480,7 +28315,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27508,7 +28345,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27536,7 +28375,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27564,7 +28405,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27592,7 +28435,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27620,7 +28465,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27648,7 +28495,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27676,7 +28525,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27704,7 +28555,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27732,7 +28585,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27760,7 +28615,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27788,7 +28645,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27816,7 +28675,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27844,7 +28705,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27872,7 +28735,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27900,7 +28765,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27928,7 +28795,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27956,7 +28825,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -27984,7 +28855,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28012,7 +28885,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28040,7 +28915,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28068,7 +28945,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28096,7 +28975,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28124,7 +29005,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28152,7 +29035,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28180,7 +29065,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28208,7 +29095,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28236,7 +29125,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28264,7 +29155,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28292,7 +29185,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28320,7 +29215,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28348,7 +29245,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28376,7 +29275,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28404,7 +29305,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28432,7 +29335,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28460,7 +29365,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28488,7 +29395,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28516,7 +29425,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28544,7 +29455,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28572,7 +29485,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28600,7 +29515,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28628,7 +29545,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28656,7 +29575,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28684,7 +29605,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28712,7 +29635,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28740,7 +29665,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28768,7 +29695,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28796,7 +29725,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28824,7 +29755,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28852,7 +29785,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28880,7 +29815,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28908,7 +29845,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28936,7 +29875,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28964,7 +29905,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -28992,7 +29935,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29020,7 +29965,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29048,7 +29995,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29076,7 +30025,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29104,7 +30055,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29132,7 +30085,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29160,7 +30115,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29188,7 +30145,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29216,7 +30175,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29244,7 +30205,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29272,7 +30235,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29300,7 +30265,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29328,7 +30295,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29356,7 +30325,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29384,7 +30355,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29412,7 +30385,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29440,7 +30415,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29468,7 +30445,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29496,7 +30475,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29524,7 +30505,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29552,7 +30535,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29580,7 +30565,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29608,8 +30595,10 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
+    flags: 16
   m_EulerEditorCurves:
-  - curve:
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29637,7 +30626,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29665,7 +30656,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29693,7 +30686,9 @@ AnimationClip:
     path: Spider
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29721,7 +30716,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29749,7 +30746,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29777,7 +30776,9 @@ AnimationClip:
     path: Spider/bodyControll
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -29904,7 +30905,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30031,7 +31034,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30158,7 +31163,9 @@ AnimationClip:
     path: Spider/bodyControll/chest
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30294,7 +31301,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30430,7 +31439,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30566,7 +31577,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/belly
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30657,7 +31670,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30748,7 +31763,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30839,7 +31856,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30867,7 +31886,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30895,7 +31916,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -30923,7 +31946,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31077,7 +32102,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31231,7 +32258,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31385,7 +32414,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31494,7 +32525,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31603,7 +32636,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31712,7 +32747,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31830,7 +32867,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -31948,7 +32987,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32066,7 +33107,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_L/Leg1_thigh_L/Leg1_shin_L/Leg1_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32094,7 +33137,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32122,7 +33167,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32150,7 +33197,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32295,7 +33344,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32440,7 +33491,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32585,7 +33638,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32703,7 +33758,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32821,7 +33878,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -32939,7 +33998,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33057,7 +34118,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33175,7 +34238,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33293,7 +34358,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_L/Leg2_thigh_L/Leg2_shin_L/Leg2_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33321,7 +34388,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33349,7 +34418,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33377,7 +34448,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33531,7 +34604,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33685,7 +34760,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33839,7 +34916,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -33948,7 +35027,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34057,7 +35138,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34166,7 +35249,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34293,7 +35378,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34420,7 +35507,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34547,7 +35636,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_L/Leg3_thigh_L/Leg3_shin_L/Leg3_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34575,7 +35666,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34603,7 +35696,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34631,7 +35726,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34785,7 +35882,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -34939,7 +36038,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35093,7 +36194,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35202,7 +36305,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35311,7 +36416,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35420,7 +36527,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35547,7 +36656,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35674,7 +36785,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35801,7 +36914,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_L/Leg4_thigh_L/Leg4_shin_L/Leg4_foot_L
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35892,7 +37007,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -35983,7 +37100,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36074,7 +37193,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Jaw_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36102,7 +37223,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36130,7 +37253,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36158,7 +37283,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36339,7 +37466,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36520,7 +37649,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36701,7 +37832,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36846,7 +37979,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -36991,7 +38126,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37136,7 +38273,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37281,7 +38420,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37426,7 +38567,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37571,7 +38714,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg1_pelvis_R/Leg1_thigh_R/Leg1_shin_R/Leg1_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37599,7 +38744,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37627,7 +38774,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37655,7 +38804,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37818,7 +38969,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -37981,7 +39134,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38144,7 +39299,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38253,7 +39410,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38362,7 +39521,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38471,7 +39632,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38589,7 +39752,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38707,7 +39872,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38825,7 +39992,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg2_pelvis_R/Leg2_thigh_R/Leg2_shin_R/Leg2_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38853,7 +40022,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38881,7 +40052,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -38909,7 +40082,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39063,7 +40238,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39217,7 +40394,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39371,7 +40550,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39471,7 +40652,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39571,7 +40754,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39671,7 +40856,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39780,7 +40967,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39889,7 +41078,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -39998,7 +41189,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg3_pelvis_R/Leg3_thigh_R/Leg3_shin_R/Leg3_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40026,7 +41219,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40054,7 +41249,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40082,7 +41279,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40245,7 +41444,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40408,7 +41609,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40571,7 +41774,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40680,7 +41885,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40789,7 +41996,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -40898,7 +42107,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -41007,7 +42218,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -41116,7 +42329,9 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
-  - curve:
+    flags: 16
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -41225,6 +42440,14 @@ AnimationClip:
     path: Spider/bodyControll/chest/Leg4_pelvis_R/Leg4_thigh_R/Leg4_shin_R/Leg4_foot_R
     classID: 4
     script: {fileID: 0}
+    flags: 16
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.7083333
+    functionName: DoAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

@@ -61,23 +61,23 @@ public class ArcherArrow : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Cho đẹp: đang bay thì quay theo quỹ đạo
+        // Only Cho đẹp: đang bay thì quay theo quỹ đạo
         if (!hasHit && rb && rb.velocity.sqrMagnitude > 0.01f)
             transform.rotation = Quaternion.LookRotation(rb.velocity);
     }
 
-    void OnCollisionEnter(Collision c)
+    void OnCollisionEnter(Collision collision)
     {
         if (hasHit) return;
-        if (owner && c.transform.IsChildOf(owner)) return; // không dính chính mình
+        if (owner && collision.transform.IsChildOf(owner)) return; // không dính chính mình
 
         // Chỉ dính vào tag mong muốn 
-        if (!string.IsNullOrEmpty(stickOnlyOnTag) && !c.collider.CompareTag(stickOnlyOnTag))
+        if (!string.IsNullOrEmpty(stickOnlyOnTag) && !collision.collider.CompareTag(stickOnlyOnTag))
         {
-            // vẫn có thể gây damage rồi tự hủy nếu muốn:
-            var h = c.collider.GetComponentInParent<Health>();
-            if (h) h.OnTakeDmg(damage);
-            // Không dính → tự hủy sớm:
+            // vẫn có thể gây damage rồi tự hủy nếu muốn
+            var hp = collision.collider.GetComponentInParent<Health>();
+            if (hp) hp.OnTakeDmg(damage);
+            // Không dính → tự hủy sớm
             StartCoroutine(DespawnAfter(0.05f));
             return;
         }
@@ -85,12 +85,12 @@ public class ArcherArrow : MonoBehaviour
         hasHit = true;
 
         // Gây damage 1 lần
-        var health = c.collider.GetComponentInParent<Health>();
+        var health = collision.collider.GetComponentInParent<Health>();
         if (health) health.OnTakeDmg(damage);
 
         // Lấy contact chính xác
-        var contact = c.GetContact(0);
-        StickTo(c.collider.transform, contact.point, contact.normal);
+        var contact = collision.GetContact(0);
+        StickTo(collision.collider.transform, contact.point, contact.normal);
     }
 
     void StickTo(Transform target, Vector3 point, Vector3 normal)

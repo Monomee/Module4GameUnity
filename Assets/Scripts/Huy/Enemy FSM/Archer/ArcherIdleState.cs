@@ -5,7 +5,7 @@ using UnityEngine;
 public class ArcherIdleState : IEnemyState
 {
     private ArcherEnemy archer;
-    private const string ARCHER_IDLE_TRIGGER = "Idle";
+    private const string ARCHER_IDLE_BOOL_ANIMATION = "isIdle";
 
 
     public ArcherIdleState(Enemy enemyController)
@@ -15,7 +15,7 @@ public class ArcherIdleState : IEnemyState
     // Start is called before the first frame update
     public void Enter()
     {
-        archer.animator.SetTrigger(ARCHER_IDLE_TRIGGER);
+        archer.animator.SetBool(ARCHER_IDLE_BOOL_ANIMATION, true);
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class ArcherIdleState : IEnemyState
     }
 
     public void Exit()
-    { 
-         // Dont have
+    {
+        archer.animator.SetBool(ARCHER_IDLE_BOOL_ANIMATION, false);
     }
 }
