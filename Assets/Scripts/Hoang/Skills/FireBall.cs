@@ -8,7 +8,7 @@ public class FireBall : SkillBase
 {
     GameObject fireball;
     private float lastCastTime = -Mathf.Infinity;
-    private float cooldown => skillConfig.parameters[3];
+    private float cooldown => skillConfig.parameters[0];
     private GameObject skillPrefab => Resources.Load<GameObject>(skillConfig.asset);
 
     public FireBall(UnitBase owner, SkillConfig skillConfig, List<EffectBase> effects)
@@ -55,9 +55,9 @@ public class FireBall : SkillBase
             OnEnterCollideSkill script = fireball.GetComponent<OnEnterCollideSkill>();
             if (script != null)
             {
-                float damage = skillConfig.parameters[0];
-                float duration = skillConfig.parameters[1];
-                float speed = skillConfig.parameters[2];
+                float damage = skillConfig.parameters[1];
+                float duration = skillConfig.parameters[2];
+                float speed = skillConfig.parameters[3];
                 script.Initialize(owner, this, direction, owner.transform, damage, duration, speed);
             }
 
@@ -78,6 +78,6 @@ public class FireBallConfig : SkillConfig
         castType = SkillCastType.Active;
         effects = new List<EffectConfig>();
         asset = "Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_03"; 
-        parameters = new float[] { 50f, 5f, 5f, 20f }; // damage, duration, speed, cooldown
+        parameters = new float[] { 20f, 50f, 5f, 5f }; // cooldown, damage, duration, speed
     }
 }

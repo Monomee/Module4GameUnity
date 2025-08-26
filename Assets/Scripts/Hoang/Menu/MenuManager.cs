@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -7,17 +8,20 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject[] buttons;
     [SerializeField] private GameObject setting;
     [SerializeField] private GameObject info;
-    public void OnStartGame()
+    public void OnNewGame()
     {
-
+        SceneManager.LoadScene("Map1");
     }
     public void OnContinueGame()
     {
+        GameSaver.Instance.LoadGame();
     }
     public void OnExitGame()
     {
         Application.Quit();
     }
+
+    // move objects in menu
     IEnumerator MoveObject(GameObject[] objs, float horizontal, float vertical, float duration)
     {
         float time = 0;

@@ -7,7 +7,7 @@ public class NormalAttackFireball : MonoBehaviour
     private Vector3 direction;
     private float damage;
     private float speed;
-    float duration = 5f; 
+    float duration = 3f; 
     public void Initialize(Vector3 direction, Transform startPosition, float damage, float speed)
     {
         this.direction = direction.normalized;
@@ -30,7 +30,7 @@ public class NormalAttackFireball : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
     void OnTriggerEnter(Collider other)
-    {
+    {     
         if (other.CompareTag("CanTakeDmg"))
         {
             Health health = other.GetComponent<Health>();
@@ -41,6 +41,5 @@ public class NormalAttackFireball : MonoBehaviour
             }
             Deactivate();
         }
-
     }
 }

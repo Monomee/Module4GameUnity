@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkillManager : MonoBehaviour
 {
-    protected List<SkillBase> skills;
+    public List<SkillBase> skills;
 
     private Animator animator;
     int maxSkillCount = 2;
@@ -23,13 +23,13 @@ public class SkillManager : MonoBehaviour
             skills = new List<SkillBase>();
         }
         //  Activator.CreateInstance(typeof(FireBall), new object[] { });   tu codename skill=> new object skill
+        skills.Add(new ThunderStorm(gameObject.GetComponent<UnitBase>(), new ThunderStormConfig(), new List<EffectBase>()));
         skills.Add(new FireBall(gameObject.GetComponent<UnitBase>(), new FireBallConfig(), new List<EffectBase>()));
         //skills.Add(new Inferno(gameObject.GetComponent<UnitBase>(), new InfernoConfig(), new List<EffectBase>()));
         //skills.Add(new Revive(gameObject.GetComponent<UnitBase>(), new ReviveConfig(), new List<EffectBase>()));
         //skills.Add(new ScorchingAura(gameObject.GetComponent<UnitBase>(), new ScorchingAuraConfig(), new List<EffectBase>()));
         //skills.Add(new GlacialSpike(gameObject.GetComponent<UnitBase>(), new GlacialSpikeConfig(), new List<EffectBase>()));
-        skills.Add(new FrostNova(gameObject.GetComponent<UnitBase>(), new FrostNovaConfig(), new List<EffectBase>()));
-        //skills.Add(new ThunderStorm(gameObject.GetComponent<UnitBase>(), new ThunderStormConfig(), new List<EffectBase>()));
+        //skills.Add(new FrostNova(gameObject.GetComponent<UnitBase>(), new FrostNovaConfig(), new List<EffectBase>()));       
         //skills.Add(new TeslaTrap(gameObject.GetComponent<UnitBase>(), new TeslaTrapConfig(), new List<EffectBase>()));
 
         UnitBase character = gameObject.GetComponent<UnitBase>();
@@ -72,6 +72,7 @@ public class SkillManager : MonoBehaviour
                         }
                     }
                     skills[i].OnActive(activeCondition);
+                    if (activeCondition) UIManager.Instance.OnUsed(i, skills[i].skillConfig.parameters[0]);
                     break;
                 case SkillActiveCondition.TargetIsEnemyInRange:
 
