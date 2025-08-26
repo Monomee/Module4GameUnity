@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class EnemyObjectPooling : MonoBehaviour
 {
-    public static EnemyObjectPooling SharedInstance;
     public List<GameObject> pooledObjectsEnemy;
     public GameObject objectToPoolEnemy;
     public int amountToPoolEnemy;
-
-    void Awake()
-    {
-        SharedInstance = this;
-    }
 
     void Start()
     {

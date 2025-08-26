@@ -3071,8 +3071,6 @@ GameObject:
   - component: {fileID: 5469722763214812302}
   - component: {fileID: 1841831742644394161}
   - component: {fileID: 7347658514947426448}
-  - component: {fileID: 7777524855734838609}
-  - component: {fileID: 3463494541592610338}
   - component: {fileID: 4569862433502235382}
   m_Layer: 0
   m_Name: Evil Knight
@@ -3233,34 +3231,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7777524855734838609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8014392636077758758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7edd658a413105644ad2cb0395c333d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3463494541592610338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8014392636077758758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1c60188690296948bd094e3e12be17b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isKnight: 1
-  isSpider: 0
-  isMage: 0
-  isArcher: 0
 --- !u!114 &4569862433502235382
 MonoBehaviour:
   m_ObjectHideFlags: 0

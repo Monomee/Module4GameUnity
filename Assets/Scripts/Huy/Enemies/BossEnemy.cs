@@ -8,7 +8,7 @@ public class BossEnemy : Enemy
 {
 
     [Header("Summon Adds")]
-    public TestPool spawnEnemies;
+    public EnemyPool spawnEnemies;
     public int addsCount = 3;             // số lính gọi ra mỗi lần
     public float summonCD = 10f;          // hồi chiêu
     public float summonRadius = 4f;       // bán kính spawn quanh tâm
@@ -16,7 +16,7 @@ public class BossEnemy : Enemy
     public float telegraphSummonTime = 0.8f;
 
     [Header("Sword Rain")]
-    public TestPool swordPool;              // kiếm có Rigidbody
+    public EnemyPool swordPool;              // kiếm có Rigidbody
     public float swordRainCD = 3f;
     public float rainRadius = 3.5f;             // bán kính vòng mưa kiếm
     public int swordsCount = 12;                 // số kiếm rơi
