@@ -25,6 +25,7 @@ public class MageFireball : MonoBehaviour
             Debug.Log($"Damage applied to {other.name}: {damage}");
         }
 
+
         // If you want the fire ball to disappear when it touched walls or ground 
         // if (other.gameObject.layer == LayerMask.NameToLayer("Ground")) Deactivate();
     }

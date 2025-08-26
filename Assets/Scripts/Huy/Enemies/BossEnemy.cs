@@ -209,6 +209,13 @@ public class BossEnemy : Enemy
 
     }
 
+    protected override void HandleDied()
+    {
+        if (_hasDied) return;
+        _hasDied = true;
+        enemyStateMachine.ChangeState(new BossDieState(this));
+    }
+
     void OnDrawGizmosSelected()
     {
         if (arenaCenter)

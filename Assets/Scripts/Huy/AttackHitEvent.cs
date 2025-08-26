@@ -95,9 +95,9 @@ public class AttackHitEvent : MonoBehaviour
         // Hàm này sẽ giúp code ngắn hơn so với 2 dòng dưới
         mageFireBall.transform.SetPositionAndRotation(mage.shootPoint.position, rot); 
         /*
-        mageFireBall.transform.position = mage.shootPoint.position;
+        mageFireBall.transform.position = boss.shootPoint.position;
         mageFireBall.transform.rotation = Quaternion.LookRotation(
-            (mage.player.position + Vector3.up * 1.2f) - mage.shootPoint.position
+            (boss.player.position + Vector3.up * 1.2f) - boss.shootPoint.position
         );
         */
         mageFireBall.SetActive(true);
@@ -109,24 +109,24 @@ public class AttackHitEvent : MonoBehaviour
     /*
         private void ArcherShootAttack()
         {
-            if (archer.shootPoint == null || archer.archerArrowPool == null)
+            if (boss.shootPoint == null || boss.archerArrowPool == null)
             {
                 Debug.LogWarning("ShootPoint or archerArrowPool is not attached on ArcherEnemy");
                 return;
             }
 
-            var archerArrow = archer.archerArrowPool.GetPooledObject();
+            var archerArrow = boss.archerArrowPool.GetPooledObject();
             if (archerArrow == null) return;
 
-            archerArrow.transform.position = archer.shootPoint.position;
+            archerArrow.transform.position = boss.shootPoint.position;
             archerArrow.transform.rotation = Quaternion.LookRotation(
-                (archer.player.position + Vector3.up * 1.2f) - archer.shootPoint.position
+                (boss.player.position + Vector3.up * 1.2f) - boss.shootPoint.position
             );
             archerArrow.SetActive(true);
 
             var rb = archerArrow.GetComponent<Rigidbody>();
             if(rb != null)
-                rb.velocity = archerArrow.transform.forward * archer.arrowSpeed;
+                rb.velocity = archerArrow.transform.forward * boss.arrowSpeed;
         }
     */
 

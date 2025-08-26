@@ -10,7 +10,7 @@ public class AttackState : IEnemyState
 
     public AttackState(Enemy enemyController)
     {
-        knight = (KnightEnemy)enemyController;
+        knight = enemyController as KnightEnemy;
     }
 
     public void Enter()

@@ -26,4 +26,11 @@ public class MageEnemy : Enemy
 
     }
 
+    protected override void HandleDied()
+    {
+        if (_hasDied) return;
+        _hasDied = true;
+        enemyStateMachine.ChangeState(new MageDieState(this));
+    }
+
 }
