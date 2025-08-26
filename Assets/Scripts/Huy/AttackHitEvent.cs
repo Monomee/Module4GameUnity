@@ -2,7 +2,8 @@
 
 public class AttackHitEvent : MonoBehaviour
 {
-    public bool isMelee;
+    public bool isKnight;
+    public bool isSpider;
     public bool isMage;
     public bool isArcher;
 
@@ -10,6 +11,7 @@ public class AttackHitEvent : MonoBehaviour
     private MageEnemy mage;
     private KnightEnemy knight;
     private ArcherEnemy archer;
+    private SpiderEnemy spider;
 
     private void Awake()
     {
@@ -17,6 +19,7 @@ public class AttackHitEvent : MonoBehaviour
         mage = GetComponent<MageEnemy>();
         knight = GetComponent<KnightEnemy>();
         archer = GetComponent<ArcherEnemy>();
+        spider = GetComponent<SpiderEnemy>();
     }
 
     public void DoAttack()
@@ -24,9 +27,14 @@ public class AttackHitEvent : MonoBehaviour
         // FSM is NOT allowed to attack
         if (!enemy.isReadyToAttack) return;
 
-        if (isMelee)
+        if (isKnight)
         {
-            MeleeAttack();
+            KnightAttack();
+        }
+
+        if (isSpider)
+        {
+            SpiderAttack();
         }
 
         if (isMage)
@@ -40,7 +48,7 @@ public class AttackHitEvent : MonoBehaviour
         }
     }
 
-    private void MeleeAttack()
+    private void KnightAttack()
     {
         if (enemy.player == null) return;
 
@@ -53,6 +61,20 @@ public class AttackHitEvent : MonoBehaviour
         }
     }
 
+    private void SpiderAttack()
+    {
+        if (enemy.player == null) return;
+
+        float dist = Vector3.Distance(enemy.transform.position, enemy.player.position);
+        if (dist <= enemy.attackRange)
+        {
+            Debug.Log($"{enemy.name} hitted Player, took {spider.spiderDamage} damage");
+
+            enemy.player.GetComponent<Health>()?.OnTakeDmg(spider.spiderDamage);
+        }
+    }
+
+
     private void MageShootAttack()
     {
         if (mage.shootPoint == null || mage.mageFireballPool == null)
@@ -64,11 +86,17 @@ public class AttackHitEvent : MonoBehaviour
         var mageFireBall = mage.mageFireballPool.GetPooledObject();
 
         if (mageFireBall == null) return;
+        Vector3 dir = (mage.player.position + Vector3.up * 1.2f) - mage.shootPoint.position;
+        Quaternion rot = Quaternion.LookRotation(dir);
 
-        mageFireBall.transform.position = mage.shootPoint.position;
+        // Hàm này sẽ giúp code ngắn hơn so với 2 dòng dưới
+        mageFireBall.transform.SetPositionAndRotation(mage.shootPoint.position, rot); 
+        /*
+        mageFireBall.transform.position = boss.shootPoint.position;
         mageFireBall.transform.rotation = Quaternion.LookRotation(
-            (mage.player.position + Vector3.up * 1.2f) - mage.shootPoint.position
+            (boss.player.position + Vector3.up * 1.2f) - boss.shootPoint.position
         );
+        */
         mageFireBall.SetActive(true);
 
         var rb = mageFireBall.GetComponent<Rigidbody>();
@@ -78,24 +106,24 @@ public class AttackHitEvent : MonoBehaviour
     /*
         private void ArcherShootAttack()
         {
-            if (archer.shootPoint == null || archer.archerArrowPool == null)
+            if (boss.shootPoint == null || boss.archerArrowPool == null)
             {
                 Debug.LogWarning("ShootPoint or archerArrowPool is not attached on ArcherEnemy");
                 return;
             }
 
-            var archerArrow = archer.archerArrowPool.GetPooledObject();
+            var archerArrow = boss.archerArrowPool.GetPooledObject();
             if (archerArrow == null) return;
 
-            archerArrow.transform.position = archer.shootPoint.position;
+            archerArrow.transform.position = boss.shootPoint.position;
             archerArrow.transform.rotation = Quaternion.LookRotation(
-                (archer.player.position + Vector3.up * 1.2f) - archer.shootPoint.position
+                (boss.player.position + Vector3.up * 1.2f) - boss.shootPoint.position
             );
             archerArrow.SetActive(true);
 
             var rb = archerArrow.GetComponent<Rigidbody>();
             if(rb != null)
-                rb.velocity = archerArrow.transform.forward * archer.arrowSpeed;
+                rb.velocity = archerArrow.transform.forward * boss.arrowSpeed;
         }
     */
 
@@ -104,13 +132,12 @@ public class AttackHitEvent : MonoBehaviour
         if (archer == null || archer.shootPoint == null || archer.archerArrowPool == null) return;
         Debug.Log("archer attack");
         var arrow = archer.archerArrowPool.GetPooledObject();
-        if (!arrow) return;
+        if (arrow == null) return;
 
-        // Hướng bay tới Player (nâng mục tiêu một chút)
+        // Hướng bay tới Player 
         Vector3 dir = (archer.player.position + Vector3.up * 1.2f) - archer.shootPoint.position;
         Quaternion rot = Quaternion.LookRotation(dir);
 
-        // Đặt world pos/rot TRƯỚC khi bật
         arrow.transform.SetPositionAndRotation(archer.shootPoint.position, rot);
         arrow.SetActive(true);
 

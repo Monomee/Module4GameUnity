@@ -6,7 +6,7 @@ public class ArcherAttackState : IEnemyState
 {
     private ArcherEnemy archer;
     private const string ARCHER_ATTACK_ANIMATION_BOOL = "isAttack";
-    private float nextShotTime = 0f;
+
 
     public ArcherAttackState(Enemy enemyController)
     {

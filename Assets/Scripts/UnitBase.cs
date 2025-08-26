@@ -5,16 +5,12 @@ using UnityEngine;
 public class UnitBase : MonoBehaviour
 {
 
-    //public int teamID;
     public Animator animator;
     public RoleStat roleStat;   
     public bool isDead = false;
-
-    public int teamID;
   
     protected Health healthComponent;
     protected Attack attackComponent;
-    public float hp;
 
     public void AddStats(StatType type, StatConfigBase stat)
     {

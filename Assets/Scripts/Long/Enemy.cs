@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -8,16 +8,25 @@ public class Enemy : UnitBase
     public float moveSpeed;
     public float attackRange = 2f;
     public float turnSpeed;
-    public float detectionRadius = 10f;
-    
+    public float detectionRadius = 5f;
+
 
     public bool hasDetectedPlayer = false;
     public bool isReadyToAttack;
+    protected bool _hasDied;
 
     public Transform player;
 
     public NavMeshAgent agent;
     public EnemyStateMachine enemyStateMachine;
+
+    private Rigidbody[] _ragdollRigidbodies;
+
+    private void Awake()
+    {
+        _ragdollRigidbodies = GetComponentsInChildren<Rigidbody>();
+        DisableRagdoll();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -33,19 +42,43 @@ public class Enemy : UnitBase
 
         enemyStateMachine = new EnemyStateMachine();
         enemyStateMachine.ChangeState(GetInitialState());
+;
 
-        Debug.Log("EnemyStats initialized with HP: " + hp + " and Move Speed: " + moveSpeed);
+    }
+
+    void OnEnable()
+    {
+        var h = GetComponent<Health>();
+        if (h != null) h.Died += HandleDied;
+    }
+
+    void OnDisable()
+    {
+        var h = GetComponent<Health>();
+        if (h != null) h.Died -= HandleDied;
     }
 
     // Update is called once per frame
     void Update()
     {
-        enemyStateMachine.Update();
+
+        if (!_hasDied)
+        {
+            enemyStateMachine.Update();
+        }
+           
     }
 
     protected virtual IEnemyState GetInitialState()
     {
         return new IdleState(this); 
+    }
+
+    protected virtual void HandleDied()
+    {
+        if (_hasDied) return;
+        _hasDied = true;
+        enemyStateMachine.ChangeState(new DieState(this));
     }
 
 
@@ -84,4 +117,29 @@ public class Enemy : UnitBase
             enemyStateMachine.ChangeState(new AttackState(this));
         }
     }
+
+    //protected virtual void OnDied()
+    //{
+    //    if(isDead == true)
+    //    {
+    //        enemyStateMachine.ChangeState(new DieState(this));
+    //    }
+    //}
+
+    public void DisableRagdoll()
+    {
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = true;
+        }
+    }
+
+    public void EnableRagdoll()
+    {
+        foreach (var rigidbody in _ragdollRigidbodies)
+        {
+            rigidbody.isKinematic = false;
+        }
+    }
+
 }

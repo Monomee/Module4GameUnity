@@ -1,10 +1,12 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public event System.Action Died; //
+
     StatConfigBase hp;
     public float health;
     public void Start()
@@ -39,13 +41,20 @@ public class Health : MonoBehaviour
         }
     }
     public void OnTakeDmg(float damage)
-    {     
+    {
+        // Trừ trước, rồi mới xét chết
+        hp.AddValue(-damage);
+        health = hp.value;
+
         if (hp.value <= 0)
         {
             hp.value = 0;
-            GetComponent<UnitBase>().isDead = true;
+            var unit = GetComponent<UnitBase>();
+            if (!unit.isDead)
+            {
+                unit.isDead = true;
+                Died?.Invoke(); // Thong bao cho Enemy
+            }
         }
-        hp.AddValue(-damage);
-        health = hp.value;
     }
 }

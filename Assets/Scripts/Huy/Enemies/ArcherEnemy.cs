@@ -22,4 +22,11 @@ public class ArcherEnemy : Enemy
             enemyStateMachine.ChangeState(new ArcherAttackState(this));
         }
     }
+
+    protected override void HandleDied()
+    {
+        if (_hasDied) return;
+        _hasDied = true;
+        enemyStateMachine.ChangeState(new ArcherDieState(this));
+    }
 }

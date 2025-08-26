@@ -21,10 +21,15 @@ public class RunningState : IEnemyState
 
     public void Update()
     {
-        knight.FaceTarget();
-        knight.agent.SetDestination(knight.player.position);
-        // Attack
-        knight.CheckAndAttackPlayer();
+        if (knight == null || knight.isDead)
+            return;
+
+        if (knight.agent != null && knight.agent.enabled && knight.agent.isOnNavMesh)
+        {
+            knight.FaceTarget();
+            knight.agent.SetDestination(knight.player.position);
+            knight.CheckAndAttackPlayer();
+        }
     }
 
     public void Exit() 
