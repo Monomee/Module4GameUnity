@@ -2,6 +2,7 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FreezeEffect : EffectBase
 {
@@ -38,11 +39,13 @@ public class FreezeEffect : EffectBase
             {
                 target = (Enemy)target;
                 target.GetComponent<Enemy>().enabled = false;
+                target.GetComponent<NavMeshAgent>().enabled = false;
             }
             else if (target is Boss)
             {
                 target = (Boss)target;
                 target.GetComponent<Boss>().enabled = false;
+                target.GetComponent<NavMeshAgent>().enabled = false;
             }
             target.GetComponent<Animator>().speed = 0f;
             yield return null;
@@ -62,11 +65,13 @@ public class FreezeEffect : EffectBase
         {
             target = (Enemy)target;
             target.GetComponent<Enemy>().enabled = true;
+            target.GetComponent<NavMeshAgent>().enabled = true;
         }
         else if (target is Boss)
         {
             target = (Boss)target;
             target.GetComponent<Boss>().enabled = true;
+            target.GetComponent<NavMeshAgent>().enabled = true;
         }
         fromOwner.StopCoroutine(freezeCoroutine);
         target.GetComponent<Animator>().speed = 1f;

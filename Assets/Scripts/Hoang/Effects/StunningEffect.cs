@@ -1,6 +1,7 @@
 using StarterAssets;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class StunningEffect : EffectBase
 {
@@ -34,15 +35,17 @@ public class StunningEffect : EffectBase
                 target.GetComponent<PlayerAttack>().enabled = false;
                 target.GetComponent<ThirdPersonController>().enabled = false;
             }
-            else if (target is TestEnemy)
+            else if (target is Enemy)
             {
-                target = (TestEnemy)target;
-                target.GetComponent<TestEnemy>().enabled = false;
+                target = (Enemy)target;
+                target.GetComponent<Enemy>().enabled = false;
+                target.GetComponent<NavMeshAgent>().enabled = false;
             }
             else if (target is Boss)
             {
                 target = (Boss)target;
                 target.GetComponent<Boss>().enabled = false;
+                target.GetComponent<NavMeshAgent>().enabled = false;
             }
             target.GetComponent<Animator>().speed = 0f;
             yield return null;
@@ -59,15 +62,17 @@ public class StunningEffect : EffectBase
             target.GetComponent<PlayerAttack>().enabled = true;
             target.GetComponent<ThirdPersonController>().enabled = true;
         }
-        else if (target is TestEnemy)
+        else if (target is Enemy)
         {
-            target = (TestEnemy)target;
-            target.GetComponent<TestEnemy>().enabled = true;
+            target = (Enemy)target;
+            target.GetComponent<Enemy>().enabled = true;
+            target.GetComponent<NavMeshAgent>().enabled = true;
         }
         else if (target is Boss)
         {
             target = (Boss)target;
             target.GetComponent<Boss>().enabled = true;
+            target.GetComponent<NavMeshAgent>().enabled = true;
         }
         fromOwner.StopCoroutine(stunCoroutine);
         target.GetComponent<Animator>().speed = 1f;

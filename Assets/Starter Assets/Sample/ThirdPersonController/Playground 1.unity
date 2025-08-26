@@ -538,8 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledObjectsEnemy: []
-  objectToPoolEnemy: {fileID: 8014392636077758758, guid: 6f8b48ac988c31048a52210d6509a62c,
-    type: 3}
+  objectToPoolEnemy: {fileID: 1900948698}
   amountToPoolEnemy: 30
 --- !u!1 &711570724
 GameObject:
@@ -550,7 +549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 711570726}
-  - component: {fileID: 711570725}
+  - component: {fileID: 711570727}
   m_Layer: 0
   m_Name: Pooling
   m_TagString: Untagged
@@ -558,18 +557,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &711570725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711570724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dfaf417fcc69849a5a809677e3f9ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &711570726
 Transform:
   m_ObjectHideFlags: 0
@@ -585,6 +572,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711570727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711570724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f413f2e3bf32349af87f504ced31d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjectsPlayer: []
+  objectToPoolPlayer: {fileID: 7251879486380165639, guid: c2f6a8962aac3814aa56cb9647c93470,
+    type: 3}
+  amountToPoolPlayer: 20
 --- !u!1001 &746329221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1647,7 +1650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1586375305
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2034,6 +2037,12 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1900948698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3083573527901665513, guid: 2fffa8bab5413e04f81a3c8117ea9bf6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4245688095844644262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1003640019413563
 GameObject:
   m_ObjectHideFlags: 0
@@ -5046,6 +5055,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4463867026796947}
+    - target: {fileID: 7390870680631759498, guid: 78354138467a3fb49b111e45b1bcc40b,
+        type: 3}
+      propertyPath: mageFireballPool
+      value: 
+      objectReference: {fileID: 1363201464}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5064,6 +5078,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4463867026796947}
+    - target: {fileID: 2243371983656920166, guid: 2fffa8bab5413e04f81a3c8117ea9bf6,
+        type: 3}
+      propertyPath: archerArrowPool
+      value: 
+      objectReference: {fileID: 1606098582}
     - target: {fileID: 2763586224079109103, guid: 2fffa8bab5413e04f81a3c8117ea9bf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5287,6 +5306,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3814197735802262735, guid: bd6ee3ae5d5677c40b58c68e5920588a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 4463867026796947}
+    - target: {fileID: 3814197735802262735, guid: bd6ee3ae5d5677c40b58c68e5920588a,
+        type: 3}
+      propertyPath: swordPool
+      value: 
+      objectReference: {fileID: 1170724972}
+    - target: {fileID: 3814197735802262735, guid: bd6ee3ae5d5677c40b58c68e5920588a,
+        type: 3}
+      propertyPath: arenaCenter
+      value: 
+      objectReference: {fileID: 4463867026796947}
+    - target: {fileID: 3814197735802262735, guid: bd6ee3ae5d5677c40b58c68e5920588a,
+        type: 3}
+      propertyPath: spawnEnemies
+      value: 
+      objectReference: {fileID: 576431281}
     - target: {fileID: 7374033230512088814, guid: bd6ee3ae5d5677c40b58c68e5920588a,
         type: 3}
       propertyPath: m_Name

@@ -5,13 +5,20 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public event System.Action Died; //
+    public event System.Action Died; 
 
     StatConfigBase hp;
     public float health;
     public void Start()
     {
         hp = new StatConfigBase(StatType.HP, 100, 1, 0, 1, 0, 0, 100);
+        if (GetComponent<Enemy>() != null)
+        {
+            if (GetComponent<Enemy>() is BossEnemy)
+            {
+                hp = new StatConfigBase(StatType.HP, 500, 1, 0, 1, 0, 0, 500);
+            }
+        }      
         AddListener();
         GetComponent<UnitBase>().AddStats(StatType.HP, hp);
         Debug.Log("HP: " + hp.GetValue());
