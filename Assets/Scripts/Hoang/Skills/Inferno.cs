@@ -9,7 +9,7 @@ public class Inferno : SkillBase
     Vector3 point;
     private GameObject skillPrefab => Resources.Load<GameObject>(skillConfig.asset);
     private float lastCastTime = -Mathf.Infinity;
-    private float cooldown => skillConfig.parameters[2];
+    private float cooldown => skillConfig.parameters[0];
 
     public Inferno(UnitBase owner, SkillConfig skillConfig, List<EffectBase> effects)
     {
@@ -57,8 +57,8 @@ public class Inferno : SkillBase
             OnStayCollideSkill script = inferno.GetComponent<OnStayCollideSkill>();
             if (script != null)
             {
-                float damage = skillConfig.parameters[0];
-                float duration = skillConfig.parameters[1];
+                float damage = skillConfig.parameters[1];
+                float duration = skillConfig.parameters[2];
                 script.Initialize(owner, this, point, damage, duration);
             }
             else
@@ -81,6 +81,6 @@ public class InfernoConfig : SkillConfig
         castType = SkillCastType.Active;
         effects = new List<EffectConfig>();
         asset = "Hun0FX/FX/FireFX_vol1/Prefabs/FX_Fire_01";
-        parameters = new float[] { 10f, 8f, 20f }; // continuous damage, duration, cooldown
+        parameters = new float[] { 20f, 10f, 8f }; // cooldown, continuous damage, duration, 
     }
 }

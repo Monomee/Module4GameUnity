@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ThunderStorm : SkillBase
 {
-    GameObject pointerPrefab => Resources.Load<GameObject>("Pointer");
-    GameObject pointer;
+    //GameObject pointerPrefab => Resources.Load<GameObject>("Pointer");
+    //GameObject pointer;
     GameObject thunder;
-    Vector3 point;
+    //Vector3 point;
     private GameObject skillPrefab => Resources.Load<GameObject>(skillConfig.asset);
     private float lastCastTime = -Mathf.Infinity;
-    private float cooldown => skillConfig.parameters[2];
+    private float cooldown => skillConfig.parameters[0];
 
     public ThunderStorm(UnitBase owner, SkillConfig skillConfig, List<EffectBase> effects)
     {
@@ -21,12 +21,58 @@ public class ThunderStorm : SkillBase
     }
     public override void OnActive(bool active)
     {
-        if (active)
+        //if (active)
+        //{
+        //    if (pointer == null)
+        //    {
+        //        pointer = Object.Instantiate(pointerPrefab);
+        //    }
+        //    Vector3 screenCenter = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
+        //    Ray ray = Camera.main.ScreenPointToRay(screenCenter);
+        //    RaycastHit hit;
+        //    if (Physics.Raycast(ray, out hit, 100f))
+        //    {
+        //        if (Mathf.Abs(Vector3.Dot(ray.direction, owner.transform.forward)) <= 0.9f)
+        //        {
+        //            if (hit.collider != null)
+        //            {
+        //                point = hit.point;
+        //            }
+        //            else
+        //            {
+        //                point = ray.direction;
+        //            }
+        //            pointer.transform.position = point;
+        //        }
+        //        Object.Destroy(pointer, 10f);
+        //    }
+        //}
+        //if (Input.GetKeyUp(KeyCode.E) && Time.time - lastCastTime >= cooldown)
+        //{
+        //    Object.Destroy(pointer, 1f);
+        //    lastCastTime = Time.time;
+
+        //    owner.animator.SetTrigger("Attack");
+        //    thunder = Object.Instantiate(skillPrefab, point, Quaternion.identity);
+
+        //    OnStayCollideSkill script = thunder.GetComponent<OnStayCollideSkill>();
+        //    if (script != null)
+        //    {
+        //        float damage = skillConfig.parameters[1];
+        //        float duration = skillConfig.parameters[2];
+        //        script.Initialize(owner, this, point, damage, duration);
+        //    }
+        //    else
+        //    {
+        //        Debug.LogError("OnStayCollideSkill component not found on the thunderstorm prefab.");
+        //    }
+        //}
+        if (active && Time.time - lastCastTime >= cooldown)
         {
-            if (pointer == null)
-            {
-                pointer = Object.Instantiate(pointerPrefab);
-            }
+            lastCastTime = Time.time;
+
+            Vector3 spawnPos = owner.transform.position + owner.transform.forward * 3f; 
+
             Vector3 screenCenter = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
             Ray ray = Camera.main.ScreenPointToRay(screenCenter);
             RaycastHit hit;
@@ -36,37 +82,30 @@ public class ThunderStorm : SkillBase
                 {
                     if (hit.collider != null)
                     {
-                        point = hit.point;
+                        spawnPos = hit.point;
                     }
                     else
                     {
-                        point = ray.direction;
+                        spawnPos = owner.transform.position + ray.direction * 5f; 
                     }
-                    pointer.transform.position = point;
                 }
-                Object.Destroy(pointer, 10f);
             }
-        }
-        if (Input.GetKeyUp(KeyCode.E) && Time.time - lastCastTime >= cooldown)
-        {
-            Object.Destroy(pointer, 1f);
-            lastCastTime = Time.time;
 
-            owner.animator.SetTrigger("Attack");
-            thunder = Object.Instantiate(skillPrefab, point, Quaternion.identity);
+            thunder = Object.Instantiate(skillPrefab, spawnPos, Quaternion.identity);
 
             OnStayCollideSkill script = thunder.GetComponent<OnStayCollideSkill>();
             if (script != null)
             {
-                float damage = skillConfig.parameters[0];
-                float duration = skillConfig.parameters[1];
-                script.Initialize(owner, this, point, damage, duration);
+                float damage = skillConfig.parameters[1];
+                float duration = skillConfig.parameters[2];
+                script.Initialize(owner, this, spawnPos, damage, duration);
             }
             else
             {
-                Debug.LogError("OnStayCollideSkill component not found on the inferno prefab.");
+                Debug.LogError("OnStayCollideSkill component not found on the thunderstorm prefab.");
             }
         }
+
     }
     public override void OnDeactive()
     {
@@ -82,6 +121,6 @@ public class ThunderStormConfig: SkillConfig
         castType = SkillCastType.Active;
         effects = new List<EffectConfig>();
         asset = "UsedAsset/ThunderStorm";
-        parameters = new float[] { 20f, 8f, 20f }; // continuous damage, duration, cooldown
+        parameters = new float[] { 20f, 8f, 20f }; // cooldown, continuous damage, duration
     }
 }
