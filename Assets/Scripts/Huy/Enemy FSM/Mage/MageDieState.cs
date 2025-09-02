@@ -34,6 +34,7 @@ public class MageDieState : IEnemyState
         {
             mage.gameObject.GetComponent<CapsuleCollider>().enabled = false;
         }
+        Object.Destroy(mage.gameObject, 3f);
     }
 
     public void Update()

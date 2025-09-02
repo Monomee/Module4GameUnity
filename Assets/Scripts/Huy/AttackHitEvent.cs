@@ -58,6 +58,9 @@ public class AttackHitEvent : MonoBehaviour
             Debug.Log($"{enemy.name} hitted Player, took {knight.knightDamage} damage");
 
             enemy.player.GetComponent<Health>()?.OnTakeDmg(knight.knightDamage);
+
+                UIManager.Instance.HPSlider.value = enemy.player.GetComponent<UnitBase>().roleStat.dictStats[StatType.HP].value;
+
         }
     }
 

@@ -31,6 +31,7 @@ public class Enemy : UnitBase
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform; //performace issue if too many object in the scene
         if (roleStat == null)
         {
             roleStat = new RoleStat();

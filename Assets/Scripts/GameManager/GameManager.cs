@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private void Start()
     {
-        
+        GameSaver.Instance.SaveGame();
     }
     private void Update()
     {
@@ -35,5 +35,13 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         GameSaver.Instance.SaveGame();
         SceneManager.LoadScene("Menu");
+    }
+    public void OnRestartGame()
+    {
+        Time.timeScale = 1;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //GameSaver.Instance.LoadGame();
     }
 }

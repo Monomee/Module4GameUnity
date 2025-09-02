@@ -34,6 +34,7 @@ public class ArcherDieState : IEnemyState
         {
             archer.gameObject.GetComponent<CapsuleCollider>().enabled = false;
         }
+        Object.Destroy(archer.gameObject, 3f);
     }
 
     public void Update()

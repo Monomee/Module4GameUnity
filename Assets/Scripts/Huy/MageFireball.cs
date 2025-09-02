@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MageFireball : MonoBehaviour
@@ -22,9 +20,9 @@ public class MageFireball : MonoBehaviour
         {
             other.GetComponent<Health>()?.OnTakeDmg(damage);
             Deactivate();
+            UIManager.Instance.HPSlider.value = other.GetComponent<UnitBase>().roleStat.dictStats[StatType.HP].value;
             Debug.Log($"Damage applied to {other.name}: {damage}");
         }
-
 
         // If you want the fire ball to disappear when it touched walls or ground 
         // if (other.gameObject.layer == LayerMask.NameToLayer("Ground")) Deactivate();

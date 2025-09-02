@@ -2,26 +2,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UI.GridLayoutGroup;
 
 public class Health : MonoBehaviour
 {
-    public event System.Action Died; 
-
+    public event System.Action Died;
+    bool isPlayer;
     StatConfigBase hp;
     public float health;
-    public void Start()
+    UnitBase owner;
+    public void Awake()
     {
-        hp = new StatConfigBase(StatType.HP, 100, 1, 0, 1, 0, 0, 100);
+        hp = new StatConfigBase(StatType.HP, 500, 1, 0, 1, 0, 0, 500);
         if (GetComponent<Enemy>() != null)
         {
-            if (GetComponent<Enemy>() is BossEnemy)
+            if (GetComponent<Enemy>() is not BossEnemy)
             {
-                hp = new StatConfigBase(StatType.HP, 500, 1, 0, 1, 0, 0, 500);
+                hp = new StatConfigBase(StatType.HP, 100, 1, 0, 1, 0, 0, 100);
             }
-        }      
+        }
         AddListener();
-        GetComponent<UnitBase>().AddStats(StatType.HP, hp);
+        owner = GetComponent<UnitBase>();
+        owner.AddStats(StatType.HP, hp);
         Debug.Log("HP: " + hp.GetValue());
+        isPlayer = owner is Player;
     }
     private void AddListener()
     {
@@ -40,13 +44,19 @@ public class Health : MonoBehaviour
     }
     public void OnChecKDead()
     {
-        if (GetComponent<UnitBase>().isDead)
+        if (owner.isDead)
         {
             Debug.Log("Unit is dead");
-            GetComponent<UnitBase>().animator.SetBool("Alive", false);
+            owner.animator.SetBool("Alive", false);
             RemoveListener();
+            if (GetComponent<Player>() != null)
+            {
+                UIManager.Instance.ShowGameOverPanel();
+            }
         }
     }
+
+    
     public void OnTakeDmg(float damage)
     {
         // Trừ trước, rồi mới xét chết
@@ -56,10 +66,10 @@ public class Health : MonoBehaviour
         if (hp.value <= 0)
         {
             hp.value = 0;
-            var unit = GetComponent<UnitBase>();
-            if (!unit.isDead)
+            
+            if (!owner.isDead)
             {
-                unit.isDead = true;
+                owner.isDead = true;
                 Died?.Invoke(); // Thong bao cho Enemy
             }
         }

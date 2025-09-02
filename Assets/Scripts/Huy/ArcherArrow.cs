@@ -70,14 +70,18 @@ public class ArcherArrow : MonoBehaviour
     {
         if (hasHit) return;
         if (owner && c.transform.IsChildOf(owner)) return; // không dính chính mình
-        
+        var health = c.collider.GetComponentInParent<Health>();
+        if (health) health.OnTakeDmg(damage);
         // Chỉ dính vào tag mong muốn (nếu có)
         if (!string.IsNullOrEmpty(stickOnlyOnTag) && !c.collider.CompareTag(stickOnlyOnTag))
         {
             // vẫn có thể gây damage rồi tự hủy nếu muốn:
-            var h = c.collider.GetComponentInParent<Health>();
-            if (h) h.OnTakeDmg(damage);
-            Debug.Log("trung: "+c.gameObject.name);
+            
+            
+            if (c.gameObject.CompareTag("Player")) //to do
+            {
+                UIManager.Instance.HPSlider.value = c.gameObject.GetComponent<UnitBase>().roleStat.dictStats[StatType.HP].value;
+            }
             // Không dính → tự hủy sớm:
             StartCoroutine(DespawnAfter(0.05f));
             return;
@@ -86,8 +90,8 @@ public class ArcherArrow : MonoBehaviour
         hasHit = true;
 
         // Gây damage 1 lần
-        var health = c.collider.GetComponentInParent<Health>();
-        if (health) health.OnTakeDmg(damage);
+        
+      
         Debug.Log("hoangpl " + c.collider.gameObject.GetInstanceID() + " my " + GetInstanceID() );
         // Lấy contact chính xác
         var contact = c.GetContact(0);
@@ -137,10 +141,23 @@ public class ArcherArrow : MonoBehaviour
 
         // Dọn dẹp trước khi trả về pool
         transform.SetParent(null);
-        if (col) col.enabled = true;
-        if (col && ownerCols != null)
-            for (int i = 0; i < ownerCols.Length; i++)
-                if (ownerCols[i]) Physics.IgnoreCollision(col, ownerCols[i], false);
+        if (col) //tach ham
+        {
+            col.enabled = true;
+            if (ownerCols != null)
+            {
+                for (int i = 0; i < ownerCols.Length; i++)
+                {
+                    if (ownerCols[i] == null)
+                    {
+                        continue;
+                    }
+                    Physics.IgnoreCollision(col, ownerCols[i], false);
+                }
+            }
+        }
+            
+        
 
         gameObject.SetActive(false);
     }

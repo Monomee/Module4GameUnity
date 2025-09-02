@@ -11,7 +11,7 @@ public class EffectManager : MonoBehaviour
     public List<EffectBase> effects;
     //public Action activeEffectAction;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         //activeEffectAction += ActiveEffect;
         effects = new List<EffectBase>();

@@ -10,7 +10,7 @@ public class Player : UnitBase
         
     }
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         if (animator == null)
         {

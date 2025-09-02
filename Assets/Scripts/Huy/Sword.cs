@@ -17,6 +17,7 @@ public class Sword : MonoBehaviour
         if (collision.collider.CompareTag(playerTag))
         {
             collision.collider.GetComponent<Health>().OnTakeDmg(damage);
+            UIManager.Instance.HPSlider.value = collision.collider.GetComponent<UnitBase>().roleStat.dictStats[StatType.HP].value;
         }
 
         //hasHit = true;

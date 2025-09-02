@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     public Slider HPSlider;
     public Image Skill1;
     public Image Skill2;
+    public GameObject GameOverPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,5 +46,12 @@ public class UIManager : MonoBehaviour
             yield return null;
         }
         skillImage.fillAmount = 1;
+    }
+    public void ShowGameOverPanel()
+    {
+        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        GameOverPanel.SetActive(true);
     }
 }

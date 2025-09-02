@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerAttack : Attack
 {
-    private void Start()
+    private void Awake()
     {
         if (animator == null)
         {

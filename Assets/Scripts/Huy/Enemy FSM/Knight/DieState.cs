@@ -34,6 +34,7 @@ public class DieState : IEnemyState
         {
             knight.gameObject.GetComponent<CapsuleCollider>().enabled = false;
         }
+        Object.Destroy(knight.gameObject, 3f);
     }
 
     public void Update()

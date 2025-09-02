@@ -19,10 +19,10 @@ public class GameSaver : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
-    public GameObject player;
+    public GameObject player => GameObject.FindGameObjectWithTag("Player");
     public void SaveGame()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
         if (player == null)
         {
             Debug.LogWarning("No player found to save!"); return;
